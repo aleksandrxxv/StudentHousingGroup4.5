@@ -1,0 +1,20 @@
+[
+  {
+    "IsAdmin": false,
+    "Name": "John Doe",
+    "UserName": "john123",
+    "PasswordHash": "75K3eLr\u002Bdx6JJFuJ7LwIpEpOFmwGZZkRiB84PURz6U8="
+  },
+  {
+    "IsAdmin": true,
+    "Name": "Admin User",
+    "UserName": "admin",
+    "PasswordHash": "cTv9p4hwv50bJh9WUob4XpfuYU7\u002BXw\u002BvfDTnyk9luso="
+  },
+  {
+    "IsAdmin": false,
+    "Name": "Jane Smith",
+    "UserName": "jane123",
+    "PasswordHash": "\u002B7SooWP/qVi08Cv5yrswz\u002B\u002B0DegD8sTDRqnTmzvhtUQ="
+  }
+]
