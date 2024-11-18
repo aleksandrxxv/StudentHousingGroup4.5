@@ -6,6 +6,7 @@ namespace StudentHousing
 {
     internal class User
     {
+        public string Id { get; private set; }
         public bool IsAdmin { get; private set; } 
         public string? Name { get; private set; } 
         public string UserName { get; private set; } 
@@ -13,6 +14,7 @@ namespace StudentHousing
 
         public User(bool isAdmin, string name, string userName, string password)
         {
+            Id = Guid.NewGuid().ToString();
             IsAdmin = isAdmin;
             Name = name;
             UserName = userName;
@@ -28,5 +30,6 @@ namespace StudentHousing
                 return Convert.ToBase64String(hash);
             }
         }
+
     }
 }

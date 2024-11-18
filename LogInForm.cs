@@ -14,11 +14,19 @@ namespace StudentHousing
     public partial class LogInForm : Form
     {
         List<User> users = new List<User>();
+        private bool authenticated = false;
+
+        public bool Authenticated
+        {
+            get { return authenticated; }
+            set { authenticated = value; }
+        }
+
         public LogInForm()
         {
             InitializeComponent();
         }
-        private bool LogIn(string username, string password)
+        private string LogIn(string username, string password)
         {
             string filePath = "C:\\Users\\krisy\\Desktop\\StudentHousingGroup4.5\\Database\\users.json";
             string hashedPassword = User.HashPassword(password);
@@ -37,7 +45,7 @@ namespace StudentHousing
                         if (storedUsername.Equals(username, StringComparison.OrdinalIgnoreCase) && storedPasswordHash.Equals(hashedPassword))
                         {
                             MessageBox.Show("Successful log in");
-                            return true;
+                            return userJson["Id"].ToString();
                         }
                     }
                 }
@@ -47,7 +55,7 @@ namespace StudentHousing
                 MessageBox.Show($"Error loading users: {ex.Message}");
             }
             lbError.Text = "Wrong credentials please try again";
-            return false;
+            return "";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -60,8 +68,22 @@ namespace StudentHousing
                 return;
             }
             string passwordHash = password;
-            bool isLogged = LogIn(username, password);
-            
+            string userId = LogIn(username, password);
+            if (userId != "")
+            {
+                authenticated = true;
+            }else
+            {
+                authenticated = false;
+            }
+
+            if (authenticated)
+            {
+                Home frm = new Home(userId);
+                frm.ShowDialog();
+
+            }
+
         }
 
     }

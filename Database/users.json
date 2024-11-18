@@ -1,17 +1,20 @@
 [
   {
+    "Id": "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6",
     "IsAdmin": false,
     "Name": "John Doe",
     "UserName": "john123",
     "PasswordHash": "75K3eLr\u002Bdx6JJFuJ7LwIpEpOFmwGZZkRiB84PURz6U8="
   },
   {
+    "Id": "0d3eaf14-7353-4dc3-b9a3-cffc7ff15662",
     "IsAdmin": true,
     "Name": "Admin User",
     "UserName": "admin",
     "PasswordHash": "cTv9p4hwv50bJh9WUob4XpfuYU7\u002BXw\u002BvfDTnyk9luso="
   },
   {
+    "Id": "28d8cddd-5062-44a6-a30c-5f0311887a84",
     "IsAdmin": false,
     "Name": "Jane Smith",
     "UserName": "jane123",

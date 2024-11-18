@@ -26,11 +26,7 @@ namespace StudentHousing
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-<<<<<<< HEAD
             Application.Run(new LogInForm());
-=======
-            Application.Run(new Home());
->>>>>>> beb10c4905ab49de4c5f2f4920b20391f7fff44d
         }
     }
 }
