@@ -50,7 +50,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.Lime;
+            panel1.BackColor = Color.FromArgb(33, 137, 126);
             panel1.Controls.Add(btnLogIn);
             panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Top;
@@ -62,20 +62,26 @@
             // 
             // btnLogIn
             // 
+            btnLogIn.BackColor = Color.FromArgb(137, 128, 245);
+            btnLogIn.Cursor = Cursors.Hand;
             btnLogIn.Dock = DockStyle.Right;
+            btnLogIn.FlatAppearance.BorderSize = 0;
+            btnLogIn.FlatStyle = FlatStyle.Flat;
             btnLogIn.Location = new Point(773, 0);
             btnLogIn.Margin = new Padding(2);
             btnLogIn.Name = "btnLogIn";
             btnLogIn.Size = new Size(73, 60);
             btnLogIn.TabIndex = 1;
             btnLogIn.Text = "Profile";
-            btnLogIn.UseVisualStyleBackColor = true;
+            btnLogIn.UseVisualStyleBackColor = false;
             btnLogIn.Click += btnLogIn_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.FromArgb(0, 2, 24, 158);
             label1.Font = new Font("Segoe UI", 20F);
+            label1.ForeColor = SystemColors.Control;
             label1.Location = new Point(9, 7);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
@@ -125,6 +131,7 @@
             Controls.Add(button2);
             Controls.Add(panel1);
             Controls.Add(btn);
+            FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(2);
             Name = "Home";
             StartPosition = FormStartPosition.CenterScreen;
