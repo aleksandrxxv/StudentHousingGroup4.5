@@ -13,12 +13,12 @@ namespace StudentHousing
 {
     public partial class Home : Form
     {
-        public string? currentUserId { get; private set; }
+        public User currentUser { get; private set; }
 
-        public Home(string currentUserId)
+        public Home(User currentUser)
         {
             InitializeComponent();
-            this.currentUserId = currentUserId;
+            this.currentUser = currentUser;
         }
 
         public Home()
@@ -28,7 +28,7 @@ namespace StudentHousing
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
-            ProfileForm profile = new ProfileForm(currentUserId);
+            ProfileForm profile = new ProfileForm(currentUser);
             profile.Show();
 
         }

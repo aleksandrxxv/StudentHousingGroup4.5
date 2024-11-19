@@ -12,14 +12,15 @@ namespace StudentHousing
 {
     public partial class ProfileForm : Form
     {
-        //private? User user = new User();
-        private string userId = string.Empty;
-        public ProfileForm(string currentUserId)
-        {
-            userId = currentUserId;
-            InitializeComponent();
-            lbId.Text = $"UserId: {currentUserId}";
+        private User user;
 
+        public ProfileForm(User currentUser)
+        {
+            InitializeComponent();
+            this.user = currentUser;
+
+            lbId.Text = user.Id;
+            lbName.Text = user.Name;
         }
     }
 }

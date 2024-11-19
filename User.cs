@@ -1,35 +1,37 @@
 ﻿using System;
 using System.Security.Cryptography;
 using System.Text;
+using System.Text.Json.Serialization;
 
 namespace StudentHousing
 {
-    internal class User
+    public class User
     {
         public string Id { get; private set; }
         public bool IsAdmin { get; private set; } 
         public string? Name { get; private set; } 
         public string UserName { get; private set; } 
-        public string PasswordHash { get; private set; } 
+        public string PasswordHash { get; private set; }
 
+        
         public User(bool isAdmin, string name, string userName, string password)
         {
             Id = Guid.NewGuid().ToString();
             IsAdmin = isAdmin;
             Name = name;
             UserName = userName;
-            PasswordHash = HashPassword(password);
+            PasswordHash = UserManager.HashPassword(password);
         }
+        public User() { }
 
-        public static string HashPassword(string password)
+        [JsonConstructor]
+        public User(string id, bool isAdmin, string? name, string userName, string passwordHash)
         {
-            using (SHA256 sha256 = SHA256.Create())
-            {
-                byte[] bytes = Encoding.UTF8.GetBytes(password);
-                byte[] hash = sha256.ComputeHash(bytes);
-                return Convert.ToBase64String(hash);
-            }
+            Id = id;
+            IsAdmin = isAdmin;
+            Name = name;
+            UserName = userName;
+            PasswordHash = passwordHash;
         }
-
     }
 }

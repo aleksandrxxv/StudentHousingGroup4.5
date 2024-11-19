@@ -25,6 +25,10 @@ namespace StudentHousing
             //File.WriteAllText("C:\\Users\\krisy\\Desktop\\StudentHousingGroup4.5\\Database\\users.json", json);
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
+            //Debug.WriteLine("Tuka");
+            //Debug.WriteLine(UserManager.LogIn("john123", "password123").Name);
+            //Debug.WriteLine(UserManager.GetUserById("4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6"));
+            UserManager.GetUserById("4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6");
             ApplicationConfiguration.Initialize();
             Application.Run(new LogInForm());
         }

@@ -35,7 +35,6 @@
             button2 = new Button();
             label2 = new Label();
             listBox1 = new ListBox();
-            lbHello = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -116,21 +115,11 @@
             listBox1.Size = new Size(598, 104);
             listBox1.TabIndex = 8;
             // 
-            // lbHello
-            // 
-            lbHello.AutoSize = true;
-            lbHello.Location = new Point(684, 379);
-            lbHello.Name = "lbHello";
-            lbHello.Size = new Size(45, 20);
-            lbHello.TabIndex = 9;
-            lbHello.Text = "Hello";
-            // 
             // Home
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(846, 531);
-            Controls.Add(lbHello);
             Controls.Add(listBox1);
             Controls.Add(label2);
             Controls.Add(button2);
@@ -155,6 +144,5 @@
         private Button button2;
         private Label label2;
         private ListBox listBox1;
-        private Label lbHello;
     }
 }

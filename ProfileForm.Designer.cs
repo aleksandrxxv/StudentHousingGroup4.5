@@ -30,6 +30,8 @@
         {
             label1 = new Label();
             lbId = new Label();
+            label2 = new Label();
+            lbName = new Label();
             SuspendLayout();
             // 
             // label1
@@ -50,11 +52,30 @@
             lbId.TabIndex = 1;
             lbId.Text = "UserId ";
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(10, 121);
+            label2.Name = "label2";
+            label2.Size = new Size(56, 20);
+            label2.TabIndex = 2;
+            label2.Text = "Name :";
+            // 
+            // lbName
+            // 
+            lbName.AutoSize = true;
+            lbName.Location = new Point(82, 121);
+            lbName.Name = "lbName";
+            lbName.Size = new Size(0, 20);
+            lbName.TabIndex = 3;
+            // 
             // ProfileForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(514, 593);
+            Controls.Add(lbName);
+            Controls.Add(label2);
             Controls.Add(lbId);
             Controls.Add(label1);
             Name = "ProfileForm";
@@ -67,5 +88,7 @@
 
         private Label label1;
         private Label lbId;
+        private Label label2;
+        private Label lbName;
     }
 }

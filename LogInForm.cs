@@ -26,37 +26,6 @@ namespace StudentHousing
         {
             InitializeComponent();
         }
-        private string LogIn(string username, string password)
-        {
-            string filePath = "C:\\Users\\krisy\\Desktop\\StudentHousingGroup4.5\\Database\\users.json";
-            string hashedPassword = User.HashPassword(password);
-
-            try
-            {
-                string json = File.ReadAllText(filePath);
-                var jsonUsers = JsonSerializer.Deserialize<List<Dictionary<string, object>>>(json);
-
-                if (jsonUsers != null)
-                {
-                    foreach (var userJson in jsonUsers)
-                    {
-                        string storedUsername = userJson["UserName"].ToString();
-                        string storedPasswordHash = userJson["PasswordHash"].ToString();
-                        if (storedUsername.Equals(username, StringComparison.OrdinalIgnoreCase) && storedPasswordHash.Equals(hashedPassword))
-                        {
-                            MessageBox.Show("Successful log in");
-                            return userJson["Id"].ToString();
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error loading users: {ex.Message}");
-            }
-            lbError.Text = "Wrong credentials please try again";
-            return "";
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -67,9 +36,8 @@ namespace StudentHousing
                 lbError.Text = "Enter both the username and the password!";
                 return;
             }
-            string passwordHash = password;
-            string userId = LogIn(username, password);
-            if (userId != "")
+            User user = UserManager.LogIn(username, password);
+            if (user != null)
             {
                 authenticated = true;
             }else
@@ -79,9 +47,8 @@ namespace StudentHousing
 
             if (authenticated)
             {
-                Home frm = new Home(userId);
+                Home frm = new Home(user);
                 frm.ShowDialog();
-
             }
 
         }
