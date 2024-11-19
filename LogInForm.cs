@@ -8,6 +8,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.DataFormats;
 
 namespace StudentHousing
 {
@@ -27,6 +28,7 @@ namespace StudentHousing
             InitializeComponent();
         }
 
+
         private void button1_Click(object sender, EventArgs e)
         {
             string username = tbUsername.Text;
@@ -40,7 +42,8 @@ namespace StudentHousing
             if (user != null)
             {
                 authenticated = true;
-            }else
+            }
+            else
             {
                 authenticated = false;
             }
@@ -48,10 +51,17 @@ namespace StudentHousing
             if (authenticated)
             {
                 Home frm = new Home(user);
-                frm.ShowDialog();
+                frm.Show();
+                this.Hide();
+                frm.FormClosed += (s, args) => this.Close();
+
             }
 
         }
 
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
