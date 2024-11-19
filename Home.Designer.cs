@@ -67,7 +67,7 @@
             btnLogIn.Dock = DockStyle.Right;
             btnLogIn.FlatAppearance.BorderSize = 0;
             btnLogIn.FlatStyle = FlatStyle.Flat;
-            btnLogIn.Location = new Point(773, 0);
+            btnLogIn.Location = new Point(967, 0);
             btnLogIn.Margin = new Padding(2);
             btnLogIn.Name = "btnLogIn";
             btnLogIn.Size = new Size(91, 75);
@@ -85,7 +85,7 @@
             label1.Location = new Point(9, 7);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(492, 54);
+            label1.Size = new Size(482, 54);
             label1.TabIndex = 0;
             label1.Text = "Student Housing Platform";
             // 
@@ -132,7 +132,6 @@
             Controls.Add(button2);
             Controls.Add(panel1);
             Controls.Add(btn);
-            FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(2);
             Name = "Home";
             StartPosition = FormStartPosition.CenterScreen;

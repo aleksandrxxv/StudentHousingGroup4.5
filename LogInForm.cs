@@ -42,7 +42,8 @@ namespace StudentHousing
             if (user != null)
             {
                 authenticated = true;
-            }else
+            }
+            else
             {
                 authenticated = false;
             }
@@ -58,5 +59,9 @@ namespace StudentHousing
 
         }
 
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
