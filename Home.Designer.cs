@@ -31,6 +31,7 @@
             btn = new Button();
             panel1 = new Panel();
             btnLogIn = new Button();
+            btnExit = new Button();
             label1 = new Label();
             button2 = new Button();
             label2 = new Label();
@@ -52,6 +53,7 @@
             // 
             panel1.BackColor = Color.FromArgb(33, 137, 126);
             panel1.Controls.Add(btnLogIn);
+            panel1.Controls.Add(btnExit);
             panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
@@ -67,14 +69,30 @@
             btnLogIn.Dock = DockStyle.Right;
             btnLogIn.FlatAppearance.BorderSize = 0;
             btnLogIn.FlatStyle = FlatStyle.Flat;
-            btnLogIn.Location = new Point(773, 0);
+            btnLogIn.Location = new Point(700, 0);
             btnLogIn.Margin = new Padding(2);
             btnLogIn.Name = "btnLogIn";
             btnLogIn.Size = new Size(73, 60);
-            btnLogIn.TabIndex = 1;
+            btnLogIn.TabIndex = 2;
             btnLogIn.Text = "Profile";
             btnLogIn.UseVisualStyleBackColor = false;
             btnLogIn.Click += btnLogIn_Click;
+            // 
+            // btnExit
+            // 
+            btnExit.BackColor = Color.FromArgb(137, 128, 245);
+            btnExit.Cursor = Cursors.Hand;
+            btnExit.Dock = DockStyle.Right;
+            btnExit.FlatAppearance.BorderSize = 0;
+            btnExit.FlatStyle = FlatStyle.Flat;
+            btnExit.Location = new Point(773, 0);
+            btnExit.Margin = new Padding(2);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(73, 60);
+            btnExit.TabIndex = 1;
+            btnExit.Text = "Exit";
+            btnExit.UseVisualStyleBackColor = false;
+            btnExit.Click += btnExit_Click;
             // 
             // label1
             // 
@@ -147,9 +165,10 @@
         private Button btn;
         private Panel panel1;
         private Label label1;
-        private Button btnLogIn;
+        private Button btnExit;
         private Button button2;
         private Label label2;
         private ListBox listBox1;
+        private Button btnLogIn;
     }
 }
