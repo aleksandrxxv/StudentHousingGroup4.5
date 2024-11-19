@@ -41,10 +41,10 @@
             // 
             // btn
             // 
-            btn.Location = new Point(12, 81);
+            btn.Location = new Point(10, 65);
             btn.Margin = new Padding(2);
             btn.Name = "btn";
-            btn.Size = new Size(451, 336);
+            btn.Size = new Size(361, 269);
             btn.TabIndex = 0;
             btn.Text = "button1";
             btn.UseVisualStyleBackColor = true;
@@ -59,7 +59,7 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1058, 75);
+            panel1.Size = new Size(846, 60);
             panel1.TabIndex = 1;
             // 
             // btnLogIn
@@ -69,10 +69,10 @@
             btnLogIn.Dock = DockStyle.Right;
             btnLogIn.FlatAppearance.BorderSize = 0;
             btnLogIn.FlatStyle = FlatStyle.Flat;
-            btnLogIn.Location = new Point(700, 0);
+            btnLogIn.Location = new Point(696, 0);
             btnLogIn.Margin = new Padding(2);
             btnLogIn.Name = "btnLogIn";
-            btnLogIn.Size = new Size(73, 60);
+            btnLogIn.Size = new Size(74, 60);
             btnLogIn.TabIndex = 2;
             btnLogIn.Text = "Profile";
             btnLogIn.UseVisualStyleBackColor = false;
@@ -85,10 +85,10 @@
             btnExit.Dock = DockStyle.Right;
             btnExit.FlatAppearance.BorderSize = 0;
             btnExit.FlatStyle = FlatStyle.Flat;
-            btnExit.Location = new Point(773, 0);
+            btnExit.Location = new Point(770, 0);
             btnExit.Margin = new Padding(2);
             btnExit.Name = "btnExit";
-            btnExit.Size = new Size(73, 60);
+            btnExit.Size = new Size(76, 60);
             btnExit.TabIndex = 1;
             btnExit.Text = "Exit";
             btnExit.UseVisualStyleBackColor = false;
@@ -100,20 +100,20 @@
             label1.BackColor = Color.FromArgb(0, 2, 24, 158);
             label1.Font = new Font("Segoe UI", 20F);
             label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(9, 7);
+            label1.Location = new Point(7, 6);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(482, 54);
+            label1.Size = new Size(407, 46);
             label1.TabIndex = 0;
             label1.Text = "Student Housing Platform";
             // 
             // button2
             // 
             button2.Anchor = AnchorStyles.Top;
-            button2.Location = new Point(506, 81);
+            button2.Location = new Point(405, 65);
             button2.Margin = new Padding(2);
             button2.Name = "button2";
-            button2.Size = new Size(465, 336);
+            button2.Size = new Size(372, 269);
             button2.TabIndex = 3;
             button2.Text = "button2";
             button2.UseVisualStyleBackColor = true;
@@ -123,28 +123,27 @@
             label2.Anchor = AnchorStyles.Top;
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 17F);
-            label2.Location = new Point(12, 429);
+            label2.Location = new Point(10, 343);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(362, 46);
+            label2.Size = new Size(307, 40);
             label2.TabIndex = 7;
             label2.Text = "Latest Announcements";
             // 
             // listBox1
             // 
             listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 25;
-            listBox1.Location = new Point(24, 489);
+            listBox1.Location = new Point(19, 391);
             listBox1.Margin = new Padding(2);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(746, 129);
+            listBox1.Size = new Size(598, 104);
             listBox1.TabIndex = 8;
             // 
             // Home
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1058, 664);
+            ClientSize = new Size(846, 531);
             Controls.Add(listBox1);
             Controls.Add(label2);
             Controls.Add(button2);
