@@ -40,56 +40,62 @@
             // 
             // btn
             // 
-            btn.Location = new Point(12, 81);
+            btn.Location = new Point(10, 65);
             btn.Margin = new Padding(2);
             btn.Name = "btn";
-            btn.Size = new Size(451, 336);
+            btn.Size = new Size(361, 269);
             btn.TabIndex = 0;
             btn.Text = "button1";
             btn.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
-            panel1.BackColor = Color.Lime;
+            panel1.BackColor = Color.FromArgb(33, 137, 126);
             panel1.Controls.Add(btnLogIn);
             panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1058, 75);
+            panel1.Size = new Size(846, 60);
             panel1.TabIndex = 1;
             // 
             // btnLogIn
             // 
+            btnLogIn.BackColor = Color.FromArgb(137, 128, 245);
+            btnLogIn.Cursor = Cursors.Hand;
             btnLogIn.Dock = DockStyle.Right;
-            btnLogIn.Location = new Point(967, 0);
+            btnLogIn.FlatAppearance.BorderSize = 0;
+            btnLogIn.FlatStyle = FlatStyle.Flat;
+            btnLogIn.Location = new Point(773, 0);
             btnLogIn.Margin = new Padding(2);
             btnLogIn.Name = "btnLogIn";
-            btnLogIn.Size = new Size(91, 75);
+            btnLogIn.Size = new Size(73, 60);
             btnLogIn.TabIndex = 1;
             btnLogIn.Text = "Profile";
-            btnLogIn.UseVisualStyleBackColor = true;
+            btnLogIn.UseVisualStyleBackColor = false;
             btnLogIn.Click += btnLogIn_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Yu Gothic UI Semibold", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(11, 9);
+            label1.BackColor = Color.FromArgb(0, 2, 24, 158);
+            label1.Font = new Font("Segoe UI", 20F);
+            label1.ForeColor = SystemColors.Control;
+            label1.Location = new Point(9, 7);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(492, 54);
+            label1.Size = new Size(407, 46);
             label1.TabIndex = 0;
             label1.Text = "Student Housing Platform";
             // 
             // button2
             // 
             button2.Anchor = AnchorStyles.Top;
-            button2.Location = new Point(506, 81);
+            button2.Location = new Point(405, 65);
             button2.Margin = new Padding(2);
             button2.Name = "button2";
-            button2.Size = new Size(465, 336);
+            button2.Size = new Size(372, 269);
             button2.TabIndex = 3;
             button2.Text = "button2";
             button2.UseVisualStyleBackColor = true;
@@ -99,33 +105,33 @@
             label2.Anchor = AnchorStyles.Top;
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 17F);
-            label2.Location = new Point(12, 429);
+            label2.Location = new Point(10, 343);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(362, 46);
+            label2.Size = new Size(307, 40);
             label2.TabIndex = 7;
             label2.Text = "Latest Announcements";
             // 
             // listBox1
             // 
             listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 25;
-            listBox1.Location = new Point(24, 489);
+            listBox1.Location = new Point(19, 391);
             listBox1.Margin = new Padding(2);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(746, 129);
+            listBox1.Size = new Size(598, 104);
             listBox1.TabIndex = 8;
             // 
             // Home
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1058, 664);
+            ClientSize = new Size(846, 531);
             Controls.Add(listBox1);
             Controls.Add(label2);
             Controls.Add(button2);
             Controls.Add(panel1);
             Controls.Add(btn);
+            FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(2);
             Name = "Home";
             StartPosition = FormStartPosition.CenterScreen;
