@@ -139,7 +139,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources._297312528_af13d14a_e6d7_4f1b_bba2_f58d93f602ef;
-            BackgroundImageLayout = ImageLayout.Stretch;
+            BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(1000, 562);
             Controls.Add(btnClose);
             Controls.Add(lbError);
