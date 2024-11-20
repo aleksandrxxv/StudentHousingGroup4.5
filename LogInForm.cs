@@ -14,8 +14,8 @@ namespace StudentHousing
 {
     public partial class LogInForm : Form
     {
-        List<User> users = new List<User>();
-        private bool authenticated = false;
+        private List<User> users;// = new List<User>();
+        private bool authenticated;
 
         public bool Authenticated
         {
@@ -25,6 +25,8 @@ namespace StudentHousing
 
         public LogInForm()
         {
+            this.authenticated = false;
+            this.users = new List<User>();
             InitializeComponent();
         }
 

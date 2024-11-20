@@ -9,7 +9,7 @@ namespace StudentHousing
     {
         public string Id { get; private set; }
         public bool IsAdmin { get; private set; } 
-        public string? Name { get; private set; } 
+        public string Name { get; private set; } 
         public string UserName { get; private set; } 
         public string PasswordHash { get; private set; }
 

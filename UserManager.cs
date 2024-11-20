@@ -74,6 +74,21 @@ namespace StudentHousing
             }
 
         }
+        public static List<User> GetAllUsers()
+        {
+            try
+            {
+                string json = File.ReadAllText(filePath);
+                var users = JsonSerializer.Deserialize<List<User>>(json);
+                return users ?? new List<User>();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error loading users: {ex.Message}");
+                return new List<User>();
+            }
+        }
+
 
     }
 

@@ -33,25 +33,29 @@
             btnLogIn = new Button();
             btnExit = new Button();
             label1 = new Label();
-            button2 = new Button();
             label2 = new Label();
             listBox1 = new ListBox();
+            button1 = new Button();
+            button2 = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // btn
             // 
-            btn.Location = new Point(10, 65);
+            btn.BackColor = Color.FromArgb(137, 128, 245);
+            btn.FlatStyle = FlatStyle.Flat;
+            btn.Font = new Font("Segoe UI", 12F);
+            btn.Location = new Point(55, 92);
             btn.Margin = new Padding(2);
             btn.Name = "btn";
-            btn.Size = new Size(361, 269);
+            btn.Size = new Size(340, 222);
             btn.TabIndex = 0;
-            btn.Text = "button1";
-            btn.UseVisualStyleBackColor = true;
+            btn.Text = "Clean the kitchen(Alexander Stoyanov)\r\nThrow out the trash(Jessie Chen)\r\n";
+            btn.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(33, 137, 126);
+            panel1.BackColor = Color.FromArgb(100, 0, 0, 0);
             panel1.Controls.Add(btnLogIn);
             panel1.Controls.Add(btnExit);
             panel1.Controls.Add(label1);
@@ -59,7 +63,7 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(846, 60);
+            panel1.Size = new Size(1250, 60);
             panel1.TabIndex = 1;
             // 
             // btnLogIn
@@ -69,7 +73,7 @@
             btnLogIn.Dock = DockStyle.Right;
             btnLogIn.FlatAppearance.BorderSize = 0;
             btnLogIn.FlatStyle = FlatStyle.Flat;
-            btnLogIn.Location = new Point(696, 0);
+            btnLogIn.Location = new Point(1100, 0);
             btnLogIn.Margin = new Padding(2);
             btnLogIn.Name = "btnLogIn";
             btnLogIn.Size = new Size(74, 60);
@@ -85,7 +89,7 @@
             btnExit.Dock = DockStyle.Right;
             btnExit.FlatAppearance.BorderSize = 0;
             btnExit.FlatStyle = FlatStyle.Flat;
-            btnExit.Location = new Point(770, 0);
+            btnExit.Location = new Point(1174, 0);
             btnExit.Margin = new Padding(2);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(76, 60);
@@ -107,23 +111,14 @@
             label1.TabIndex = 0;
             label1.Text = "Student Housing Platform";
             // 
-            // button2
-            // 
-            button2.Anchor = AnchorStyles.Top;
-            button2.Location = new Point(405, 65);
-            button2.Margin = new Padding(2);
-            button2.Name = "button2";
-            button2.Size = new Size(372, 269);
-            button2.TabIndex = 3;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
-            // 
             // label2
             // 
             label2.Anchor = AnchorStyles.Top;
             label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 17F);
-            label2.Location = new Point(10, 343);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(191, 482);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
             label2.Size = new Size(307, 40);
@@ -132,21 +127,51 @@
             // 
             // listBox1
             // 
+            listBox1.BackColor = Color.FromArgb(137, 128, 245);
+            listBox1.BorderStyle = BorderStyle.FixedSingle;
             listBox1.FormattingEnabled = true;
-            listBox1.Location = new Point(19, 391);
+            listBox1.Location = new Point(9, 530);
             listBox1.Margin = new Padding(2);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(598, 104);
+            listBox1.Size = new Size(598, 102);
             listBox1.TabIndex = 8;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(137, 128, 245);
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Location = new Point(472, 92);
+            button1.Margin = new Padding(2);
+            button1.Name = "button1";
+            button1.Size = new Size(322, 222);
+            button1.TabIndex = 9;
+            button1.Text = "Groceries list";
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.FromArgb(137, 128, 245);
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Location = new Point(873, 92);
+            button2.Margin = new Padding(2);
+            button2.Name = "button2";
+            button2.Size = new Size(318, 222);
+            button2.TabIndex = 10;
+            button2.Text = "button1";
+            button2.UseVisualStyleBackColor = false;
             // 
             // Home
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(846, 531);
+            AutoScroll = true;
+            BackgroundImage = Properties.Resources._9538280;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1250, 697);
+            Controls.Add(button2);
+            Controls.Add(button1);
             Controls.Add(listBox1);
             Controls.Add(label2);
-            Controls.Add(button2);
             Controls.Add(panel1);
             Controls.Add(btn);
             Margin = new Padding(2);
@@ -165,9 +190,10 @@
         private Panel panel1;
         private Label label1;
         private Button btnExit;
-        private Button button2;
         private Label label2;
         private ListBox listBox1;
         private Button btnLogIn;
+        private Button button1;
+        private Button button2;
     }
 }

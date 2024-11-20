@@ -36,17 +36,20 @@
             button1 = new Button();
             lbError = new Label();
             btnClose = new Button();
+            panel1 = new Panel();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
             // 
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Yu Gothic UI", 20F);
-            label1.Location = new Point(401, 91);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.ForeColor = SystemColors.ButtonHighlight;
+            label1.Location = new Point(162, 40);
             label1.Name = "label1";
-            label1.Size = new Size(134, 54);
+            label1.Size = new Size(113, 46);
             label1.TabIndex = 0;
             label1.Text = "Log In";
             // 
@@ -54,54 +57,54 @@
             // 
             label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
+            label2.BackColor = Color.FromArgb(100, 0, 0, 0);
             label2.Font = new Font("Yu Gothic UI", 14F);
-            label2.Location = new Point(284, 165);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.ForeColor = SystemColors.ButtonHighlight;
+            label2.Location = new Point(344, 221);
             label2.Name = "label2";
-            label2.Size = new Size(148, 38);
-            label2.TabIndex = 1;
+            label2.Size = new Size(126, 32);
+            label2.TabIndex = 8;
             label2.Text = "Username:";
             // 
             // label3
             // 
             label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
+            label3.BackColor = Color.FromArgb(100, 0, 0, 0);
             label3.Font = new Font("Yu Gothic UI", 14F);
-            label3.Location = new Point(295, 230);
-            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.ForeColor = SystemColors.ButtonFace;
+            label3.Location = new Point(353, 273);
             label3.Name = "label3";
-            label3.Size = new Size(138, 38);
+            label3.Size = new Size(117, 32);
             label3.TabIndex = 2;
             label3.Text = "Password:";
             // 
             // tbUsername
             // 
             tbUsername.Anchor = AnchorStyles.None;
-            tbUsername.Location = new Point(449, 172);
-            tbUsername.Margin = new Padding(4);
+            tbUsername.BackColor = SystemColors.InactiveBorder;
+            tbUsername.Location = new Point(476, 227);
             tbUsername.Name = "tbUsername";
             tbUsername.PlaceholderText = "Provided username";
-            tbUsername.Size = new Size(225, 31);
+            tbUsername.Size = new Size(181, 27);
             tbUsername.TabIndex = 3;
             // 
             // tbPassword
             // 
             tbPassword.Anchor = AnchorStyles.None;
-            tbPassword.Location = new Point(449, 236);
-            tbPassword.Margin = new Padding(4);
+            tbPassword.Location = new Point(476, 278);
             tbPassword.Name = "tbPassword";
             tbPassword.PlaceholderText = "Provided password";
-            tbPassword.Size = new Size(225, 31);
+            tbPassword.Size = new Size(181, 27);
             tbPassword.TabIndex = 4;
             // 
             // button1
             // 
             button1.Anchor = AnchorStyles.None;
             button1.Font = new Font("Yu Gothic UI", 18F);
-            button1.Location = new Point(374, 324);
-            button1.Margin = new Padding(4);
+            button1.Location = new Point(138, 291);
             button1.Name = "button1";
-            button1.Size = new Size(189, 71);
+            button1.Size = new Size(151, 57);
             button1.TabIndex = 5;
             button1.Text = "Log In";
             button1.UseVisualStyleBackColor = true;
@@ -113,10 +116,9 @@
             lbError.AutoSize = true;
             lbError.Font = new Font("Yu Gothic UI", 10F);
             lbError.ForeColor = Color.Red;
-            lbError.Location = new Point(261, 291);
-            lbError.Margin = new Padding(4, 0, 4, 0);
+            lbError.Location = new Point(326, 322);
             lbError.Name = "lbError";
-            lbError.Size = new Size(0, 28);
+            lbError.Size = new Size(0, 23);
             lbError.TabIndex = 6;
             // 
             // btnClose
@@ -126,34 +128,45 @@
             btnClose.FlatAppearance.BorderSize = 0;
             btnClose.FlatStyle = FlatStyle.Flat;
             btnClose.ForeColor = SystemColors.ButtonHighlight;
-            btnClose.Location = new Point(948, 12);
+            btnClose.Location = new Point(944, 11);
+            btnClose.Margin = new Padding(2);
             btnClose.Name = "btnClose";
-            btnClose.Size = new Size(40, 40);
+            btnClose.Size = new Size(32, 32);
             btnClose.TabIndex = 7;
             btnClose.Text = "X";
             btnClose.UseVisualStyleBackColor = false;
             btnClose.Click += btnClose_Click;
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(100, 0, 0, 0);
+            panel1.Controls.Add(button1);
+            panel1.Controls.Add(label1);
+            panel1.Location = new Point(290, 91);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(429, 410);
+            panel1.TabIndex = 0;
+            // 
             // LogInForm
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources._297312528_af13d14a_e6d7_4f1b_bba2_f58d93f602ef;
+            BackgroundImage = Properties.Resources._9538280;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1000, 562);
+            ClientSize = new Size(987, 563);
             Controls.Add(btnClose);
             Controls.Add(lbError);
-            Controls.Add(button1);
             Controls.Add(tbPassword);
             Controls.Add(tbUsername);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(4);
             Name = "LogInForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "LogIn";
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -168,5 +181,6 @@
         private Button button1;
         private Label lbError;
         private Button btnClose;
+        private Panel panel1;
     }
 }

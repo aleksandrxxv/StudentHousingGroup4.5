@@ -28,7 +28,13 @@ namespace StudentHousing
             //Debug.WriteLine("Tuka");
             //Debug.WriteLine(UserManager.LogIn("john123", "password123").Name);
             //Debug.WriteLine(UserManager.GetUserById("4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6"));
-            UserManager.GetUserById("4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6");
+            //UserManager.GetUserById("4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6");
+            //List<User> users = UserManager.GetAllUsers();
+            //Debug.WriteLine("HERE");
+            //foreach (User user in users)
+            //{
+            //    Debug.WriteLine(user.Name);
+            //}
             ApplicationConfiguration.Initialize();
             Application.Run(new LogInForm());
         }
