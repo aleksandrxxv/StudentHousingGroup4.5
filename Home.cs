@@ -44,12 +44,5 @@ namespace StudentHousing
         {
             this.Close();
         }
-
-        private void btnAdmin_Click(object sender, EventArgs e)
-        {
-            AddBuilding addBuilding = new AddBuilding();
-            addBuilding.Show();
-        }
-
     }
 }
