@@ -19,11 +19,18 @@ namespace StudentHousing
         {
             InitializeComponent();
             this.currentUser = currentUser;
+            Building tenantBuilding = BuildingManager.GetBuildingByTenantID(currentUser.Id);
+            lblHouseName.Text = tenantBuilding.address;
+            if (currentUser.IsAdmin)
+            {
+                btnAdmin.Visible = true;
+            }
         }
 
         public Home()
         {
             InitializeComponent();
+
         }
 
         private void btnLogIn_Click(object sender, EventArgs e)
@@ -37,5 +44,12 @@ namespace StudentHousing
         {
             this.Close();
         }
+
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {
+            AddBuilding addBuilding = new AddBuilding();
+            addBuilding.Show();
+        }
+
     }
 }
