@@ -94,6 +94,7 @@
             tbPassword.Anchor = AnchorStyles.None;
             tbPassword.Location = new Point(476, 278);
             tbPassword.Name = "tbPassword";
+            tbPassword.PasswordChar = '*';
             tbPassword.PlaceholderText = "Provided password";
             tbPassword.Size = new Size(181, 27);
             tbPassword.TabIndex = 4;
