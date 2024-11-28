@@ -47,7 +47,7 @@ namespace StudentHousing
 
         private void btnAdmin_Click(object sender, EventArgs e)
         {
-            AddBuilding addBuilding = new AddBuilding();
+            AdminPanel addBuilding = new AdminPanel();
             addBuilding.Show();
         }
 

@@ -19,5 +19,12 @@
     "Name": "Jane Smith",
     "UserName": "jane123",
     "PasswordHash": "\u002B7SooWP/qVi08Cv5yrswz\u002B\u002B0DegD8sTDRqnTmzvhtUQ="
+  },
+  {
+    "Id": "28d8cddd-5062-44a6-a30c-5f0311887a85",
+    "IsAdmin": false,
+    "Name": "Martin Luther",
+    "UserName": "martin123",
+    "PasswordHash": "\u002B7SooWP/qVi08Cv5yrswz\u002B\u002B0DegD8sTDRqnTmzvhtUQ="
   }
 ]

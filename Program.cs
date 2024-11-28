@@ -35,6 +35,9 @@ namespace StudentHousing
             //{
             //    Debug.WriteLine(user.Name);
             //}
+            //Announcement announcement = new Announcement("1", "2", "5", "nekuv content", DateTime.Now);
+            //AnnouncementManager announcementManager = new AnnouncementManager();
+            //announcementManager.CreateAnnouncement(announcement);
             ApplicationConfiguration.Initialize();
             Application.Run(new LogInForm());
         }
