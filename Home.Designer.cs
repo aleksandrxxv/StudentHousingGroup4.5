@@ -154,21 +154,23 @@
             label2.Anchor = AnchorStyles.Top;
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
+            label2.Cursor = Cursors.Hand;
             label2.Font = new Font("Segoe UI", 17F);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(51, 636);
+            label2.Location = new Point(51, 575);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
             label2.Size = new Size(307, 40);
             label2.TabIndex = 7;
             label2.Text = "Latest Announcements";
+            label2.Click += label2_Click;
             // 
             // listBox1
             // 
             listBox1.BackColor = Color.FromArgb(137, 128, 245);
             listBox1.BorderStyle = BorderStyle.FixedSingle;
             listBox1.FormattingEnabled = true;
-            listBox1.Location = new Point(51, 696);
+            listBox1.Location = new Point(51, 618);
             listBox1.Margin = new Padding(2, 3, 2, 3);
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(1310, 122);
@@ -241,7 +243,7 @@
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Segoe UI", 17F);
             label6.ForeColor = Color.White;
-            label6.Location = new Point(1119, 420);
+            label6.Location = new Point(1093, 420);
             label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
             label6.Size = new Size(161, 40);
@@ -266,6 +268,7 @@
             Controls.Add(label2);
             Controls.Add(panel1);
             Controls.Add(btn);
+            FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(2, 3, 2, 3);
             Name = "Home";
             StartPosition = FormStartPosition.CenterScreen;

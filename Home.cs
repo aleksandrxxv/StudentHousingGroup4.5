@@ -50,5 +50,13 @@ namespace StudentHousing
             AddBuilding addBuilding = new AddBuilding();
             addBuilding.Show();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            AnnouncementsForm af = new AnnouncementsForm(this.currentUser);
+            af.Show();
+            this.Hide();
+            af.FormClosed += (s, args) => this.Close();
+        }
     }
 }

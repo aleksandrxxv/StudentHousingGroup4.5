@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.ApplicationServices;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,24 @@ namespace StudentHousing
 {
     public partial class AnnouncementsForm : Form
     {
-        public AnnouncementsForm()
+        public User CurrentUser { get; private set; }
+        public AnnouncementsForm(User currentUser)
         {
             InitializeComponent();
+            this.CurrentUser = currentUser;
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Home frm = new Home(this.CurrentUser);
+            frm.Show();
+            this.Hide();
+            frm.FormClosed += (s, args) => this.Close();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
