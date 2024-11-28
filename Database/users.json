@@ -1,7 +1,7 @@
 [
   {
     "Id": "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6",
-    "IsAdmin": true,
+    "IsAdmin": false,
     "Name": "John Doe",
     "UserName": "john123",
     "PasswordHash": "75K3eLr\u002Bdx6JJFuJ7LwIpEpOFmwGZZkRiB84PURz6U8="
@@ -18,6 +18,13 @@
     "IsAdmin": false,
     "Name": "Jane Smith",
     "UserName": "jane123",
+    "PasswordHash": "\u002B7SooWP/qVi08Cv5yrswz\u002B\u002B0DegD8sTDRqnTmzvhtUQ="
+  },
+  {
+    "Id": "28d8cddd-5062-44a6-a30c-5f0311887a85",
+    "IsAdmin": false,
+    "Name": "Martin Luther",
+    "UserName": "martin123",
     "PasswordHash": "\u002B7SooWP/qVi08Cv5yrswz\u002B\u002B0DegD8sTDRqnTmzvhtUQ="
   }
 ]

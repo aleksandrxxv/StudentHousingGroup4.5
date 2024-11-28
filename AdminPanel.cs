@@ -14,12 +14,12 @@ using System.Windows.Forms;
 namespace StudentHousing
 {
 
-    public partial class AddBuilding : Form
+    public partial class AdminPanel : Form
     {
         private List<Building> allBuildings = new List<Building>();
         private List<User> selectedUsers = new List<User>();
 
-        public AddBuilding()
+        public AdminPanel()
         {
             InitializeComponent();
             UpdateBuildingList();
@@ -27,7 +27,8 @@ namespace StudentHousing
             List<User> users = UserManager.GetAllUsers();
             foreach (User user in users)
             {
-                if (!user.IsAdmin)
+                Building userBuilding = BuildingManager.GetBuildingByTenantID(user.Id);
+                if (!user.IsAdmin && userBuilding == null)
                 {
                     cbTenants.Items.Add(user);
                 }
