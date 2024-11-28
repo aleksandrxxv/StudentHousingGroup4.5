@@ -36,5 +36,19 @@ namespace StudentHousing
 
             }
         }
+        public List<Announcement> GetAnnouncements()
+        {
+            if (File.Exists(filePath))
+            {
+                string existingData = File.ReadAllText(filePath);
+
+                if (!String.IsNullOrEmpty(existingData) && existingData.Trim() != "[]")
+                {
+                    return JsonSerializer.Deserialize<List<Announcement>>(existingData);
+                }
+
+            }
+            return new List<Announcement>();
+        }
     }
 }
