@@ -10,7 +10,7 @@ namespace StudentHousing
     public class AnnouncementManager
     {
         private static readonly string filePath = Path.Combine("..", "..", "..", "Database", "announcements.json");
-        public void CreateAnnouncement(Announcement announcement)
+        public static void CreateAnnouncement(Announcement announcement)
         {
             DateTime date = DateTime.Now;
             List<Announcement> announcements = new List<Announcement>();
