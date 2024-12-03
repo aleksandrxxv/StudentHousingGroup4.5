@@ -22,5 +22,13 @@
     "ReplyToAnnouncement": "",
     "Content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "CreationDate": "2024-12-03T12:30:22.6172805+02:00"
+  },
+  {
+    "Id": "a7f5edfa-64cf-4ab2-afbe-d449d44f0b4c",
+    "CreatedBy": "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6",
+    "BuildingId": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
+    "ReplyToAnnouncement": "",
+    "Content": "z",
+    "CreationDate": "2024-12-03T13:25:14.1160402+02:00"
   }
 ]

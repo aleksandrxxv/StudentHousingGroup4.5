@@ -6,8 +6,9 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using StudentHousing.Classes;
 
-namespace StudentHousing
+namespace StudentHousing.ManagerClasses
 {
     public class UserManager
     {
@@ -57,11 +58,11 @@ namespace StudentHousing
                     {
                         if (user.UserName == username && user.PasswordHash.Equals(HashPassword(password)))
                         {
-                            
+
                             return user;
                         }
                     }
-                    
+
                 }
                 Debug.WriteLine("Izliza 2");
                 return null;

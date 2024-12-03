@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using StudentHousing.Classes;
+using StudentHousing.ManagerClasses;
 
 namespace StudentHousing
 {

@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using StudentHousing.ManagerClasses;
 
-namespace StudentHousing
+namespace StudentHousing.Classes
 {
     public class Building
     {
@@ -18,7 +19,7 @@ namespace StudentHousing
 
         public Building(string address, int capacity, decimal rentPerMonth, List<string> tenantIDs)
         {
-            this.BuildingID = Guid.NewGuid().ToString();
+            BuildingID = Guid.NewGuid().ToString();
             this.address = address;
             this.capacity = capacity;
             this.rentPerMonth = rentPerMonth;

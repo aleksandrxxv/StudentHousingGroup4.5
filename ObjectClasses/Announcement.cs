@@ -5,15 +5,15 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace StudentHousing
+namespace StudentHousing.Classes
 {
-    
+
     public class Announcement
     {
         public string Id { get; private set; }
         public string CreatedBy { get; private set; }
         public string BuildingId { get; private set; }
-        public string? ReplyToAnnouncement {  get; private set; }
+        public string? ReplyToAnnouncement { get; private set; }
         public string Content { get; private set; }
         public DateTime CreationDate { get; private set; }
 
@@ -28,7 +28,7 @@ namespace StudentHousing
         }
         public Announcement() { }
         [JsonConstructor]
-        public Announcement(string id,string createdBy, string buildingId, string? replyToAnnouncement, string content, DateTime creationDate)
+        public Announcement(string id, string createdBy, string buildingId, string? replyToAnnouncement, string content, DateTime creationDate)
         {
             Id = id;
             CreatedBy = createdBy;

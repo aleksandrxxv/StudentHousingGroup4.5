@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using StudentHousing.Classes;
 
-namespace StudentHousing
+namespace StudentHousing.ManagerClasses
 {
     public class BuildingManager
     {
@@ -32,8 +33,8 @@ namespace StudentHousing
         }
         public static Building GetBuildingByTenantID(string tenantID)
         {
-            List <Building> allBuildings = GetAllBuildings();
-            foreach (Building building in allBuildings) 
+            List<Building> allBuildings = GetAllBuildings();
+            foreach (Building building in allBuildings)
             {
                 if (building.tenantIDs.Contains(tenantID))
                 {

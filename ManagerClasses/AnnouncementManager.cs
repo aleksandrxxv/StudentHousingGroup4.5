@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using StudentHousing.Classes;
 
-namespace StudentHousing
+namespace StudentHousing.ManagerClasses
 {
     public class AnnouncementManager
     {
@@ -42,7 +43,7 @@ namespace StudentHousing
             {
                 string existingData = File.ReadAllText(filePath);
 
-                if (!String.IsNullOrEmpty(existingData) && existingData.Trim() != "[]")
+                if (!string.IsNullOrEmpty(existingData) && existingData.Trim() != "[]")
                 {
                     return JsonSerializer.Deserialize<List<Announcement>>(existingData);
                 }

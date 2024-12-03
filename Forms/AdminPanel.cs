@@ -10,6 +10,8 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using StudentHousing.Classes;
+using StudentHousing.ManagerClasses;
 
 namespace StudentHousing
 {
