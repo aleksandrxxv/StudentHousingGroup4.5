@@ -36,7 +36,7 @@ namespace StudentHousing
 
             }
         }
-        public List<Announcement> GetAnnouncements()
+        public static List<Announcement> GetAnnouncements()
         {
             if (File.Exists(filePath))
             {
