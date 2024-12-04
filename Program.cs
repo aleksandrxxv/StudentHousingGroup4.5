@@ -40,7 +40,7 @@ namespace StudentHousing
             //AnnouncementManager announcementManager = new AnnouncementManager();
             //announcementManager.CreateAnnouncement(announcement);
             ApplicationConfiguration.Initialize();
-            Application.Run(new AddChore());
+            Application.Run(new LogInForm());
         }
     }
 }
