@@ -52,7 +52,7 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1143, 64);
+            panel1.Size = new Size(1429, 80);
             panel1.TabIndex = 2;
             // 
             // lblHouseName
@@ -61,10 +61,10 @@
             lblHouseName.BackColor = Color.FromArgb(0, 2, 24, 158);
             lblHouseName.Font = new Font("Segoe UI", 20F);
             lblHouseName.ForeColor = SystemColors.Control;
-            lblHouseName.Location = new Point(422, 8);
+            lblHouseName.Location = new Point(528, 10);
             lblHouseName.Margin = new Padding(2, 0, 2, 0);
             lblHouseName.Name = "lblHouseName";
-            lblHouseName.Size = new Size(407, 46);
+            lblHouseName.Size = new Size(482, 54);
             lblHouseName.TabIndex = 4;
             lblHouseName.Text = "Student Housing Platform";
             // 
@@ -75,10 +75,10 @@
             btnAdmin.Dock = DockStyle.Right;
             btnAdmin.FlatAppearance.BorderSize = 0;
             btnAdmin.FlatStyle = FlatStyle.Flat;
-            btnAdmin.Location = new Point(965, 0);
+            btnAdmin.Location = new Point(1206, 0);
             btnAdmin.Margin = new Padding(2);
             btnAdmin.Name = "btnAdmin";
-            btnAdmin.Size = new Size(59, 64);
+            btnAdmin.Size = new Size(74, 80);
             btnAdmin.TabIndex = 3;
             btnAdmin.Text = "Admin";
             btnAdmin.UseVisualStyleBackColor = false;
@@ -91,10 +91,10 @@
             btnLogIn.Dock = DockStyle.Right;
             btnLogIn.FlatAppearance.BorderSize = 0;
             btnLogIn.FlatStyle = FlatStyle.Flat;
-            btnLogIn.Location = new Point(1024, 0);
+            btnLogIn.Location = new Point(1280, 0);
             btnLogIn.Margin = new Padding(2);
             btnLogIn.Name = "btnLogIn";
-            btnLogIn.Size = new Size(59, 64);
+            btnLogIn.Size = new Size(74, 80);
             btnLogIn.TabIndex = 2;
             btnLogIn.Text = "Profile";
             btnLogIn.UseVisualStyleBackColor = false;
@@ -106,10 +106,10 @@
             btnExit.Dock = DockStyle.Right;
             btnExit.FlatAppearance.BorderSize = 0;
             btnExit.FlatStyle = FlatStyle.Flat;
-            btnExit.Location = new Point(1083, 0);
+            btnExit.Location = new Point(1354, 0);
             btnExit.Margin = new Padding(2);
             btnExit.Name = "btnExit";
-            btnExit.Size = new Size(60, 64);
+            btnExit.Size = new Size(75, 80);
             btnExit.TabIndex = 1;
             btnExit.Text = "Exit";
             btnExit.UseVisualStyleBackColor = false;
@@ -120,10 +120,10 @@
             label1.BackColor = Color.FromArgb(0, 2, 24, 158);
             label1.Font = new Font("Segoe UI", 20F);
             label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(9, 8);
+            label1.Location = new Point(11, 10);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(407, 46);
+            label1.Size = new Size(482, 54);
             label1.TabIndex = 0;
             label1.Text = "Student Housing Platform";
             // 
@@ -132,10 +132,10 @@
             btnBack.BackColor = Color.FromArgb(137, 128, 245);
             btnBack.FlatStyle = FlatStyle.Flat;
             btnBack.Font = new Font("Segoe UI", 12F);
-            btnBack.Location = new Point(9, 69);
+            btnBack.Location = new Point(11, 86);
             btnBack.Margin = new Padding(2);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(111, 38);
+            btnBack.Size = new Size(139, 48);
             btnBack.TabIndex = 3;
             btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = false;
@@ -146,10 +146,10 @@
             btnAddAnnouncement.BackColor = Color.FromArgb(137, 128, 245);
             btnAddAnnouncement.FlatStyle = FlatStyle.Flat;
             btnAddAnnouncement.Font = new Font("Segoe UI", 12F);
-            btnAddAnnouncement.Location = new Point(442, 116);
+            btnAddAnnouncement.Location = new Point(552, 145);
             btnAddAnnouncement.Margin = new Padding(2);
             btnAddAnnouncement.Name = "btnAddAnnouncement";
-            btnAddAnnouncement.Size = new Size(274, 77);
+            btnAddAnnouncement.Size = new Size(342, 96);
             btnAddAnnouncement.TabIndex = 4;
             btnAddAnnouncement.Text = "Add new Announcement";
             btnAddAnnouncement.UseVisualStyleBackColor = false;
@@ -158,22 +158,24 @@
             // panelAnnouncements
             // 
             panelAnnouncements.AutoScroll = true;
-            panelAnnouncements.Location = new Point(219, 207);
+            panelAnnouncements.Location = new Point(274, 259);
+            panelAnnouncements.Margin = new Padding(4, 4, 4, 4);
             panelAnnouncements.Name = "panelAnnouncements";
-            panelAnnouncements.Size = new Size(695, 416);
+            panelAnnouncements.Size = new Size(869, 520);
             panelAnnouncements.TabIndex = 5;
             // 
             // AnnouncementsForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources._9538280;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1143, 743);
+            ClientSize = new Size(1429, 929);
             Controls.Add(panelAnnouncements);
             Controls.Add(btnAddAnnouncement);
             Controls.Add(btnBack);
             Controls.Add(panel1);
+            DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(2);
             Name = "AnnouncementsForm";

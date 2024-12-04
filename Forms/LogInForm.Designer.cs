@@ -170,6 +170,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(panel1);
+            DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4);
             Name = "LogInForm";

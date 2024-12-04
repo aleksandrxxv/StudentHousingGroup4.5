@@ -1,3 +1,4 @@
+using StudentHousing.Forms;
 using System.Diagnostics;
 using System.Text.Json;
 
@@ -39,7 +40,7 @@ namespace StudentHousing
             //AnnouncementManager announcementManager = new AnnouncementManager();
             //announcementManager.CreateAnnouncement(announcement);
             ApplicationConfiguration.Initialize();
-            Application.Run(new LogInForm());
+            Application.Run(new AddChore());
         }
     }
 }
