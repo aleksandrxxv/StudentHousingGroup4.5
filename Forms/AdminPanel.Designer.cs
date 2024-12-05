@@ -62,12 +62,23 @@
             cbUsers = new ComboBox();
             btnCreateChore = new Button();
             cbChoreType = new ComboBox();
+            FinesTab = new TabPage();
+            btnCreateFine = new Button();
+            label15 = new Label();
+            tbReasonFine = new TextBox();
+            label14 = new Label();
+            label13 = new Label();
+            numFineAmount = new NumericUpDown();
+            label12 = new Label();
+            cbUsersFines = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)numUDMaxTenants).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numUDRent).BeginInit();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
             tabPage3.SuspendLayout();
+            FinesTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)numFineAmount).BeginInit();
             SuspendLayout();
             // 
             // tbBuildingAddress
@@ -141,6 +152,7 @@
             tabControl1.Controls.Add(tabPage1);
             tabControl1.Controls.Add(tabPage2);
             tabControl1.Controls.Add(tabPage3);
+            tabControl1.Controls.Add(FinesTab);
             resources.ApplyResources(tabControl1, "tabControl1");
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
@@ -289,6 +301,65 @@
             resources.ApplyResources(cbChoreType, "cbChoreType");
             cbChoreType.Name = "cbChoreType";
             // 
+            // FinesTab
+            // 
+            FinesTab.Controls.Add(btnCreateFine);
+            FinesTab.Controls.Add(label15);
+            FinesTab.Controls.Add(tbReasonFine);
+            FinesTab.Controls.Add(label14);
+            FinesTab.Controls.Add(label13);
+            FinesTab.Controls.Add(numFineAmount);
+            FinesTab.Controls.Add(label12);
+            FinesTab.Controls.Add(cbUsersFines);
+            resources.ApplyResources(FinesTab, "FinesTab");
+            FinesTab.Name = "FinesTab";
+            FinesTab.UseVisualStyleBackColor = true;
+            // 
+            // btnCreateFine
+            // 
+            resources.ApplyResources(btnCreateFine, "btnCreateFine");
+            btnCreateFine.Name = "btnCreateFine";
+            btnCreateFine.UseVisualStyleBackColor = true;
+            btnCreateFine.Click += btnCreateFine_Click;
+            // 
+            // label15
+            // 
+            resources.ApplyResources(label15, "label15");
+            label15.Name = "label15";
+            // 
+            // tbReasonFine
+            // 
+            resources.ApplyResources(tbReasonFine, "tbReasonFine");
+            tbReasonFine.Name = "tbReasonFine";
+            // 
+            // label14
+            // 
+            resources.ApplyResources(label14, "label14");
+            label14.Name = "label14";
+            // 
+            // label13
+            // 
+            resources.ApplyResources(label13, "label13");
+            label13.Name = "label13";
+            // 
+            // numFineAmount
+            // 
+            numFineAmount.DecimalPlaces = 2;
+            numFineAmount.Increment = new decimal(new int[] { 5, 0, 0, 0 });
+            resources.ApplyResources(numFineAmount, "numFineAmount");
+            numFineAmount.Name = "numFineAmount";
+            // 
+            // label12
+            // 
+            resources.ApplyResources(label12, "label12");
+            label12.Name = "label12";
+            // 
+            // cbUsersFines
+            // 
+            cbUsersFines.FormattingEnabled = true;
+            resources.ApplyResources(cbUsersFines, "cbUsersFines");
+            cbUsersFines.Name = "cbUsersFines";
+            // 
             // AdminPanel
             // 
             resources.ApplyResources(this, "$this");
@@ -304,6 +375,9 @@
             tabPage2.PerformLayout();
             tabPage3.ResumeLayout(false);
             tabPage3.PerformLayout();
+            FinesTab.ResumeLayout(false);
+            FinesTab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)numFineAmount).EndInit();
             ResumeLayout(false);
         }
 
@@ -342,5 +416,14 @@
         private ComboBox cbUsers;
         private Button btnCreateChore;
         private ComboBox cbChoreType;
+        private TabPage FinesTab;
+        private Label label12;
+        private ComboBox cbUsersFines;
+        private Button btnCreateFine;
+        private Label label15;
+        private TextBox tbReasonFine;
+        private Label label14;
+        private Label label13;
+        private NumericUpDown numFineAmount;
     }
 }

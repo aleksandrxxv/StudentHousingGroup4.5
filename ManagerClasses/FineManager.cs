@@ -1,4 +1,5 @@
 ﻿using StudentHousing.Classes;
+using StudentHousing.ENUMS;
 using StudentHousing.ObjectClasses;
 using System;
 using System.Collections.Generic;
@@ -41,7 +42,17 @@ namespace StudentHousing.ManagerClasses
 
         public static List<Fine> GetFinesForUser(string userId)
         {
-            return null;
+            string jsonContent = File.ReadAllText(filePath);
+            List<Fine> allFines = JsonSerializer.Deserialize<List<Fine>>(jsonContent);
+            List<Fine> finesForUser = new List<Fine>();
+            foreach(Fine fine in allFines)
+            {
+                if(fine.TennantId == userId)
+                {
+                    finesForUser.Add(fine);
+                }
+            }
+            return finesForUser;
         }
 
     }

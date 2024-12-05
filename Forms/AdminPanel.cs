@@ -22,7 +22,7 @@ namespace StudentHousing
     {
         private List<Building> allBuildings = new List<Building>();
         private List<User> selectedUsers = new List<User>();
-
+        private List<User> allUsers = new List<User>();
         public AdminPanel()
         {
             InitializeComponent();
@@ -44,6 +44,8 @@ namespace StudentHousing
             }
             foreach (User user in users)
             {
+                cbUsersFines.Items.Add(user);
+                cbUsersFines.DisplayMember = "Name";
                 cbUsers.Items.Add(user);
                 cbUsers.DisplayMember = "Name";
             }
@@ -174,6 +176,32 @@ namespace StudentHousing
 
             Chore chore = new Chore(selectedChoreType, selectedDate, Convert.ToString(selectedBuilding.BuildingID), Convert.ToString(selectedUser.Id), new DateTime());
             ChoreManager.CreateChore(chore);
+        }
+
+        private void btnCreateFine_Click(object sender, EventArgs e)
+        {
+            User selectedUser = cbUsersFines.SelectedItem as User;
+            decimal amount = numFineAmount.Value;
+            string reason = tbReasonFine.Text;
+            if(selectedUser == null)
+            {
+                MessageBox.Show("Please select a tennant to be fined.");
+            }
+            else if (amount <= 0)
+            {
+                MessageBox.Show("Please select the amount of the fine that is more than 0.");
+            }
+            else if(reason.Length < 5)
+            {
+                MessageBox.Show("Please provide a reason that is more than 5 characters long.");
+            }
+            else
+            {
+                Fine fine = new Fine(amount, selectedUser.Id, reason, DateTime.Now);
+                FineManager.CreateFine(fine);
+                MessageBox.Show("Fine created successfully!");
+            }
+            
         }
     }
 }

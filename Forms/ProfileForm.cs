@@ -21,7 +21,6 @@ namespace StudentHousing
             InitializeComponent();
             this.user = currentUser;
 
-            lbId.Text = user.Id;
             lbName.Text = user.Name;
             Building tenantBuilding = BuildingManager.GetBuildingByTenantID(user.Id);
             lblTenantBuilding.Text = tenantBuilding.address;

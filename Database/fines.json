@@ -1,2 +1,37 @@
 [
+  {
+    "Id": "c86ba7d3-6c22-4b85-99df-591b88de43f0",
+    "Amount": 18,
+    "TennantId": "6abdf1ef-bc01-4cda-948c-3f41e7f36bf8",
+    "Reason": "Not doing chores",
+    "Date": "2024-12-05T12:09:50.1987454+02:00"
+  },
+  {
+    "Id": "5505a7f6-25e9-4dd8-a7dd-2ce51fa4f201",
+    "Amount": 25,
+    "TennantId": "6abdf1ef-bc01-4cda-948c-3f41e7f36bf8",
+    "Reason": "Damaging property",
+    "Date": "2024-12-05T12:09:50.2157095+02:00"
+  },
+  {
+    "Id": "a2e92003-638c-4f5b-a183-423aaea8fc45",
+    "Amount": 18,
+    "TennantId": "z",
+    "Reason": "Not doing chores",
+    "Date": "2024-12-05T20:14:07.7202571+02:00"
+  },
+  {
+    "Id": "b7bf2e2a-1fe4-4b00-9094-b9ea2b0075f4",
+    "Amount": 25,
+    "TennantId": "z",
+    "Reason": "Damaging property",
+    "Date": "2024-12-05T20:14:07.723025+02:00"
+  },
+  {
+    "Id": "c488a9b6-804d-4c7a-a44f-46b61a21bbee",
+    "Amount": 10,
+    "TennantId": "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6",
+    "Reason": "Broke the sink in the kitchen",
+    "Date": "2024-12-05T20:41:05.0694163+02:00"
+  }
 ]

@@ -42,10 +42,11 @@ namespace StudentHousing
             //AnnouncementManager announcementManager = new AnnouncementManager();
             //announcementManager.CreateAnnouncement(announcement);
 
-            Fine fine1 = new Fine(18, "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6", "Not doing chores", DateTime.Now);
-            Fine fine2 = new Fine(25, "6abdf1ef-bc01-4cda-948c-3f41e7f36bf8", "Damaging property", DateTime.Now);
-            FineManager.CreateFine(fine1);
-            FineManager.CreateFine(fine2);
+            //Fine fine1 = new Fine(18, "z", "Not doing chores", DateTime.Now);
+            //Fine fine2 = new Fine(25, "z", "Damaging property", DateTime.Now);
+            //FineManager.CreateFine(fine1);
+            //FineManager.CreateFine(fine2);
+            
 
             ApplicationConfiguration.Initialize();
             Application.Run(new LogInForm());
