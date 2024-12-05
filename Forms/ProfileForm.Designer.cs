@@ -32,9 +32,12 @@
             lbName = new Label();
             lblTenantBuilding = new Label();
             panel1 = new Panel();
+            btnBack = new Button();
             lblHouseName = new Label();
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
+            label1 = new Label();
+            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -42,39 +45,61 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(11, 244);
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Segoe UI", 15F);
+            label2.ForeColor = SystemColors.ControlLightLight;
+            label2.Location = new Point(30, 216);
             label2.Name = "label2";
-            label2.Size = new Size(56, 20);
+            label2.Size = new Size(94, 35);
             label2.TabIndex = 2;
             label2.Text = "Name :";
             // 
             // lbName
             // 
             lbName.AutoSize = true;
-            lbName.Location = new Point(83, 244);
+            lbName.BackColor = Color.Transparent;
+            lbName.Font = new Font("Segoe UI", 15F);
+            lbName.ForeColor = SystemColors.ControlLightLight;
+            lbName.Location = new Point(151, 216);
             lbName.Name = "lbName";
-            lbName.Size = new Size(0, 20);
+            lbName.Size = new Size(0, 35);
             lbName.TabIndex = 3;
             // 
             // lblTenantBuilding
             // 
             lblTenantBuilding.AutoSize = true;
-            lblTenantBuilding.Location = new Point(18, 286);
+            lblTenantBuilding.BackColor = Color.Transparent;
+            lblTenantBuilding.Font = new Font("Segoe UI", 15F);
+            lblTenantBuilding.ForeColor = SystemColors.ControlLightLight;
+            lblTenantBuilding.Location = new Point(151, 254);
             lblTenantBuilding.Name = "lblTenantBuilding";
-            lblTenantBuilding.Size = new Size(50, 20);
+            lblTenantBuilding.Size = new Size(0, 35);
             lblTenantBuilding.TabIndex = 4;
-            lblTenantBuilding.Text = "label3";
             // 
             // panel1
             // 
-            panel1.BackColor = Color.MediumPurple;
-            panel1.Controls.Add(lblHouseName);
+            panel1.BackColor = Color.FromArgb(100, 0, 0, 0);
+            panel1.Controls.Add(btnBack);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(2, 3, 2, 3);
+            panel1.Margin = new Padding(2, 4, 2, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(514, 61);
-            panel1.TabIndex = 5;
+            panel1.Size = new Size(514, 100);
+            panel1.TabIndex = 1;
+            // 
+            // btnBack
+            // 
+            btnBack.BackColor = Color.FromArgb(137, 128, 245);
+            btnBack.FlatStyle = FlatStyle.Flat;
+            btnBack.Font = new Font("Segoe UI", 12F);
+            btnBack.Location = new Point(26, 28);
+            btnBack.Margin = new Padding(2);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(111, 38);
+            btnBack.TabIndex = 8;
+            btnBack.Text = "Back";
+            btnBack.UseVisualStyleBackColor = false;
+            btnBack.Click += btnBack_Click;
             // 
             // lblHouseName
             // 
@@ -91,7 +116,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.BackColor = Color.MediumPurple;
+            pictureBox1.BackColor = Color.FromArgb(100, 0, 0, 0);
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox1.Image = Properties.Resources.user;
             pictureBox1.Location = new Point(198, 37);
@@ -109,20 +134,36 @@
             panel2.Size = new Size(250, 125);
             panel2.TabIndex = 5;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI", 15F);
+            label1.ForeColor = SystemColors.ControlLightLight;
+            label1.Location = new Point(26, 254);
+            label1.Name = "label1";
+            label1.Size = new Size(98, 35);
+            label1.TabIndex = 7;
+            label1.Text = "House :";
+            // 
             // ProfileForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(514, 593);
+            BackgroundImage = Properties.Resources.blob_scene_haikei;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(514, 885);
+            Controls.Add(label1);
             Controls.Add(pictureBox1);
             Controls.Add(lblTenantBuilding);
             Controls.Add(lbName);
             Controls.Add(label2);
             Controls.Add(panel1);
+            DoubleBuffered = true;
+            FormBorderStyle = FormBorderStyle.None;
             Name = "ProfileForm";
             Text = "Profile";
             panel1.ResumeLayout(false);
-            panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -136,5 +177,8 @@
         private PictureBox pictureBox1;
         private Label lblHouseName;
         private Panel panel2;
+        private Label label1;
+        private Button btnBack;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

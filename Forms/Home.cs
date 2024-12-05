@@ -46,6 +46,8 @@ namespace StudentHousing
         private void btnLogIn_Click(object sender, EventArgs e)
         {
             ProfileForm profile = new ProfileForm(currentUser);
+            profile.StartPosition = FormStartPosition.Manual;
+            profile.Location = this.Location;
             profile.Show();
 
         }
