@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "57f012a2-78eb-4726-9930-454d80225c37",
+    "typeOfChore": 1,
+    "TimeToBeExecuted": "2024-12-04T13:55:13.3175002+01:00",
+    "BuildingID": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
+    "ResponsibleUserID": "0d3eaf14-7353-4dc3-b9a3-cffc7ff15662",
+    "DateCompleted": "0001-01-01T00:00:00"
+  },
+  {
+    "Id": "8679afd8-1f11-47eb-8bf7-0b8fccad33ad",
+    "typeOfChore": 2,
+    "TimeToBeExecuted": "2024-12-04T13:55:13.3175002+01:00",
+    "BuildingID": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
+    "ResponsibleUserID": "0d3eaf14-7353-4dc3-b9a3-cffc7ff15662",
+    "DateCompleted": "0001-01-01T00:00:00"
+  },
+  {
+    "Id": "58871271-35d3-41fb-97ea-e3bf2f3160ea",
+    "typeOfChore": 0,
+    "TimeToBeExecuted": "2024-12-04T13:58:26.1773655+01:00",
+    "BuildingID": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
+    "ResponsibleUserID": "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6",
+    "DateCompleted": "0001-01-01T00:00:00"
+  }
+]

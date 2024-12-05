@@ -42,6 +42,7 @@
             lbTenants = new ListBox();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
+            label6 = new Label();
             label5 = new Label();
             tabPage2 = new TabPage();
             label4 = new Label();
@@ -50,12 +51,23 @@
             cbAdmin = new CheckBox();
             tbPassword = new TextBox();
             tbUsername = new TextBox();
-            label6 = new Label();
+            tabPage3 = new TabPage();
+            label11 = new Label();
+            label7 = new Label();
+            label8 = new Label();
+            label9 = new Label();
+            label10 = new Label();
+            dtpDate = new DateTimePicker();
+            cbBuildings = new ComboBox();
+            cbUsers = new ComboBox();
+            btnCreateChore = new Button();
+            cbChoreType = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)numUDMaxTenants).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numUDRent).BeginInit();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
+            tabPage3.SuspendLayout();
             SuspendLayout();
             // 
             // tbBuildingAddress
@@ -128,6 +140,7 @@
             // 
             tabControl1.Controls.Add(tabPage1);
             tabControl1.Controls.Add(tabPage2);
+            tabControl1.Controls.Add(tabPage3);
             resources.ApplyResources(tabControl1, "tabControl1");
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
@@ -150,6 +163,11 @@
             resources.ApplyResources(tabPage1, "tabPage1");
             tabPage1.Name = "tabPage1";
             tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            resources.ApplyResources(label6, "label6");
+            label6.Name = "label6";
             // 
             // label5
             // 
@@ -200,10 +218,76 @@
             resources.ApplyResources(tbUsername, "tbUsername");
             tbUsername.Name = "tbUsername";
             // 
-            // label6
+            // tabPage3
             // 
-            resources.ApplyResources(label6, "label6");
-            label6.Name = "label6";
+            tabPage3.Controls.Add(label11);
+            tabPage3.Controls.Add(label7);
+            tabPage3.Controls.Add(label8);
+            tabPage3.Controls.Add(label9);
+            tabPage3.Controls.Add(label10);
+            tabPage3.Controls.Add(dtpDate);
+            tabPage3.Controls.Add(cbBuildings);
+            tabPage3.Controls.Add(cbUsers);
+            tabPage3.Controls.Add(btnCreateChore);
+            tabPage3.Controls.Add(cbChoreType);
+            resources.ApplyResources(tabPage3, "tabPage3");
+            tabPage3.Name = "tabPage3";
+            tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            resources.ApplyResources(label11, "label11");
+            label11.Name = "label11";
+            // 
+            // label7
+            // 
+            resources.ApplyResources(label7, "label7");
+            label7.Name = "label7";
+            // 
+            // label8
+            // 
+            resources.ApplyResources(label8, "label8");
+            label8.Name = "label8";
+            // 
+            // label9
+            // 
+            resources.ApplyResources(label9, "label9");
+            label9.Name = "label9";
+            // 
+            // label10
+            // 
+            resources.ApplyResources(label10, "label10");
+            label10.Name = "label10";
+            // 
+            // dtpDate
+            // 
+            resources.ApplyResources(dtpDate, "dtpDate");
+            dtpDate.Name = "dtpDate";
+            // 
+            // cbBuildings
+            // 
+            cbBuildings.FormattingEnabled = true;
+            resources.ApplyResources(cbBuildings, "cbBuildings");
+            cbBuildings.Name = "cbBuildings";
+            // 
+            // cbUsers
+            // 
+            cbUsers.FormattingEnabled = true;
+            resources.ApplyResources(cbUsers, "cbUsers");
+            cbUsers.Name = "cbUsers";
+            // 
+            // btnCreateChore
+            // 
+            resources.ApplyResources(btnCreateChore, "btnCreateChore");
+            btnCreateChore.Name = "btnCreateChore";
+            btnCreateChore.UseVisualStyleBackColor = true;
+            btnCreateChore.Click += btnCreateChore_Click;
+            // 
+            // cbChoreType
+            // 
+            cbChoreType.FormattingEnabled = true;
+            resources.ApplyResources(cbChoreType, "cbChoreType");
+            cbChoreType.Name = "cbChoreType";
             // 
             // AdminPanel
             // 
@@ -218,6 +302,8 @@
             tabPage1.PerformLayout();
             tabPage2.ResumeLayout(false);
             tabPage2.PerformLayout();
+            tabPage3.ResumeLayout(false);
+            tabPage3.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -245,5 +331,16 @@
         private TextBox tbUsername;
         private Label label5;
         private Label label6;
+        private TabPage tabPage3;
+        private Label label11;
+        private Label label7;
+        private Label label8;
+        private Label label9;
+        private Label label10;
+        private DateTimePicker dtpDate;
+        private ComboBox cbBuildings;
+        private ComboBox cbUsers;
+        private Button btnCreateChore;
+        private ComboBox cbChoreType;
     }
 }

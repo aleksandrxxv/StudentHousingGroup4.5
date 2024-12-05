@@ -30,6 +30,18 @@ namespace StudentHousing
             this.authenticated = false;
             this.users = new List<User>();
             InitializeComponent();
+            this.AcceptButton = button1;
+            this.KeyDown += LoginForm_KeyDown;
+            this.KeyPreview = true;
+        }
+
+        private void LoginForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                button1.PerformClick();
+            }
         }
 
 

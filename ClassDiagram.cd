@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="StudentHousing.ManagerClasses.AnnouncementManager">
+    <Position X="2.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAABAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>ManagerClasses\AnnouncementManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudentHousing.ManagerClasses.BuildingManager">
+    <Position X="6" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ManagerClasses\BuildingManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudentHousing.ManagerClasses.ChoreManager">
+    <Position X="4.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAQAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>ManagerClasses\ChoreManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudentHousing.ManagerClasses.UserManager">
+    <Position X="0.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAEAAAAAAAAAAAAAAAAAFAAAAAAAAEAAAA=</HashCode>
+      <FileName>ManagerClasses\UserManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudentHousing.Classes.Announcement">
+    <Position X="2.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RAACAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAE=</HashCode>
+      <FileName>ObjectClasses\Announcement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudentHousing.Classes.Building">
+    <Position X="6" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAIAAAAAAAAAAAAAAoAAAAAAAIAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ObjectClasses\Building.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudentHousing.Classes.User">
+    <Position X="0.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACCAAAAAAAAAAAAAAAAAAQACAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>ObjectClasses\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudentHousing.ObjectClasses.Chore">
+    <Position X="4.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQACCAAAAAgAAAAAAAAQAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>ObjectClasses\Chore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="StudentHousing.ENUMS.ChoreType">
+    <Position X="8" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAgAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ENUMS\ChoreType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
