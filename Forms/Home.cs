@@ -22,7 +22,15 @@ namespace StudentHousing
             InitializeComponent();
             this.currentUser = currentUser;
             Building tenantBuilding = BuildingManager.GetBuildingByTenantID(currentUser.Id);
-            lblHouseName.Text = tenantBuilding.address;
+            if (currentUser.IsAdmin == true)
+            {
+                lblHouseName.Text = "Admin Account";
+
+            } else
+            {
+                lblHouseName.Text = tenantBuilding.address;
+
+            }
             if (currentUser.IsAdmin)
             {
                 btnAdmin.Visible = true;

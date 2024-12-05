@@ -1,4 +1,5 @@
 ﻿using StudentHousing.Classes;
+using StudentHousing.ENUMS;
 using StudentHousing.ObjectClasses;
 using System;
 using System.Collections.Generic;
@@ -38,20 +39,14 @@ namespace StudentHousing.ManagerClasses
 
             }
         }
+        public static List<Chore> GetChoresByType(ChoreType choreType)
+        {
+            string jsonContent = File.ReadAllText(filePath);
+            List<Chore> chores = JsonSerializer.Deserialize<List<Chore>>(jsonContent);
+
+            return chores.Where(chore => chore.typeOfChore == choreType).ToList();
+        }
 
     }
-        //public static List<Chore> GetChore()
-        //{
-        //    return new List<Chore>();
-        //}
-        //public static List<Chore> GetChoresByType(string type)
-        //{
-        //    if (type == "cleaning")
-        //    {
-        //        //for loop for sorting chores by type cleaning
-        //        return new List<Chore>();
-        //    }
-            
-        //}
-    //}
+    
 }

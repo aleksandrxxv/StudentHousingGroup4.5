@@ -11,7 +11,9 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using StudentHousing.Classes;
+using StudentHousing.ENUMS;
 using StudentHousing.ManagerClasses;
+using StudentHousing.ObjectClasses;
 
 namespace StudentHousing
 {
@@ -34,6 +36,21 @@ namespace StudentHousing
                 {
                     cbTenants.Items.Add(user);
                 }
+            }
+            List<Building> buildings = BuildingManager.GetAllBuildings();
+            foreach (ChoreType chore in Enum.GetValues(typeof(ChoreType)))
+            {
+                cbChoreType.Items.Add(chore);
+            }
+            foreach (User user in users)
+            {
+                cbUsers.Items.Add(user);
+                cbUsers.DisplayMember = "Name";
+            }
+            foreach (Building building in buildings)
+            {
+                cbBuildings.Items.Add(building);
+                cbBuildings.DisplayMember = "address";
             }
 
             cbTenants.DisplayMember = "Name";
@@ -104,7 +121,8 @@ namespace StudentHousing
                     lbTenants.Items.Clear();
                     selectedUsers.Add(selectedUser);
                     MessageBox.Show($"Added tenant: {selectedUser.Name}");
-                    foreach (User u in selectedUsers) {
+                    foreach (User u in selectedUsers)
+                    {
                         lbTenants.Items.Add(u.Name);
                     }
                 }
@@ -137,13 +155,25 @@ namespace StudentHousing
                 if (tenant != null)
                 {
                     lbTenants.Items.Add(tenant.Name);
-                } else
+                }
+                else
                 {
                     MessageBox.Show("tuka smee");
 
                 }
             }
 
+        }
+
+        private void btnCreateChore_Click(object sender, EventArgs e)
+        {
+            User selectedUser = cbUsers.SelectedItem as User;
+            Building selectedBuilding = cbBuildings.SelectedItem as Building;
+            DateTime selectedDate = dtpDate.Value;
+            ChoreType selectedChoreType = (ChoreType)cbChoreType.SelectedItem;
+
+            Chore chore = new Chore(selectedChoreType, selectedDate, Convert.ToString(selectedBuilding.BuildingID), Convert.ToString(selectedUser.Id), new DateTime());
+            ChoreManager.CreateChore(chore);
         }
     }
 }

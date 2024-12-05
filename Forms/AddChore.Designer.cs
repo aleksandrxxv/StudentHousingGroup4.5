@@ -37,6 +37,7 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
+            lbTest = new ListBox();
             SuspendLayout();
             // 
             // cbChoreType
@@ -116,11 +117,21 @@
             label4.TabIndex = 8;
             label4.Text = "Date To Be Executed";
             // 
+            // lbTest
+            // 
+            lbTest.FormattingEnabled = true;
+            lbTest.ItemHeight = 25;
+            lbTest.Location = new Point(571, 91);
+            lbTest.Name = "lbTest";
+            lbTest.Size = new Size(180, 129);
+            lbTest.TabIndex = 9;
+            // 
             // AddChore
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lbTest);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -147,5 +158,6 @@
         private Label label2;
         private Label label3;
         private Label label4;
+        private ListBox lbTest;
     }
 }

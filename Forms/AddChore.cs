@@ -35,6 +35,12 @@ namespace StudentHousing.Forms
                 cbBuildings.Items.Add(building);
                 cbBuildings.DisplayMember = "address";
             }
+            List<Chore> currentChores = ChoreManager.GetChoresByType(ChoreType.Cleaning);
+            foreach (Chore c in currentChores)
+            {
+                lbTest.Items.Add(c);
+                lbTest.DisplayMember = "Id";
+            }
         }
 
         private void btnCreateChore_Click(object sender, EventArgs e)
@@ -42,7 +48,7 @@ namespace StudentHousing.Forms
             User selectedUser = cbUsers.SelectedItem as User;
             Building selectedBuilding = cbBuildings.SelectedItem as Building;
             DateTime selectedDate = dtpDate.Value;
-            string selectedChoreType = Convert.ToString(cbChoreType.SelectedItem);
+            ChoreType selectedChoreType = (ChoreType)cbChoreType.SelectedItem;
 
             Chore chore = new Chore(selectedChoreType, selectedDate, Convert.ToString(selectedBuilding.BuildingID), Convert.ToString(selectedUser.Id), new DateTime());
             ChoreManager.CreateChore( chore );
