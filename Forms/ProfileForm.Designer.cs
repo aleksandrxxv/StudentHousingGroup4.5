@@ -38,6 +38,9 @@
             panel2 = new Panel();
             label1 = new Label();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            label3 = new Label();
+            backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
+            panelFines = new Panel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -146,6 +149,26 @@
             label1.TabIndex = 7;
             label1.Text = "House :";
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Segoe UI", 19F, FontStyle.Underline);
+            label3.ForeColor = SystemColors.ControlLightLight;
+            label3.Location = new Point(212, 338);
+            label3.Name = "label3";
+            label3.Size = new Size(93, 45);
+            label3.TabIndex = 8;
+            label3.Text = "Fines";
+            // 
+            // panelFines
+            // 
+            panelFines.BackColor = Color.Transparent;
+            panelFines.Location = new Point(50, 412);
+            panelFines.Name = "panelFines";
+            panelFines.Size = new Size(409, 448);
+            panelFines.TabIndex = 9;
+            // 
             // ProfileForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -153,6 +176,8 @@
             BackgroundImage = Properties.Resources.blob_scene_haikei;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(514, 885);
+            Controls.Add(panelFines);
+            Controls.Add(label3);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             Controls.Add(lblTenantBuilding);
@@ -180,5 +205,8 @@
         private Label label1;
         private Button btnBack;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private Label label3;
+        private System.ComponentModel.BackgroundWorker backgroundWorker2;
+        private Panel panelFines;
     }
 }
