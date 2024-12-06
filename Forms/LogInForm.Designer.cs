@@ -45,7 +45,7 @@
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Yu Gothic UI", 20F);
+            label1.Font = new Font("Yu Gothic UI", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ButtonHighlight;
             label1.Location = new Point(202, 50);
             label1.Margin = new Padding(4, 0, 4, 0);

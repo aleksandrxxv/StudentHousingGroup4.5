@@ -79,5 +79,14 @@ namespace StudentHousing.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AtypDisplayTRIAL-Medium-BF65727125b8683.
+        /// </summary>
+        internal static string Atyp {
+            get {
+                return ResourceManager.GetString("Atyp", resourceCulture);
+            }
+        }
     }
 }
