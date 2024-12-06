@@ -1,3 +1,5 @@
+using StudentHousing.ManagerClasses;
+using StudentHousing.ObjectClasses;
 using StudentHousing.Forms;
 using System.Diagnostics;
 using System.Text.Json;
@@ -39,6 +41,13 @@ namespace StudentHousing
             //Announcement announcement = new Announcement("1", "2", "5", "nekuv content", DateTime.Now);
             //AnnouncementManager announcementManager = new AnnouncementManager();
             //announcementManager.CreateAnnouncement(announcement);
+
+            //Fine fine1 = new Fine(18, "z", "Not doing chores", DateTime.Now);
+            //Fine fine2 = new Fine(25, "z", "Damaging property", DateTime.Now);
+            //FineManager.CreateFine(fine1);
+            //FineManager.CreateFine(fine2);
+            
+
             ApplicationConfiguration.Initialize();
             Application.Run(new LogInForm());
         }
