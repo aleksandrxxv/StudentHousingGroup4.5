@@ -9,7 +9,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using StudentHousing.Classes;
+using StudentHousing.Forms;
 using StudentHousing.ManagerClasses;
+using StudentHousing.ObjectClasses;
 
 namespace StudentHousing
 {
@@ -26,7 +28,8 @@ namespace StudentHousing
             {
                 lblHouseName.Text = "Admin Account";
 
-            } else
+            }
+            else
             {
                 lblHouseName.Text = tenantBuilding.address;
 
@@ -35,6 +38,13 @@ namespace StudentHousing
             {
                 btnAdmin.Visible = true;
             }
+        }
+        private void ShoppingButton()
+        {
+            List<Product> products = new List<Product>();
+            List<string> topThreeItems = products.Take(3).Select(product => product.Name).ToList();
+            string buttonText = string.Join(", ", topThreeItems);
+            btnShoppingPanel.Text = buttonText;
         }
 
         public Home()
@@ -69,6 +79,12 @@ namespace StudentHousing
             af.Show();
             this.Hide();
             af.FormClosed += (s, args) => this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Shopping shopping = new Shopping();
+            shopping.Show();
         }
     }
 }
