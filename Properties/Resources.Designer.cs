@@ -81,11 +81,30 @@ namespace StudentHousing.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to AtypDisplayTRIAL-Medium-BF65727125b8683.
+        /// </summary>
+        internal static string Atyp {
+            get {
+                return ResourceManager.GetString("Atyp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap blob_scene_haikei {
             get {
                 object obj = ResourceManager.GetObject("blob-scene-haikei", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cleaning {
+            get {
+                object obj = ResourceManager.GetObject("cleaning", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

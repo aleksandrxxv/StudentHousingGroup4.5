@@ -38,5 +38,13 @@
     "BuildingID": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
     "ResponsibleUserID": "28d8cddd-5062-44a6-a30c-5f0311887a84",
     "DateCompleted": "0001-01-01T00:00:00"
+  },
+  {
+    "Id": "15ab1474-b6c6-4e3d-a836-1eb3c9b71a85",
+    "typeOfChore": 0,
+    "TimeToBeExecuted": "2024-12-12T17:20:08.931",
+    "BuildingID": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
+    "ResponsibleUserID": "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6",
+    "DateCompleted": "0001-01-01T00:00:00"
   }
 ]

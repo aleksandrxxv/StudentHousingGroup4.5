@@ -12,12 +12,12 @@ namespace StudentHousing.ObjectClasses
     {
         public string Id { get; private set; }
         public ChoreType typeOfChore { get; private set; }
-        public DateTime? TimeToBeExecuted { get; private set; }
+        public DateTime TimeToBeExecuted { get; private set; }
         public string BuildingID { get; private set; }
         public string ResponsibleUserID { get; private set; }
         public DateTime? DateCompleted { get; private set; }
 
-        public Chore(ChoreType typeOfChore, DateTime? timeToBeExecuted, string buildingID, string responsibleUserID, DateTime? dateCompleted)
+        public Chore(ChoreType typeOfChore, DateTime timeToBeExecuted, string buildingID, string responsibleUserID, DateTime? dateCompleted)
         {
             Id = Guid.NewGuid().ToString();
             this.typeOfChore = typeOfChore;  
@@ -28,7 +28,7 @@ namespace StudentHousing.ObjectClasses
         }
         public Chore() { }
         [JsonConstructor]
-        public Chore(string id, ChoreType typeOfChore, DateTime? timeToBeExecuted, string buildingID, string responsibleUserID, DateTime? dateCompleted)
+        public Chore(string id, ChoreType typeOfChore, DateTime timeToBeExecuted, string buildingID, string responsibleUserID, DateTime? dateCompleted)
         {
             Id = id;
             this.typeOfChore = typeOfChore;

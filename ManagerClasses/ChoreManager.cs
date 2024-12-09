@@ -47,6 +47,20 @@ namespace StudentHousing.ManagerClasses
             return chores.Where(chore => chore.typeOfChore == choreType).ToList();
         }
 
+        public static List<Chore> GetUserChoreByDay(string userId, DateTime date)
+        {
+            string jsonContent = File.ReadAllText(filePath);
+            List<Chore> chores = JsonSerializer.Deserialize<List<Chore>>(jsonContent);
+            List<Chore> choresForToday = new List<Chore>();
+            foreach (Chore chore in chores)
+            {
+                if(chore.ResponsibleUserID == userId && chore.TimeToBeExecuted.Date == date.Date)
+                {
+                    choresForToday.Add(chore);
+                }
+            }
+            return choresForToday;
+        }
     }
     
 }
