@@ -16,10 +16,10 @@ namespace StudentHousing.Forms
 {
     public partial class ChoresCalendar : Form
     {
-        private User currentUser;
+        private User CurrentUser;
         public ChoresCalendar(User currentUser)
         {
-            this.currentUser = currentUser;
+            this.CurrentUser = currentUser;
             InitializeComponent();
             GenerateCalendar();
         }
@@ -27,14 +27,15 @@ namespace StudentHousing.Forms
         private void GenerateCalendar()
         {
             int daysInMonth = DateTime.DaysInMonth(DateTime.Now.Year, DateTime.Now.Month);
-            
+
             int dayCounter = 1;
-            int rows = 5; 
+            int rows = 5;
             int cols = 7;
             int spacing = 10;
-            int controlWidth = 100;
-            int controlHeight = 120;
-            int initialOffset = 100;
+            int controlWidth = 150;
+            int controlHeight = 150;
+            int initialOffsetY = 130;
+            int initialOffsetX = 180;
 
             for (int row = 0; row < rows; row++)
             {
@@ -44,8 +45,8 @@ namespace StudentHousing.Forms
                         break;
 
                     DateTime date = new DateTime(DateTime.Now.Year, DateTime.Now.Month, dayCounter);
-                    List<Chore> choresForDay = ChoreManager.GetUserChoreByDay(currentUser.Id, date);
-                    bool isCleaning = choresForDay.Any(chore => chore.typeOfChore == ChoreType.Cleaning);;
+                    List<Chore> choresForDay = ChoreManager.GetUserChoreByDay(CurrentUser.Id, date);
+                    bool isCleaning = choresForDay.Any(chore => chore.typeOfChore == ChoreType.Cleaning); ;
 
                     Image img = null;
                     if (isCleaning)
@@ -57,7 +58,7 @@ namespace StudentHousing.Forms
                     {
                         DayNumber = dayCounter,
                         DayImage = img,
-                        Location = new Point(col * (controlWidth + spacing), row * (controlHeight + spacing) + initialOffset),
+                        Location = new Point(col * (controlWidth + spacing) + initialOffsetX, row * (controlHeight + spacing) + initialOffsetY),
                         Size = new Size(controlWidth, controlHeight)
                     };
 
@@ -65,6 +66,14 @@ namespace StudentHousing.Forms
                     dayCounter++;
                 }
             }
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Home frm = new Home(this.CurrentUser);
+            frm.Show();
+            this.Hide();
+            frm.FormClosed += (s, args) => this.Close();
         }
     }
 }

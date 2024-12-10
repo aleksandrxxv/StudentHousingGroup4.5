@@ -33,6 +33,7 @@
             btnAdmin = new Button();
             btnLogIn = new Button();
             btnExit = new Button();
+            btnBack = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -109,12 +110,27 @@
             btnExit.Text = "Exit";
             btnExit.UseVisualStyleBackColor = false;
             // 
+            // btnBack
+            // 
+            btnBack.BackColor = Color.FromArgb(137, 128, 245);
+            btnBack.FlatStyle = FlatStyle.Flat;
+            btnBack.Font = new Font("Segoe UI", 12F);
+            btnBack.Location = new Point(45, 101);
+            btnBack.Margin = new Padding(2);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(111, 38);
+            btnBack.TabIndex = 4;
+            btnBack.Text = "Back";
+            btnBack.UseVisualStyleBackColor = false;
+            btnBack.Click += btnBack_Click;
+            // 
             // ChoresCalendar
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources._9538280;
             ClientSize = new Size(1411, 838);
+            Controls.Add(btnBack);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "ChoresCalendar";
@@ -131,5 +147,6 @@
         private Button btnAdmin;
         private Button btnLogIn;
         private Button btnExit;
+        private Button btnBack;
     }
 }

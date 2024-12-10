@@ -49,7 +49,7 @@
             pictureBox1.InitialImage = Properties.Resources.cleaning;
             pictureBox1.Location = new Point(14, 32);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(117, 101);
+            pictureBox1.Size = new Size(111, 115);
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
@@ -57,7 +57,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.LightGray;
+            BackColor = Color.CornflowerBlue;
+            BorderStyle = BorderStyle.FixedSingle;
             Controls.Add(pictureBox1);
             Controls.Add(lbDay);
             Name = "DayControl";
