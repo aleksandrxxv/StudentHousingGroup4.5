@@ -86,5 +86,11 @@ namespace StudentHousing
             Shopping shopping = new Shopping();
             shopping.Show();
         }
+
+        private void btnChores_Click(object sender, EventArgs e)
+        {
+            ChoresCalendar choresCalendar = new ChoresCalendar(currentUser);
+            choresCalendar.Show();
+        }
     }
 }
