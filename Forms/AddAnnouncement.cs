@@ -14,12 +14,20 @@ namespace StudentHousing
 {
     public partial class AddAnnouncement : Form
     {
-        User CurrentUser;
+        private User CurrentUser;
+        private string replyTo = "";
         public AddAnnouncement(User currentUser)
         {
             InitializeComponent();
             CurrentUser = currentUser;
         }
+        public AddAnnouncement(User currentUser, string replyTo)
+        {
+            InitializeComponent();
+            this.replyTo = replyTo;
+            CurrentUser = currentUser;
+        }
+
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
@@ -28,9 +36,10 @@ namespace StudentHousing
             Building userBuilding = BuildingManager.GetBuildingByTenantID(userId);
             string buildingId = userBuilding.BuildingID;
             string content = tbContent.Text;
+            Announcement announcement;
             if (content != "")
             {
-                Announcement announcement = new Announcement(userId, buildingId, "", content, date);
+                announcement = new Announcement(userId, buildingId, replyTo, content, date);
                 AnnouncementManager.CreateAnnouncement(announcement);
                 AnnouncementsForm af = new AnnouncementsForm(this.CurrentUser);
                 af.Show();
