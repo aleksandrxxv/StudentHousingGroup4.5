@@ -34,7 +34,6 @@
             btnAdmin = new Button();
             btnLogIn = new Button();
             btnExit = new Button();
-            label1 = new Label();
             label2 = new Label();
             listBox1 = new ListBox();
             btnShoppingPanel = new Button();
@@ -46,8 +45,10 @@
             button3 = new Button();
             lbDate = new Label();
             panel2 = new Panel();
+            pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // btnChores
@@ -67,11 +68,11 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(100, 0, 0, 0);
+            panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(lblHouseName);
             panel1.Controls.Add(btnAdmin);
             panel1.Controls.Add(btnLogIn);
             panel1.Controls.Add(btnExit);
-            panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(2, 3, 2, 3);
@@ -140,19 +141,6 @@
             btnExit.Text = "Exit";
             btnExit.UseVisualStyleBackColor = false;
             btnExit.Click += btnExit_Click;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.FromArgb(0, 2, 24, 158);
-            label1.Font = new Font("Yu Gothic UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(7, 5);
-            label1.Margin = new Padding(2, 0, 2, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(422, 46);
-            label1.TabIndex = 0;
-            label1.Text = "Student Housing Platform";
             // 
             // label2
             // 
@@ -284,7 +272,7 @@
             lbDate.Name = "lbDate";
             lbDate.Size = new Size(310, 280);
             lbDate.TabIndex = 17;
-            lbDate.Text = DateTime.Today.ToString("dd.MM\nyyyy");
+            lbDate.Text = "16.12\n2024";
             lbDate.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // panel2
@@ -297,6 +285,17 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(596, 728);
             panel2.TabIndex = 18;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.BackgroundImage = Properties.Resources.logo_removebg_preview__1_;
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Location = new Point(23, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(122, 81);
+            pictureBox1.TabIndex = 5;
+            pictureBox1.TabStop = false;
             // 
             // Home
             // 
@@ -326,6 +325,7 @@
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -334,7 +334,6 @@
 
         private Button btnChores;
         private Panel panel1;
-        private Label label1;
         private Button btnExit;
         private Label label2;
         private ListBox listBox1;
@@ -350,5 +349,6 @@
         private Button button3;
         private Label lbDate;
         private Panel panel2;
+        private PictureBox pictureBox1;
     }
 }

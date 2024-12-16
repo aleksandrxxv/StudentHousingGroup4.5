@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using StudentHousing.Classes;
+using StudentHousing.Forms;
 using StudentHousing.ManagerClasses;
 using StudentHousing.ObjectClasses;
 
@@ -62,13 +63,24 @@ namespace StudentHousing
                     Font = new Font("Segoe UI", 12F),
                     Margin = new Padding(2),
                     Size = new Size(111, 38),
-                    UseVisualStyleBackColor = false
+                    UseVisualStyleBackColor = false,
+                    Tag = fine
                 };
+                button.Click += PayNowButton_Click;
                 panelFines.Controls.Add(lbl);
                 panelFines.Controls.Add(button);
                 yPosition += lbl.Height + button.Height + 30;
 
             }
         }
+
+        private void PayNowButton_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            Fine fine = (Fine)button.Tag;
+            PaymentForm paymentForm = new PaymentForm(fine);
+            paymentForm.ShowDialog();
+        }
+
     }
 }

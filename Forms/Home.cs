@@ -51,7 +51,6 @@ namespace StudentHousing
         public Home()
         {
             InitializeComponent();
-            lbDate.Text = "aaa";
 
         }
 
