@@ -12,6 +12,7 @@ using StudentHousing.Classes;
 using StudentHousing.Forms;
 using StudentHousing.ManagerClasses;
 using StudentHousing.ObjectClasses;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 
 namespace StudentHousing
 {
@@ -50,6 +51,7 @@ namespace StudentHousing
         public Home()
         {
             InitializeComponent();
+            lbDate.Text = "aaa";
 
         }
 

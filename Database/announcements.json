@@ -5,7 +5,7 @@
     "BuildingId": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
     "ReplyToAnnouncement": "",
     "Content": "I will be hosting a party on the 2nd floor on the 21st of December. Feel free to join us in the kitchen! Reply to the announcement if you have a problem with that.",
-    "CreationDate": "2024-11-28T15:27:35.7523793+02:00"
+    "CreationDate": "2024-11-28T14:27:35.7523793+01:00"
   },
   {
     "Id": "f5209f4a-91a4-4501-adb9-75eaccc3469b",
@@ -13,7 +13,7 @@
     "BuildingId": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
     "ReplyToAnnouncement": "",
     "Content": "I invite all of the residents to a quiz night tonight. Feel free to invite a friend!",
-    "CreationDate": "2024-12-03T12:26:37.1021073+02:00"
+    "CreationDate": "2024-12-03T11:26:37.1021073+01:00"
   },
   {
     "Id": "4172e45b-2e9e-40e4-846b-84fd4e7fa187",
@@ -21,7 +21,7 @@
     "BuildingId": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
     "ReplyToAnnouncement": "",
     "Content": "There will be no internet from 12:00 to 14:00 tomorrow.",
-    "CreationDate": "2024-12-03T12:30:22.6172805+02:00"
+    "CreationDate": "2024-12-03T11:30:22.6172805+01:00"
   },
   {
     "Id": "5efd2ed3-08cc-49b9-a01e-b27787d2c75c",
@@ -29,7 +29,7 @@
     "BuildingId": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
     "ReplyToAnnouncement": "",
     "Content": "fsagiuafshg",
-    "CreationDate": "2024-12-04T10:48:52.4969732+02:00"
+    "CreationDate": "2024-12-04T09:48:52.4969732+01:00"
   },
   {
     "Id": "0a75ecba-2643-453c-8d45-93eee3f28636",
@@ -37,6 +37,22 @@
     "BuildingId": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
     "ReplyToAnnouncement": "",
     "Content": "uiahfauif",
-    "CreationDate": "2024-12-05T14:39:28.1721464+02:00"
+    "CreationDate": "2024-12-05T13:39:28.1721464+01:00"
+  },
+  {
+    "Id": "13365051-48c8-4486-98dc-f7c057c954a2",
+    "CreatedBy": "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6",
+    "BuildingId": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
+    "ReplyToAnnouncement": "",
+    "Content": "afadfa",
+    "CreationDate": "2024-12-11T13:56:58.6905263+01:00"
+  },
+  {
+    "Id": "72e30578-1225-4e3c-9d2b-f29f22d1aea8",
+    "CreatedBy": "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6",
+    "BuildingId": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
+    "ReplyToAnnouncement": "",
+    "Content": "afda",
+    "CreationDate": "2024-12-12T13:33:30.3255767+01:00"
   }
 ]

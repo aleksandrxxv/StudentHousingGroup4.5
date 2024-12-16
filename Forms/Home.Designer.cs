@@ -39,13 +39,15 @@
             listBox1 = new ListBox();
             btnShoppingPanel = new Button();
             button2 = new Button();
-            label3 = new Label();
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
             button3 = new Button();
+            lbDate = new Label();
+            panel2 = new Panel();
             panel1.SuspendLayout();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // btnChores
@@ -53,10 +55,10 @@
             btnChores.BackColor = Color.FromArgb(137, 128, 245);
             btnChores.FlatStyle = FlatStyle.Flat;
             btnChores.Font = new Font("Segoe UI", 12F);
-            btnChores.Location = new Point(685, 125);
+            btnChores.Location = new Point(774, 110);
             btnChores.Margin = new Padding(2, 3, 2, 3);
             btnChores.Name = "btnChores";
-            btnChores.Size = new Size(277, 181);
+            btnChores.Size = new Size(277, 296);
             btnChores.TabIndex = 0;
             btnChores.Text = "Clean the kitchen(Alexander Stoyanov)\r\nThrow out the trash(Jessie Chen)\r\n";
             btnChores.UseVisualStyleBackColor = false;
@@ -160,7 +162,7 @@
             label2.Cursor = Cursors.Hand;
             label2.Font = new Font("Yu Gothic UI", 16.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(693, 691);
+            label2.Location = new Point(154, 318);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
             label2.Size = new Size(316, 40);
@@ -173,20 +175,20 @@
             listBox1.BackColor = Color.FromArgb(137, 128, 245);
             listBox1.BorderStyle = BorderStyle.FixedSingle;
             listBox1.FormattingEnabled = true;
-            listBox1.Location = new Point(693, 734);
+            listBox1.Location = new Point(37, 373);
             listBox1.Margin = new Padding(2, 3, 2, 3);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(661, 122);
+            listBox1.Size = new Size(524, 302);
             listBox1.TabIndex = 8;
             // 
             // btnShoppingPanel
             // 
             btnShoppingPanel.BackColor = Color.FromArgb(137, 128, 245);
             btnShoppingPanel.FlatStyle = FlatStyle.Flat;
-            btnShoppingPanel.Location = new Point(685, 407);
+            btnShoppingPanel.Location = new Point(774, 504);
             btnShoppingPanel.Margin = new Padding(2, 3, 2, 3);
             btnShoppingPanel.Name = "btnShoppingPanel";
-            btnShoppingPanel.Size = new Size(271, 192);
+            btnShoppingPanel.Size = new Size(271, 294);
             btnShoppingPanel.TabIndex = 9;
             btnShoppingPanel.Text = "1kg Tomatoes\r\n1L  milk\r\n500g Chicken breasts\r\n";
             btnShoppingPanel.UseVisualStyleBackColor = false;
@@ -196,21 +198,13 @@
             // 
             button2.BackColor = Color.FromArgb(137, 128, 245);
             button2.FlatStyle = FlatStyle.Flat;
-            button2.Location = new Point(1097, 125);
+            button2.Location = new Point(1091, 110);
             button2.Margin = new Padding(2, 3, 2, 3);
             button2.Name = "button2";
-            button2.Size = new Size(271, 181);
+            button2.Size = new Size(271, 296);
             button2.TabIndex = 10;
             button2.Text = "Complaints this week: 1";
             button2.UseVisualStyleBackColor = false;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(148, 435);
-            label3.Name = "label3";
-            label3.Size = new Size(0, 20);
-            label3.TabIndex = 11;
             // 
             // label4
             // 
@@ -219,7 +213,7 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Yu Gothic UI", 16.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(772, 309);
+            label4.Location = new Point(857, 409);
             label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
             label4.Size = new Size(108, 40);
@@ -233,7 +227,7 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Yu Gothic UI", 16.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(731, 602);
+            label5.Location = new Point(817, 798);
             label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
             label5.Size = new Size(196, 40);
@@ -247,7 +241,7 @@
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Yu Gothic UI", 16.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.White;
-            label6.Location = new Point(1157, 309);
+            label6.Location = new Point(1158, 409);
             label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
             label6.Size = new Size(166, 40);
@@ -261,7 +255,7 @@
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Yu Gothic UI", 16.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7.ForeColor = Color.White;
-            label7.Location = new Point(1189, 602);
+            label7.Location = new Point(1187, 798);
             label7.Margin = new Padding(2, 0, 2, 0);
             label7.Name = "label7";
             label7.Size = new Size(77, 40);
@@ -272,13 +266,37 @@
             // 
             button3.BackColor = Color.FromArgb(137, 128, 245);
             button3.FlatStyle = FlatStyle.Flat;
-            button3.Location = new Point(1097, 407);
+            button3.Location = new Point(1091, 507);
             button3.Margin = new Padding(2, 3, 2, 3);
             button3.Name = "button3";
-            button3.Size = new Size(271, 192);
+            button3.Size = new Size(271, 291);
             button3.TabIndex = 15;
             button3.Text = "Time untill rent payment : 7d\r\nAmount: 800€\r\n";
             button3.UseVisualStyleBackColor = false;
+            // 
+            // lbDate
+            // 
+            lbDate.AutoSize = true;
+            lbDate.BackColor = Color.Transparent;
+            lbDate.Font = new Font("Segoe UI", 63F);
+            lbDate.ForeColor = Color.FromArgb(137, 128, 245);
+            lbDate.Location = new Point(154, 16);
+            lbDate.Name = "lbDate";
+            lbDate.Size = new Size(310, 280);
+            lbDate.TabIndex = 17;
+            lbDate.Text = DateTime.Today.ToString("dd.MM\nyyyy");
+            lbDate.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(100, 0, 0, 0);
+            panel2.Controls.Add(lbDate);
+            panel2.Controls.Add(listBox1);
+            panel2.Controls.Add(label2);
+            panel2.Location = new Point(43, 110);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(596, 728);
+            panel2.TabIndex = 18;
             // 
             // Home
             // 
@@ -288,16 +306,14 @@
             BackgroundImage = Properties.Resources._9538280;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1429, 885);
+            Controls.Add(panel2);
             Controls.Add(label7);
             Controls.Add(button3);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
-            Controls.Add(label3);
             Controls.Add(button2);
             Controls.Add(btnShoppingPanel);
-            Controls.Add(listBox1);
-            Controls.Add(label2);
             Controls.Add(panel1);
             Controls.Add(btnChores);
             DoubleBuffered = true;
@@ -308,6 +324,8 @@
             Text = "Home";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -325,11 +343,12 @@
         private Button button2;
         private Button btnAdmin;
         private Label lblHouseName;
-        private Label label3;
         private Label label4;
         private Label label5;
         private Label label6;
         private Label label7;
         private Button button3;
+        private Label lbDate;
+        private Panel panel2;
     }
 }

@@ -2,7 +2,7 @@
   {
     "Id": "57f012a2-78eb-4726-9930-454d80225c37",
     "typeOfChore": 1,
-    "TimeToBeExecuted": "2024-12-04T14:55:13.3175002+02:00",
+    "TimeToBeExecuted": "2024-12-04T13:55:13.3175002+01:00",
     "BuildingID": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
     "ResponsibleUserID": "0d3eaf14-7353-4dc3-b9a3-cffc7ff15662",
     "DateCompleted": "0001-01-01T00:00:00"
@@ -10,7 +10,7 @@
   {
     "Id": "8679afd8-1f11-47eb-8bf7-0b8fccad33ad",
     "typeOfChore": 2,
-    "TimeToBeExecuted": "2024-12-04T14:55:13.3175002+02:00",
+    "TimeToBeExecuted": "2024-12-04T13:55:13.3175002+01:00",
     "BuildingID": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
     "ResponsibleUserID": "0d3eaf14-7353-4dc3-b9a3-cffc7ff15662",
     "DateCompleted": "0001-01-01T00:00:00"
@@ -18,7 +18,7 @@
   {
     "Id": "58871271-35d3-41fb-97ea-e3bf2f3160ea",
     "typeOfChore": 0,
-    "TimeToBeExecuted": "2024-12-04T14:58:26.1773655+02:00",
+    "TimeToBeExecuted": "2024-12-04T13:58:26.1773655+01:00",
     "BuildingID": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
     "ResponsibleUserID": "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6",
     "DateCompleted": "0001-01-01T00:00:00"
@@ -43,6 +43,22 @@
     "Id": "15ab1474-b6c6-4e3d-a836-1eb3c9b71a85",
     "typeOfChore": 0,
     "TimeToBeExecuted": "2024-12-12T17:20:08.931",
+    "BuildingID": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
+    "ResponsibleUserID": "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6",
+    "DateCompleted": "0001-01-01T00:00:00"
+  },
+  {
+    "Id": "92bf9ebd-20a5-47f7-935a-fca50090b956",
+    "typeOfChore": 0,
+    "TimeToBeExecuted": "2024-12-20T10:48:29.106",
+    "BuildingID": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
+    "ResponsibleUserID": "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6",
+    "DateCompleted": "0001-01-01T00:00:00"
+  },
+  {
+    "Id": "f6435e1b-bff6-4a21-80a8-be2cc52dc33f",
+    "typeOfChore": 0,
+    "TimeToBeExecuted": "2024-12-27T13:34:41.271",
     "BuildingID": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
     "ResponsibleUserID": "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6",
     "DateCompleted": "0001-01-01T00:00:00"
