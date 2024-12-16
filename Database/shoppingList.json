@@ -34,17 +34,5 @@
     "Name": "Chocolate",
     "Price": 20.00,
     "Amount": 3
-  },
-  {
-    "OwnerId": "1234",
-    "Name": "Chocolate",
-    "Price": 0.00,
-    "Amount": 2
-  },
-  {
-    "OwnerId": "1234",
-    "Name": "Chocolate",
-    "Price": 0.00,
-    "Amount": 2
   }
 ]
