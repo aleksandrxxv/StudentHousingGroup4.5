@@ -94,5 +94,11 @@ namespace StudentHousing
             ChoresCalendar choresCalendar = new ChoresCalendar(currentUser);
             choresCalendar.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AddComplaint addComplaint = new AddComplaint(currentUser);
+            addComplaint.Show();
+        }
     }
 }
