@@ -150,6 +150,7 @@
             textBox2.Font = new Font("Segoe UI", 25F);
             textBox2.Location = new Point(170, 192);
             textBox2.Name = "textBox2";
+            textBox2.ReadOnly = true;
             textBox2.Size = new Size(377, 63);
             textBox2.TabIndex = 3;
             textBox2.Text = "**** **** **** 1314";
@@ -159,6 +160,7 @@
             textBox1.Font = new Font("Segoe UI", 25F);
             textBox1.Location = new Point(170, 96);
             textBox1.Name = "textBox1";
+            textBox1.ReadOnly = true;
             textBox1.Size = new Size(377, 63);
             textBox1.TabIndex = 2;
             textBox1.Text = "**** **** **** 5214";

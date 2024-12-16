@@ -87,7 +87,7 @@
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.BackgroundImage = Properties.Resources.logo_removebg_preview__1_;
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Location = new Point(18, 0);
+            pictureBox1.Location = new Point(18, 11);
             pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(98, 65);
@@ -98,12 +98,12 @@
             // 
             lblHouseName.AutoSize = true;
             lblHouseName.BackColor = Color.FromArgb(0, 2, 24, 158);
-            lblHouseName.Font = new Font("Yu Gothic UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblHouseName.Font = new Font("Segoe UI", 19F, FontStyle.Bold | FontStyle.Italic);
             lblHouseName.ForeColor = SystemColors.Control;
-            lblHouseName.Location = new Point(528, 7);
+            lblHouseName.Location = new Point(120, 21);
             lblHouseName.Margin = new Padding(2, 0, 2, 0);
             lblHouseName.Name = "lblHouseName";
-            lblHouseName.Size = new Size(422, 46);
+            lblHouseName.Size = new Size(409, 45);
             lblHouseName.TabIndex = 4;
             lblHouseName.Text = "Student Housing Platform";
             // 
@@ -164,7 +164,7 @@
             label2.Cursor = Cursors.Hand;
             label2.Font = new Font("Yu Gothic UI", 16.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(141, 333);
+            label2.Location = new Point(141, 323);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
             label2.Size = new Size(316, 40);
@@ -308,11 +308,11 @@
             // 
             lbDate.AutoSize = true;
             lbDate.BackColor = Color.Transparent;
-            lbDate.Font = new Font("Segoe UI", 63F);
+            lbDate.Font = new Font("Segoe UI", 63F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             lbDate.ForeColor = Color.FromArgb(137, 128, 245);
-            lbDate.Location = new Point(141, 0);
+            lbDate.Location = new Point(130, 27);
             lbDate.Name = "lbDate";
-            lbDate.Size = new Size(310, 280);
+            lbDate.Size = new Size(327, 280);
             lbDate.TabIndex = 17;
             lbDate.Text = "16.12\n2024";
             lbDate.TextAlign = ContentAlignment.MiddleCenter;
