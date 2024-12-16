@@ -300,7 +300,6 @@
             // pictureBox1
             // 
             pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.BackgroundImage = Properties.Resources.logo_removebg_preview__1_;
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox1.Location = new Point(23, 0);
             pictureBox1.Name = "pictureBox1";
