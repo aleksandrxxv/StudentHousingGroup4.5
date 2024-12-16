@@ -1,38 +1,8 @@
 [
   {
     "OwnerId": "1234",
-    "Name": "Mlqko",
-    "Price": 1.00,
+    "Name": "Milk",
+    "Price": 2.00,
     "Amount": 1
-  },
-  {
-    "OwnerId": "1234",
-    "Name": "Eggs",
-    "Price": 1.00,
-    "Amount": 1
-  },
-  {
-    "OwnerId": "1234",
-    "Name": "",
-    "Price": 0.00,
-    "Amount": 0
-  },
-  {
-    "OwnerId": "1234",
-    "Name": "",
-    "Price": 0.00,
-    "Amount": 0
-  },
-  {
-    "OwnerId": "1234",
-    "Name": "",
-    "Price": 0.00,
-    "Amount": 0
-  },
-  {
-    "OwnerId": "1234",
-    "Name": "Chocolate",
-    "Price": 20.00,
-    "Amount": 3
   }
 ]
