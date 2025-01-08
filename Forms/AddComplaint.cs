@@ -31,10 +31,20 @@ namespace StudentHousing.Forms
             string buildingId = BuildingManager.GetBuildingByTenantID(userId).BuildingID;
             ComplaintArea area = (ComplaintArea)cbArea.SelectedItem;
             DateTime date = DateTime.Now;
-            bool permissionToEnter = cbPermission.Checked;
+            bool anonymous = cbAnonymous.Checked;
 
-            Complaint complaint = new Complaint(userId, buildingId, area, additionalInfo, date, permissionToEnter);
-            ComplaintsManager.CreateComplaint(complaint);
+            if (anonymous == false)
+            {
+                Complaint complaint = new Complaint(userId, buildingId, area, additionalInfo, date);
+                ComplaintsManager.CreateComplaint(complaint);
+                MessageBox.Show("Complaint created succesfully.");
+            } else
+            {
+                Complaint complaint = new Complaint("-1", buildingId, area, additionalInfo, date);
+                ComplaintsManager.CreateComplaint(complaint);
+                MessageBox.Show("Anonymous complaint created succesfully.");
+            }
+
 
 
         }

@@ -16,9 +16,8 @@ namespace StudentHousing.ObjectClasses
         public ComplaintArea Area { get; private set; }
         public string AdditionalNotes { get; private set; }
         public DateTime Date {  get; private set; }
-        public bool PermissionToEnter { get; private set; }
 
-        public Complaint(string userId, string buildingId, ComplaintArea area, string additionalNotes, DateTime date, bool permissionToEnter)
+        public Complaint(string userId, string buildingId, ComplaintArea area, string additionalNotes, DateTime date)
         {
             Id = Guid.NewGuid().ToString();
             UserId = userId;
@@ -26,13 +25,16 @@ namespace StudentHousing.ObjectClasses
             Area = area;
             AdditionalNotes = additionalNotes;
             Date = date;
-            PermissionToEnter = permissionToEnter;
+        }
+        public override string ToString()
+        {
+            return $"{Date} - {AdditionalNotes}";
         }
 
         public Complaint() { }
 
         [JsonConstructor]
-        public Complaint(string Id, string userId, string buildingId, ComplaintArea area, string additionalNotes, DateTime date, bool permissionToEnter)
+        public Complaint(string Id, string userId, string buildingId, ComplaintArea area, string additionalNotes, DateTime date)
         {
             this.Id = Id;
             this.UserId = userId;
@@ -40,7 +42,6 @@ namespace StudentHousing.ObjectClasses
             this.Area = area;
             this.AdditionalNotes = additionalNotes;
             this.Date = date;
-            this.PermissionToEnter = permissionToEnter;
         }
     }
 }
