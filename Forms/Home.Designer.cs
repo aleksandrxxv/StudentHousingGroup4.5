@@ -30,6 +30,7 @@
         {
             btnChores = new Button();
             panel1 = new Panel();
+            pictureBox1 = new PictureBox();
             lblHouseName = new Label();
             btnAdmin = new Button();
             btnLogIn = new Button();
@@ -44,11 +45,12 @@
             label6 = new Label();
             label7 = new Label();
             button3 = new Button();
-            lbDate = new Label();
             panel2 = new Panel();
-            pictureBox1 = new PictureBox();
+            panel3 = new Panel();
+            lbDate = new Label();
             panel1.SuspendLayout();
-            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel3.SuspendLayout();
             SuspendLayout();
             // 
             // btnChores
@@ -56,10 +58,10 @@
             btnChores.BackColor = Color.FromArgb(137, 128, 245);
             btnChores.FlatStyle = FlatStyle.Flat;
             btnChores.Font = new Font("Segoe UI", 12F);
-            btnChores.Location = new Point(856, 156);
-            btnChores.Margin = new Padding(2, 4, 2, 4);
+            btnChores.Location = new Point(685, 125);
+            btnChores.Margin = new Padding(2, 3, 2, 3);
             btnChores.Name = "btnChores";
-            btnChores.Size = new Size(346, 226);
+            btnChores.Size = new Size(277, 307);
             btnChores.TabIndex = 0;
             btnChores.Text = "Clean the kitchen(Alexander Stoyanov)\r\nThrow out the trash(Jessie Chen)\r\n";
             btnChores.UseVisualStyleBackColor = false;
@@ -75,10 +77,22 @@
             panel1.Controls.Add(btnExit);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(2, 4, 2, 4);
+            panel1.Margin = new Padding(2, 3, 2, 3);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1786, 100);
+            panel1.Size = new Size(1429, 80);
             panel1.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.BackgroundImage = Properties.Resources.logo_removebg_preview__1_;
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Location = new Point(18, 0);
+            pictureBox1.Margin = new Padding(2);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(98, 65);
+            pictureBox1.TabIndex = 5;
+            pictureBox1.TabStop = false;
             // 
             // lblHouseName
             // 
@@ -86,10 +100,10 @@
             lblHouseName.BackColor = Color.FromArgb(0, 2, 24, 158);
             lblHouseName.Font = new Font("Yu Gothic UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblHouseName.ForeColor = SystemColors.Control;
-            lblHouseName.Location = new Point(660, 9);
+            lblHouseName.Location = new Point(528, 7);
             lblHouseName.Margin = new Padding(2, 0, 2, 0);
             lblHouseName.Name = "lblHouseName";
-            lblHouseName.Size = new Size(492, 54);
+            lblHouseName.Size = new Size(422, 46);
             lblHouseName.TabIndex = 4;
             lblHouseName.Text = "Student Housing Platform";
             // 
@@ -100,10 +114,10 @@
             btnAdmin.Dock = DockStyle.Right;
             btnAdmin.FlatAppearance.BorderSize = 0;
             btnAdmin.FlatStyle = FlatStyle.Flat;
-            btnAdmin.Location = new Point(1508, 0);
-            btnAdmin.Margin = new Padding(2, 4, 2, 4);
+            btnAdmin.Location = new Point(1206, 0);
+            btnAdmin.Margin = new Padding(2, 3, 2, 3);
             btnAdmin.Name = "btnAdmin";
-            btnAdmin.Size = new Size(92, 100);
+            btnAdmin.Size = new Size(74, 80);
             btnAdmin.TabIndex = 3;
             btnAdmin.Text = "Admin";
             btnAdmin.UseVisualStyleBackColor = false;
@@ -117,10 +131,10 @@
             btnLogIn.Dock = DockStyle.Right;
             btnLogIn.FlatAppearance.BorderSize = 0;
             btnLogIn.FlatStyle = FlatStyle.Flat;
-            btnLogIn.Location = new Point(1600, 0);
-            btnLogIn.Margin = new Padding(2, 4, 2, 4);
+            btnLogIn.Location = new Point(1280, 0);
+            btnLogIn.Margin = new Padding(2, 3, 2, 3);
             btnLogIn.Name = "btnLogIn";
-            btnLogIn.Size = new Size(92, 100);
+            btnLogIn.Size = new Size(74, 80);
             btnLogIn.TabIndex = 2;
             btnLogIn.Text = "Profile";
             btnLogIn.UseVisualStyleBackColor = false;
@@ -133,10 +147,10 @@
             btnExit.Dock = DockStyle.Right;
             btnExit.FlatAppearance.BorderSize = 0;
             btnExit.FlatStyle = FlatStyle.Flat;
-            btnExit.Location = new Point(1692, 0);
-            btnExit.Margin = new Padding(2, 4, 2, 4);
+            btnExit.Location = new Point(1354, 0);
+            btnExit.Margin = new Padding(2, 3, 2, 3);
             btnExit.Name = "btnExit";
-            btnExit.Size = new Size(94, 100);
+            btnExit.Size = new Size(75, 80);
             btnExit.TabIndex = 1;
             btnExit.Text = "Exit";
             btnExit.UseVisualStyleBackColor = false;
@@ -150,10 +164,10 @@
             label2.Cursor = Cursors.Hand;
             label2.Font = new Font("Yu Gothic UI", 16.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(866, 864);
+            label2.Location = new Point(141, 333);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(373, 46);
+            label2.Size = new Size(316, 40);
             label2.TabIndex = 7;
             label2.Text = "Latest Announcements";
             label2.Click += label2_Click;
@@ -163,21 +177,20 @@
             listBox1.BackColor = Color.FromArgb(137, 128, 245);
             listBox1.BorderStyle = BorderStyle.FixedSingle;
             listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 25;
-            listBox1.Location = new Point(866, 918);
-            listBox1.Margin = new Padding(2, 4, 2, 4);
+            listBox1.Location = new Point(23, 376);
+            listBox1.Margin = new Padding(2, 3, 2, 3);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(826, 152);
+            listBox1.Size = new Size(542, 342);
             listBox1.TabIndex = 8;
             // 
             // btnShoppingPanel
             // 
             btnShoppingPanel.BackColor = Color.FromArgb(137, 128, 245);
             btnShoppingPanel.FlatStyle = FlatStyle.Flat;
-            btnShoppingPanel.Location = new Point(856, 509);
-            btnShoppingPanel.Margin = new Padding(2, 4, 2, 4);
+            btnShoppingPanel.Location = new Point(685, 504);
+            btnShoppingPanel.Margin = new Padding(2, 3, 2, 3);
             btnShoppingPanel.Name = "btnShoppingPanel";
-            btnShoppingPanel.Size = new Size(339, 240);
+            btnShoppingPanel.Size = new Size(277, 294);
             btnShoppingPanel.TabIndex = 9;
             btnShoppingPanel.Text = "1kg Tomatoes\r\n1L  milk\r\n500g Chicken breasts\r\n";
             btnShoppingPanel.UseVisualStyleBackColor = false;
@@ -187,10 +200,10 @@
             // 
             button2.BackColor = Color.FromArgb(137, 128, 245);
             button2.FlatStyle = FlatStyle.Flat;
-            button2.Location = new Point(1371, 156);
-            button2.Margin = new Padding(2, 4, 2, 4);
+            button2.Location = new Point(1097, 125);
+            button2.Margin = new Padding(2, 3, 2, 3);
             button2.Name = "button2";
-            button2.Size = new Size(339, 226);
+            button2.Size = new Size(271, 307);
             button2.TabIndex = 10;
             button2.Text = "Complaints this week: 1";
             button2.UseVisualStyleBackColor = false;
@@ -199,10 +212,9 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(185, 544);
-            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Location = new Point(148, 435);
             label3.Name = "label3";
-            label3.Size = new Size(0, 25);
+            label3.Size = new Size(0, 20);
             label3.TabIndex = 11;
             // 
             // label4
@@ -212,10 +224,10 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Yu Gothic UI", 16.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(965, 386);
+            label4.Location = new Point(761, 435);
             label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Size = new Size(127, 46);
+            label4.Size = new Size(108, 40);
             label4.TabIndex = 12;
             label4.Text = "Chores";
             // 
@@ -226,10 +238,10 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Yu Gothic UI", 16.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(914, 752);
+            label5.Location = new Point(719, 803);
             label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(230, 46);
+            label5.Size = new Size(196, 40);
             label5.TabIndex = 13;
             label5.Text = "Shopping List";
             // 
@@ -240,10 +252,10 @@
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Yu Gothic UI", 16.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.White;
-            label6.Location = new Point(1446, 386);
+            label6.Location = new Point(1157, 435);
             label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
-            label6.Size = new Size(194, 46);
+            label6.Size = new Size(166, 40);
             label6.TabIndex = 14;
             label6.Text = "Complaints";
             // 
@@ -254,10 +266,10 @@
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Yu Gothic UI", 16.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7.ForeColor = Color.White;
-            label7.Location = new Point(1486, 752);
+            label7.Location = new Point(1193, 803);
             label7.Margin = new Padding(2, 0, 2, 0);
             label7.Name = "label7";
-            label7.Size = new Size(91, 46);
+            label7.Size = new Size(77, 40);
             label7.TabIndex = 16;
             label7.Text = "Rent";
             // 
@@ -265,13 +277,32 @@
             // 
             button3.BackColor = Color.FromArgb(137, 128, 245);
             button3.FlatStyle = FlatStyle.Flat;
-            button3.Location = new Point(1371, 509);
-            button3.Margin = new Padding(2, 4, 2, 4);
+            button3.Location = new Point(1097, 504);
+            button3.Margin = new Padding(2, 3, 2, 3);
             button3.Name = "button3";
-            button3.Size = new Size(339, 240);
+            button3.Size = new Size(271, 296);
             button3.TabIndex = 15;
             button3.Text = "Time untill rent payment : 7d\r\nAmount: 800€\r\n";
             button3.UseVisualStyleBackColor = false;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(100, 0, 0, 0);
+            panel2.Location = new Point(43, 110);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(596, 728);
+            panel2.TabIndex = 18;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.FromArgb(100, 0, 0, 0);
+            panel3.Controls.Add(lbDate);
+            panel3.Controls.Add(label2);
+            panel3.Controls.Add(listBox1);
+            panel3.Location = new Point(18, 125);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(582, 735);
+            panel3.TabIndex = 17;
             // 
             // lbDate
             // 
@@ -279,42 +310,22 @@
             lbDate.BackColor = Color.Transparent;
             lbDate.Font = new Font("Segoe UI", 63F);
             lbDate.ForeColor = Color.FromArgb(137, 128, 245);
-            lbDate.Location = new Point(154, 16);
+            lbDate.Location = new Point(141, 0);
             lbDate.Name = "lbDate";
             lbDate.Size = new Size(310, 280);
             lbDate.TabIndex = 17;
             lbDate.Text = "16.12\n2024";
             lbDate.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // panel2
-            // 
-            panel2.BackColor = Color.FromArgb(100, 0, 0, 0);
-            panel2.Controls.Add(lbDate);
-            panel2.Controls.Add(listBox1);
-            panel2.Controls.Add(label2);
-            panel2.Location = new Point(43, 110);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(596, 728);
-            panel2.TabIndex = 18;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Location = new Point(23, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(122, 81);
-            pictureBox1.TabIndex = 5;
-            pictureBox1.TabStop = false;
-            // 
             // Home
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackgroundImage = Properties.Resources._9538280;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1786, 1106);
+            ClientSize = new Size(1429, 885);
+            Controls.Add(panel3);
             Controls.Add(label7);
             Controls.Add(button3);
             Controls.Add(label6);
@@ -323,21 +334,19 @@
             Controls.Add(label3);
             Controls.Add(button2);
             Controls.Add(btnShoppingPanel);
-            Controls.Add(listBox1);
-            Controls.Add(label2);
             Controls.Add(panel1);
             Controls.Add(btnChores);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(2, 4, 2, 4);
+            Margin = new Padding(2, 3, 2, 3);
             Name = "Home";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Home";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -360,8 +369,9 @@
         private Label label6;
         private Label label7;
         private Button button3;
-        private Label lbDate;
         private Panel panel2;
         private PictureBox pictureBox1;
+        private Panel panel3;
+        private Label lbDate;
     }
 }
