@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Text.Json;
@@ -50,6 +51,42 @@ namespace StudentHousing.ManagerClasses
 
             }
             return new List<Announcement>();
+        }
+
+        public static List<Announcement> GetMainAnnouncementsForHouse(string buildingId)
+        {
+            List<Announcement> announcements = GetAnnouncements();
+            List<Announcement> mainAnnouncementsForBuilding = new List<Announcement>();
+            if (announcements.Count > 0)
+            {
+                foreach (Announcement announcement in announcements)
+                {
+                    Debug.WriteLine("opaa");
+                    Debug.WriteLine(announcement.Content);
+                    Debug.WriteLine(announcement.ReplyToAnnouncement);
+                    Debug.WriteLine("-------------------------");
+                    if (announcement.BuildingId == buildingId && announcement.ReplyToAnnouncement == "")
+                    {
+                        mainAnnouncementsForBuilding.Add(announcement);
+                    }
+                }
+            }
+
+            return mainAnnouncementsForBuilding;
+        }
+
+        public static List<Announcement> GetReplies(string announcementId)
+        {
+            List<Announcement> replies = new List<Announcement>();
+
+            foreach (Announcement announcement in GetAnnouncements())
+            {
+                if(announcement.ReplyToAnnouncement == announcementId)
+                {
+                    replies.Add(announcement);
+                }
+            }
+            return replies;
         }
     }
 }

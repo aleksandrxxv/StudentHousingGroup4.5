@@ -146,7 +146,7 @@
             btnAddAnnouncement.BackColor = Color.FromArgb(137, 128, 245);
             btnAddAnnouncement.FlatStyle = FlatStyle.Flat;
             btnAddAnnouncement.Font = new Font("Segoe UI", 12F);
-            btnAddAnnouncement.Location = new Point(442, 116);
+            btnAddAnnouncement.Location = new Point(439, 83);
             btnAddAnnouncement.Margin = new Padding(2);
             btnAddAnnouncement.Name = "btnAddAnnouncement";
             btnAddAnnouncement.Size = new Size(274, 77);
@@ -158,9 +158,10 @@
             // panelAnnouncements
             // 
             panelAnnouncements.AutoScroll = true;
-            panelAnnouncements.Location = new Point(219, 207);
+            panelAnnouncements.BackColor = Color.FromArgb(40, 67, 135);
+            panelAnnouncements.Location = new Point(52, 165);
             panelAnnouncements.Name = "panelAnnouncements";
-            panelAnnouncements.Size = new Size(695, 416);
+            panelAnnouncements.Size = new Size(1031, 534);
             panelAnnouncements.TabIndex = 5;
             // 
             // AnnouncementsForm

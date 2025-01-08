@@ -24,35 +24,19 @@
     "CreationDate": "2024-12-03T11:30:22.6172805+01:00"
   },
   {
-    "Id": "5efd2ed3-08cc-49b9-a01e-b27787d2c75c",
+    "Id": "6b31e786-118d-42ee-a42a-952a01e5d5f7",
     "CreatedBy": "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6",
     "BuildingId": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
-    "ReplyToAnnouncement": "",
-    "Content": "fsagiuafshg",
-    "CreationDate": "2024-12-04T09:48:52.4969732+01:00"
+    "ReplyToAnnouncement": "4172e45b-2e9e-40e4-846b-84fd4e7fa187",
+    "Content": "zz",
+    "CreationDate": "2024-12-16T16:37:48.466695+01:00"
   },
   {
-    "Id": "0a75ecba-2643-453c-8d45-93eee3f28636",
+    "Id": "a97c97b0-f673-41dd-abb4-c446c47b513a",
     "CreatedBy": "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6",
     "BuildingId": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
-    "ReplyToAnnouncement": "",
-    "Content": "uiahfauif",
-    "CreationDate": "2024-12-05T13:39:28.1721464+01:00"
-  },
-  {
-    "Id": "13365051-48c8-4486-98dc-f7c057c954a2",
-    "CreatedBy": "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6",
-    "BuildingId": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
-    "ReplyToAnnouncement": "",
-    "Content": "afadfa",
-    "CreationDate": "2024-12-11T13:56:58.6905263+01:00"
-  },
-  {
-    "Id": "72e30578-1225-4e3c-9d2b-f29f22d1aea8",
-    "CreatedBy": "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6",
-    "BuildingId": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
-    "ReplyToAnnouncement": "",
-    "Content": "afda",
-    "CreationDate": "2024-12-12T13:33:30.3255767+01:00"
+    "ReplyToAnnouncement": "4172e45b-2e9e-40e4-846b-84fd4e7fa187",
+    "Content": "test reply",
+    "CreationDate": "2024-12-16T16:55:16.8117684+01:00"
   }
 ]
