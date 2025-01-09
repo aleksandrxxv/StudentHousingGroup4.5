@@ -4,5 +4,17 @@
     "Name": "Milk",
     "Price": 2.00,
     "Amount": 1
+  },
+  {
+    "OwnerId": "1234",
+    "Name": "adf",
+    "Price": 0.00,
+    "Amount": 0
+  },
+  {
+    "OwnerId": "1234",
+    "Name": "xzvv",
+    "Price": 2.00,
+    "Amount": 1
   }
 ]

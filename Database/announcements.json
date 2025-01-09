@@ -38,5 +38,21 @@
     "ReplyToAnnouncement": "4172e45b-2e9e-40e4-846b-84fd4e7fa187",
     "Content": "test reply",
     "CreationDate": "2024-12-16T16:55:16.8117684+01:00"
+  },
+  {
+    "Id": "650fca1d-5783-46c8-a62d-ce2bff466507",
+    "CreatedBy": "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6",
+    "BuildingId": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
+    "ReplyToAnnouncement": "f5209f4a-91a4-4501-adb9-75eaccc3469b",
+    "Content": "zdrafei  bro kude odara popee",
+    "CreationDate": "2024-12-17T12:40:02.2004968+01:00"
+  },
+  {
+    "Id": "f95f73b5-fc07-43a3-8331-e11dc3434699",
+    "CreatedBy": "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6",
+    "BuildingId": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
+    "ReplyToAnnouncement": "57e23576-0c8b-47b2-8597-c1ed278754be",
+    "Content": "haha",
+    "CreationDate": "2024-12-19T13:53:55.6386206+01:00"
   }
 ]

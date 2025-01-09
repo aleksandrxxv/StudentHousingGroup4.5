@@ -44,24 +44,27 @@
             // tbItemName
             // 
             tbItemName.Font = new Font("Segoe UI", 15F);
-            tbItemName.Location = new Point(265, 55);
+            tbItemName.Location = new Point(212, 44);
+            tbItemName.Margin = new Padding(2);
             tbItemName.Name = "tbItemName";
-            tbItemName.Size = new Size(226, 47);
+            tbItemName.Size = new Size(182, 41);
             tbItemName.TabIndex = 0;
             // 
             // numUDAmount
             // 
             numUDAmount.Font = new Font("Segoe UI", 15F);
-            numUDAmount.Location = new Point(265, 174);
+            numUDAmount.Location = new Point(212, 139);
+            numUDAmount.Margin = new Padding(2);
             numUDAmount.Name = "numUDAmount";
-            numUDAmount.Size = new Size(226, 47);
+            numUDAmount.Size = new Size(181, 41);
             numUDAmount.TabIndex = 2;
             // 
             // btnAddItem
             // 
-            btnAddItem.Location = new Point(153, 252);
+            btnAddItem.Location = new Point(122, 202);
+            btnAddItem.Margin = new Padding(2);
             btnAddItem.Name = "btnAddItem";
-            btnAddItem.Size = new Size(216, 75);
+            btnAddItem.Size = new Size(173, 60);
             btnAddItem.TabIndex = 3;
             btnAddItem.Text = "AddItem";
             btnAddItem.UseVisualStyleBackColor = true;
@@ -71,71 +74,82 @@
             // 
             tbItemPrice.DecimalPlaces = 2;
             tbItemPrice.Font = new Font("Segoe UI", 15F);
-            tbItemPrice.Location = new Point(265, 114);
+            tbItemPrice.Location = new Point(212, 91);
+            tbItemPrice.Margin = new Padding(2);
             tbItemPrice.Name = "tbItemPrice";
-            tbItemPrice.Size = new Size(226, 47);
+            tbItemPrice.Size = new Size(181, 41);
             tbItemPrice.TabIndex = 4;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = Color.Indigo;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 15F);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(73, 55);
+            label1.Location = new Point(58, 44);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(165, 41);
+            label1.Size = new Size(139, 35);
             label1.TabIndex = 5;
             label1.Text = "Item Name";
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 15F);
-            label2.Location = new Point(96, 120);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(77, 96);
+            label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(142, 41);
+            label2.Size = new Size(119, 35);
             label2.TabIndex = 6;
             label2.Text = "ItemPrice";
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 15F);
-            label3.Location = new Point(53, 176);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(42, 141);
+            label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(185, 41);
+            label3.Size = new Size(154, 35);
             label3.TabIndex = 7;
             label3.Text = "ItemAmount";
             // 
             // lbShoppingList
             // 
-            lbShoppingList.BackColor = Color.PapayaWhip;
-            lbShoppingList.Font = new Font("Yu Gothic UI Semibold", 15F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lbShoppingList.BackColor = Color.FromArgb(137, 128, 245);
+            lbShoppingList.BorderStyle = BorderStyle.FixedSingle;
+            lbShoppingList.Font = new Font("Segoe UI", 15F);
             lbShoppingList.FormattingEnabled = true;
-            lbShoppingList.ItemHeight = 41;
-            lbShoppingList.Location = new Point(526, 8);
+            lbShoppingList.ItemHeight = 35;
+            lbShoppingList.Location = new Point(421, 6);
+            lbShoppingList.Margin = new Padding(2);
             lbShoppingList.Name = "lbShoppingList";
-            lbShoppingList.Size = new Size(500, 578);
+            lbShoppingList.Size = new Size(401, 457);
             lbShoppingList.TabIndex = 8;
             // 
             // lblTotalPrice
             // 
             lblTotalPrice.AutoSize = true;
-            lblTotalPrice.BackColor = Color.PapayaWhip;
-            lblTotalPrice.Font = new Font("Yu Gothic UI Semibold", 15F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            lblTotalPrice.Location = new Point(544, 524);
+            lblTotalPrice.BackColor = Color.FromArgb(137, 128, 245);
+            lblTotalPrice.Font = new Font("Segoe UI", 15F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblTotalPrice.Location = new Point(435, 419);
+            lblTotalPrice.Margin = new Padding(2, 0, 2, 0);
             lblTotalPrice.Name = "lblTotalPrice";
-            lblTotalPrice.Size = new Size(101, 41);
+            lblTotalPrice.Size = new Size(88, 35);
             lblTotalPrice.TabIndex = 9;
             lblTotalPrice.Text = "label4";
             // 
             // Shopping
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources._9538280;
-            ClientSize = new Size(1058, 664);
+            ClientSize = new Size(846, 531);
             Controls.Add(lblTotalPrice);
             Controls.Add(lbShoppingList);
             Controls.Add(label3);
@@ -145,6 +159,7 @@
             Controls.Add(btnAddItem);
             Controls.Add(numUDAmount);
             Controls.Add(tbItemName);
+            Margin = new Padding(2);
             Name = "Shopping";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Shopping";

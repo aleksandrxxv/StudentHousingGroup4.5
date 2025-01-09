@@ -14,6 +14,8 @@ namespace StudentHousing.Classes
         public string UserName { get; private set; }
         public string PasswordHash { get; private set; }
 
+        //add building id
+
 
         public User(bool isAdmin, string name, string userName, string password)
         {

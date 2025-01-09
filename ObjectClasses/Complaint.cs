@@ -14,7 +14,7 @@ namespace StudentHousing.ObjectClasses
         public string UserId { get; private set; }
         public string BuildingId { get; private set; }
         public ComplaintArea Area { get; private set; }
-        public string AdditionalNotes { get; private set; }
+        public string? AdditionalNotes { get; private set; }
         public DateTime Date {  get; private set; }
         public bool PermissionToEnter { get; private set; }
 
