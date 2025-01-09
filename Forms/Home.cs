@@ -96,8 +96,8 @@ namespace StudentHousing
 
         private void button2_Click(object sender, EventArgs e)
         {
-            AddComplaint addComplaint = new AddComplaint(currentUser);
-            addComplaint.Show();
+            Complaints complaints = new Complaints(currentUser);
+            complaints.Show();
         }
     }
 }

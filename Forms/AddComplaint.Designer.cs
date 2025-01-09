@@ -28,10 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             tbAdditional = new TextBox();
             cbArea = new ComboBox();
             btnCreate = new Button();
-            cbPermission = new CheckBox();
+            cbAnonymous = new CheckBox();
+            toolTip1 = new ToolTip(components);
+            label1 = new Label();
+            label2 = new Label();
             SuspendLayout();
             // 
             // tbAdditional
@@ -60,22 +64,55 @@
             btnCreate.UseVisualStyleBackColor = true;
             btnCreate.Click += btnCreate_Click;
             // 
-            // cbPermission
+            // cbAnonymous
             // 
-            cbPermission.AutoSize = true;
-            cbPermission.Location = new Point(94, 292);
-            cbPermission.Name = "cbPermission";
-            cbPermission.Size = new Size(581, 29);
-            cbPermission.TabIndex = 3;
-            cbPermission.Text = "I grant permission for the workers to enter my room if I'm not home";
-            cbPermission.UseVisualStyleBackColor = true;
+            cbAnonymous.AutoSize = true;
+            cbAnonymous.BackColor = Color.Transparent;
+            cbAnonymous.ForeColor = SystemColors.ControlLightLight;
+            cbAnonymous.Location = new Point(262, 40);
+            cbAnonymous.Name = "cbAnonymous";
+            cbAnonymous.Size = new Size(216, 29);
+            cbAnonymous.TabIndex = 4;
+            cbAnonymous.Text = "Submit as anonymous";
+            cbAnonymous.UseVisualStyleBackColor = false;
+            // 
+            // toolTip1
+            // 
+            toolTip1.ToolTipTitle = "Sumbit as anonymous";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.ForeColor = SystemColors.ControlLightLight;
+            label1.Location = new Point(84, 150);
+            label1.Name = "label1";
+            label1.Size = new Size(131, 25);
+            label1.TabIndex = 5;
+            label1.Text = "Additional Info";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Yu Gothic UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.ForeColor = SystemColors.ControlLightLight;
+            label2.Location = new Point(131, 92);
+            label2.Name = "label2";
+            label2.Size = new Size(84, 25);
+            label2.TabIndex = 6;
+            label2.Text = "Category";
+            label2.TextAlign = ContentAlignment.TopCenter;
             // 
             // AddComplaint
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources._9538280;
             ClientSize = new Size(800, 450);
-            Controls.Add(cbPermission);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(cbAnonymous);
             Controls.Add(btnCreate);
             Controls.Add(cbArea);
             Controls.Add(tbAdditional);
@@ -90,6 +127,9 @@
         private TextBox tbAdditional;
         private ComboBox cbArea;
         private Button btnCreate;
-        private CheckBox cbPermission;
+        private CheckBox cbAnonymous;
+        private ToolTip toolTip1;
+        private Label label1;
+        private Label label2;
     }
 }

@@ -1,4 +1,5 @@
-﻿using StudentHousing.ObjectClasses;
+﻿using StudentHousing.Classes;
+using StudentHousing.ObjectClasses;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,6 +35,27 @@ namespace StudentHousing.ManagerClasses
 
                 File.WriteAllText(filePath, jsonData);
 
+            }
+        }
+        public static List<Complaint> GetAllBuildings()
+        {
+            string filePath = Path.Combine("..", "..", "..", "Database", "complaints.json");
+
+            if (!File.Exists(filePath))
+            {
+                throw new FileNotFoundException("The complaints JSON file does not exist.");
+            }
+
+            string jsonString = File.ReadAllText(filePath);
+
+            try
+            {
+                return JsonSerializer.Deserialize<List<Complaint>>(jsonString);
+            }
+            catch (JsonException)
+            {
+                Complaint singleComplaint = JsonSerializer.Deserialize<Complaint>(jsonString);
+                return new List<Complaint> { singleComplaint };
             }
         }
     }
