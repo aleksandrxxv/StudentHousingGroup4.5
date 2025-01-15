@@ -29,7 +29,10 @@ namespace StudentHousing.Forms
                 tbText.Visible = true;
                 cbBuildings.Visible = true;
             }
-            label1.Text = $"Rules for {currentBuilding.address}";
+            else
+            {
+                label1.Text = $"Rules for {currentBuilding.address}";
+            }
             List<ObjectClasses.Rule> rules = RuleManager.GetRulesByBuilding(userBuilding);
             foreach (ObjectClasses.Rule rule in rules)
             {
