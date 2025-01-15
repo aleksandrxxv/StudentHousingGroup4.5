@@ -11,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip;
 
 namespace StudentHousing.Forms
 {
@@ -31,7 +32,7 @@ namespace StudentHousing.Forms
             int dayCounter = 1;
             int rows = 5;
             int cols = 7;
-            int spacing = 10;
+            int spacing = 25;
             int controlWidth = 150;
             int controlHeight = 150;
             int initialOffsetY = 130;
@@ -49,12 +50,14 @@ namespace StudentHousing.Forms
                     bool isCleaning = choresForDay.Any(chore => chore.typeOfChore == ChoreType.Cleaning); ;
 
                     Image img = null;
+                    string toolTipText = "None";
                     if (isCleaning)
                     {
                         img = Properties.Resources.cleaning;
+                        toolTipText = "Cleaning";
                     }
 
-                    DayControl dayControl = new DayControl
+                    DayControl dayControl = new DayControl(toolTipText)
                     {
                         DayNumber = dayCounter,
                         DayImage = img,

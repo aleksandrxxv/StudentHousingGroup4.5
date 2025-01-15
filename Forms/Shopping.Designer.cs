@@ -121,7 +121,7 @@
             // 
             // lbShoppingList
             // 
-            lbShoppingList.BackColor = Color.FromArgb(137, 128, 245);
+            lbShoppingList.BackColor = Color.WhiteSmoke;
             lbShoppingList.BorderStyle = BorderStyle.FixedSingle;
             lbShoppingList.Font = new Font("Segoe UI", 15F);
             lbShoppingList.FormattingEnabled = true;
@@ -135,7 +135,7 @@
             // lblTotalPrice
             // 
             lblTotalPrice.AutoSize = true;
-            lblTotalPrice.BackColor = Color.FromArgb(137, 128, 245);
+            lblTotalPrice.BackColor = Color.WhiteSmoke;
             lblTotalPrice.Font = new Font("Segoe UI", 15F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             lblTotalPrice.Location = new Point(435, 419);
             lblTotalPrice.Margin = new Padding(2, 0, 2, 0);
@@ -148,7 +148,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources._9538280;
+            BackgroundImage = Properties.Resources.background;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(846, 531);
             Controls.Add(lblTotalPrice);
             Controls.Add(lbShoppingList);

@@ -14,6 +14,8 @@ namespace StudentHousing
     public partial class DayControl : UserControl
     {
         private int dayNumber;
+        private ToolTip toolTip;
+
         public int DayNumber
         {
             get { return dayNumber; }
@@ -30,9 +32,21 @@ namespace StudentHousing
             set => pictureBox1.BackgroundImage = value;
         }
 
-        public DayControl()
+        public DayControl(string toolTipText)
         {
             InitializeComponent();
+
+            toolTip = new ToolTip
+            {
+                InitialDelay = 500, 
+                ReshowDelay = 100,  
+                AutoPopDelay = 5000, 
+                ShowAlways = true    
+            };
+            toolTip.SetToolTip(pictureBox1, toolTipText); 
+
+
         }
+
     }
 }

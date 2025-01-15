@@ -48,7 +48,7 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(2, 3, 2, 3);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1411, 80);
+            panel1.Size = new Size(1683, 80);
             panel1.TabIndex = 2;
             // 
             // lblHouseName
@@ -71,7 +71,7 @@
             btnAdmin.Dock = DockStyle.Right;
             btnAdmin.FlatAppearance.BorderSize = 0;
             btnAdmin.FlatStyle = FlatStyle.Flat;
-            btnAdmin.Location = new Point(1188, 0);
+            btnAdmin.Location = new Point(1460, 0);
             btnAdmin.Margin = new Padding(2, 3, 2, 3);
             btnAdmin.Name = "btnAdmin";
             btnAdmin.Size = new Size(74, 80);
@@ -87,7 +87,7 @@
             btnLogIn.Dock = DockStyle.Right;
             btnLogIn.FlatAppearance.BorderSize = 0;
             btnLogIn.FlatStyle = FlatStyle.Flat;
-            btnLogIn.Location = new Point(1262, 0);
+            btnLogIn.Location = new Point(1534, 0);
             btnLogIn.Margin = new Padding(2, 3, 2, 3);
             btnLogIn.Name = "btnLogIn";
             btnLogIn.Size = new Size(74, 80);
@@ -102,7 +102,7 @@
             btnExit.Dock = DockStyle.Right;
             btnExit.FlatAppearance.BorderSize = 0;
             btnExit.FlatStyle = FlatStyle.Flat;
-            btnExit.Location = new Point(1336, 0);
+            btnExit.Location = new Point(1608, 0);
             btnExit.Margin = new Padding(2, 3, 2, 3);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(75, 80);
@@ -129,7 +129,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources._9538280;
-            ClientSize = new Size(1411, 838);
+            ClientSize = new Size(1683, 1000);
             Controls.Add(btnBack);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;

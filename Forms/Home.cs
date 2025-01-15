@@ -91,7 +91,10 @@ namespace StudentHousing
         private void btnChores_Click(object sender, EventArgs e)
         {
             ChoresCalendar choresCalendar = new ChoresCalendar(currentUser);
+            choresCalendar.StartPosition = FormStartPosition.CenterScreen;
             choresCalendar.Show();
+            this.Hide();
+            choresCalendar.FormClosed += (s, args) => this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
