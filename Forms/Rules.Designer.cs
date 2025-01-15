@@ -51,7 +51,7 @@
             // 
             btnAddRule.Location = new Point(772, 233);
             btnAddRule.Name = "btnAddRule";
-            btnAddRule.Size = new Size(171, 34);
+            btnAddRule.Size = new Size(171, 69);
             btnAddRule.TabIndex = 1;
             btnAddRule.Text = "Add Rule to this building";
             btnAddRule.UseVisualStyleBackColor = true;
