@@ -30,16 +30,91 @@ namespace StudentHousing
             if (currentUser.IsAdmin == true)
             {
                 lblHouseName.Text = "Admin Account";
+                btnAdmin.Visible = true;
 
             }
             else
             {
                 lblHouseName.Text = tenantBuilding.address;
 
+                LoadAnnouncements();
+
+
+
+                //lbAnnouncements.Items.Clear();
+                List<Announcement> mainAnnouncements = AnnouncementManager.GetMainAnnouncementsForHouse(tenantBuilding.BuildingID);
+
+                if(mainAnnouncements.Count > 0)
+                {
+                    for (int i = 0; i < 2; i++)
+                    {
+                        if (mainAnnouncements[i] != null)
+                        {
+                            //lbAnnouncements.Items.Add(mainAnnouncements[i].Content);
+                        }
+                    }
+                }
+                
             }
-            if (currentUser.IsAdmin)
+        }
+        private void LoadAnnouncements()
+        {
+            announcementsPanel.Controls.Clear();
+            string userBuildingId = BuildingManager.GetBuildingByTenantID(currentUser.Id).BuildingID;
+            List<Announcement> announcements = AnnouncementManager.GetMainAnnouncementsForHouse(userBuildingId);
+            int yPosition = 10;
+            int i = 0;
+            foreach (Announcement reply in announcements)
             {
-                btnAdmin.Visible = true;
+                i++;
+                if(i > 2)
+                {
+                    break;
+                }
+                Label lbAuthor = new Label()
+                {
+                    Text = UserManager.GetUserById(reply.CreatedBy).UserName,
+                    Font = new Font("Arial", 12, FontStyle.Bold),
+                    Location = new Point(10, 10),
+                    BackColor = Color.Transparent,
+                    ForeColor = Color.Black,
+                };
+
+                Label lbDate = new Label()
+                {
+                    Text = reply.CreationDate.ToShortDateString(),
+                    Font = new Font("Arial", 8, FontStyle.Regular),
+                    ForeColor = Color.DarkSlateGray,
+                    Location = new Point(10, lbAuthor.Height + 10),
+                    BackColor = Color.Transparent
+                };
+
+                Label lblAnnouncement = new Label
+                {
+                    Text = $"{reply.Content}",
+                    AutoSize = true,
+                    Location = new Point(10, lbAuthor.Height + lbDate.Height + 10),
+                    Font = new Font("Arial", 10, FontStyle.Regular),
+                    MaximumSize = new Size(400, 0),
+                    BackColor = Color.Transparent,
+                    ForeColor = Color.Black,
+                };
+
+                Panel replyPanel = new Panel
+                {
+                    BackColor = Color.Transparent,
+                    Location = new Point(5, yPosition),
+                    Size = new Size(announcementsPanel.Width - 10, 0),
+                    BorderStyle = BorderStyle.None
+                };
+
+                replyPanel.Controls.Add(lbAuthor);
+                replyPanel.Controls.Add(lbDate);
+                replyPanel.Controls.Add(lblAnnouncement);
+
+                announcementsPanel.Controls.Add(replyPanel);
+                replyPanel.Height = lblAnnouncement.Location.Y + lblAnnouncement.Height + 10;
+                yPosition += replyPanel.Height + 10;
             }
         }
         private void ShoppingButton()
