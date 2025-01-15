@@ -6,5 +6,13 @@
     "Area": 0,
     "AdditionalNotes": "Stefan leaves his dishes all over the place",
     "Date": "2025-01-09T13:17:38.1501058+01:00"
+  },
+  {
+    "Id": "c2d7c4fe-f4a2-4545-aa6c-2a9bf5fa0c08",
+    "UserId": "-1",
+    "BuildingId": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
+    "Area": 4,
+    "AdditionalNotes": "room 5 broken pipe",
+    "Date": "2025-01-15T12:17:36.5198454+01:00"
   }
 ]

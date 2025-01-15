@@ -5,6 +5,7 @@ using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 using StudentHousing.Classes;
+using StudentHousing.Forms;
 using StudentHousing.ManagerClasses;
 
 namespace StudentHousing
@@ -53,12 +54,18 @@ namespace StudentHousing
             List<Announcement> replies = AnnouncementManager.GetReplies(announcementId);
             if(replies.Count > 0)
             {
-                string returnString = "";
-                foreach(Announcement announcement in replies)
-                {
-                    returnString += announcement.Content + "\n\n\n";
-                }
-                MessageBox.Show(returnString);
+                //string returnString = "";
+                //foreach(Announcement announcement in replies)
+                //{
+                //    returnString += announcement.Content + "\n\n\n";
+                //}
+                //MessageBox.Show(returnString);
+                RepliesForm frm = new RepliesForm(CurrentUser, replies);
+                frm.StartPosition = FormStartPosition.Manual;
+                frm.Location = this.Location;
+                frm.Show();
+                this.Hide();
+                frm.FormClosed += (s, args) => this.Close();
                 return;
             }
             else

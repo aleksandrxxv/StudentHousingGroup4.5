@@ -54,5 +54,29 @@
     "ReplyToAnnouncement": "57e23576-0c8b-47b2-8597-c1ed278754be",
     "Content": "haha",
     "CreationDate": "2024-12-19T13:53:55.6386206+01:00"
+  },
+  {
+    "Id": "8f2d578b-be85-4246-abe3-4c09ec1a47bf",
+    "CreatedBy": "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6",
+    "BuildingId": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
+    "ReplyToAnnouncement": "",
+    "Content": "hello",
+    "CreationDate": "2025-01-15T12:15:34.4783073+01:00"
+  },
+  {
+    "Id": "d49918dc-886e-4b9c-90be-e7e6232ddaa5",
+    "CreatedBy": "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6",
+    "BuildingId": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
+    "ReplyToAnnouncement": "8f2d578b-be85-4246-abe3-4c09ec1a47bf",
+    "Content": "adfafd",
+    "CreationDate": "2025-01-15T12:15:43.562972+01:00"
+  },
+  {
+    "Id": "ebe50953-3f32-4fb0-b079-f9348c2e683d",
+    "CreatedBy": "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6",
+    "BuildingId": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
+    "ReplyToAnnouncement": "4172e45b-2e9e-40e4-846b-84fd4e7fa187",
+    "Content": "I am writing a long reply. I am writing a long reply. I am writing a long reply. I am writing a long reply. I am writing a long reply.",
+    "CreationDate": "2025-01-15T15:40:55.3777283+01:00"
   }
 ]

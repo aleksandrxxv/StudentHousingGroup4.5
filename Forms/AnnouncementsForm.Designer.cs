@@ -75,10 +75,10 @@
             btnAdmin.Dock = DockStyle.Right;
             btnAdmin.FlatAppearance.BorderSize = 0;
             btnAdmin.FlatStyle = FlatStyle.Flat;
-            btnAdmin.Location = new Point(965, 0);
+            btnAdmin.Location = new Point(926, 0);
             btnAdmin.Margin = new Padding(2);
             btnAdmin.Name = "btnAdmin";
-            btnAdmin.Size = new Size(59, 64);
+            btnAdmin.Size = new Size(85, 64);
             btnAdmin.TabIndex = 3;
             btnAdmin.Text = "Admin";
             btnAdmin.UseVisualStyleBackColor = false;
@@ -91,10 +91,10 @@
             btnLogIn.Dock = DockStyle.Right;
             btnLogIn.FlatAppearance.BorderSize = 0;
             btnLogIn.FlatStyle = FlatStyle.Flat;
-            btnLogIn.Location = new Point(1024, 0);
+            btnLogIn.Location = new Point(1011, 0);
             btnLogIn.Margin = new Padding(2);
             btnLogIn.Name = "btnLogIn";
-            btnLogIn.Size = new Size(59, 64);
+            btnLogIn.Size = new Size(72, 64);
             btnLogIn.TabIndex = 2;
             btnLogIn.Text = "Profile";
             btnLogIn.UseVisualStyleBackColor = false;
@@ -158,7 +158,7 @@
             // panelAnnouncements
             // 
             panelAnnouncements.AutoScroll = true;
-            panelAnnouncements.BackColor = Color.FromArgb(40, 67, 135);
+            panelAnnouncements.BackColor = Color.FromArgb(100, 0, 0, 0);
             panelAnnouncements.Location = new Point(52, 165);
             panelAnnouncements.Name = "panelAnnouncements";
             panelAnnouncements.Size = new Size(1031, 534);
