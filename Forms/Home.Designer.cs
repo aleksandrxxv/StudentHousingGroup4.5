@@ -36,7 +36,6 @@
             btnLogIn = new Button();
             btnExit = new Button();
             label2 = new Label();
-            listBox1 = new ListBox();
             btnShoppingPanel = new Button();
             button2 = new Button();
             label3 = new Label();
@@ -47,6 +46,7 @@
             button3 = new Button();
             panel2 = new Panel();
             panel3 = new Panel();
+            announcementsPanel = new Panel();
             lbDate = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -172,17 +172,6 @@
             label2.Text = "Latest Announcements";
             label2.Click += label2_Click;
             // 
-            // listBox1
-            // 
-            listBox1.BackColor = Color.FromArgb(137, 128, 245);
-            listBox1.BorderStyle = BorderStyle.FixedSingle;
-            listBox1.FormattingEnabled = true;
-            listBox1.Location = new Point(23, 376);
-            listBox1.Margin = new Padding(2, 3, 2, 3);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(542, 342);
-            listBox1.TabIndex = 8;
-            // 
             // btnShoppingPanel
             // 
             btnShoppingPanel.BackColor = Color.FromArgb(137, 128, 245);
@@ -296,13 +285,21 @@
             // panel3
             // 
             panel3.BackColor = Color.FromArgb(100, 0, 0, 0);
+            panel3.Controls.Add(announcementsPanel);
             panel3.Controls.Add(lbDate);
             panel3.Controls.Add(label2);
-            panel3.Controls.Add(listBox1);
             panel3.Location = new Point(18, 125);
             panel3.Name = "panel3";
             panel3.Size = new Size(582, 735);
             panel3.TabIndex = 17;
+            // 
+            // announcementsPanel
+            // 
+            announcementsPanel.BackColor = Color.FromArgb(137, 128, 245);
+            announcementsPanel.Location = new Point(23, 366);
+            announcementsPanel.Name = "announcementsPanel";
+            announcementsPanel.Size = new Size(537, 352);
+            announcementsPanel.TabIndex = 18;
             // 
             // lbDate
             // 
@@ -357,7 +354,6 @@
         private Panel panel1;
         private Button btnExit;
         private Label label2;
-        private ListBox listBox1;
         private Button btnLogIn;
         private Button btnShoppingPanel;
         private Button button2;
@@ -373,5 +369,6 @@
         private PictureBox pictureBox1;
         private Panel panel3;
         private Label lbDate;
+        private Panel announcementsPanel;
     }
 }
