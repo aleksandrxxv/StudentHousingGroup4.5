@@ -16,11 +16,13 @@ namespace StudentHousing.Forms
 {
     public partial class AddComplaint : Form
     {
-        User currentUser;
-        public AddComplaint(User user)
+        private User currentUser;
+        private Complaints complaintsForm;
+        public AddComplaint(User user, Complaints complaintsForm)
         {
             InitializeComponent();
             currentUser = user;
+            this.complaintsForm = complaintsForm;
             cbArea.DataSource = Enum.GetValues(typeof(ComplaintArea));
         }
 
@@ -38,11 +40,14 @@ namespace StudentHousing.Forms
                 Complaint complaint = new Complaint(userId, buildingId, area, additionalInfo, date);
                 ComplaintsManager.CreateComplaint(complaint);
                 MessageBox.Show("Complaint created succesfully.");
+                complaintsForm.RefreshComplaints();
+
             } else
             {
                 Complaint complaint = new Complaint("-1", buildingId, area, additionalInfo, date);
                 ComplaintsManager.CreateComplaint(complaint);
                 MessageBox.Show("Anonymous complaint created succesfully.");
+                complaintsForm.RefreshComplaints();
             }
 
 

@@ -24,6 +24,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Database\rules.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Database\announcements.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

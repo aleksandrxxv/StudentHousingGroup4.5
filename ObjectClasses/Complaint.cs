@@ -1,10 +1,12 @@
 ﻿using StudentHousing.ENUMS;
+using StudentHousing.ManagerClasses;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace StudentHousing.ObjectClasses
 {
@@ -28,7 +30,15 @@ namespace StudentHousing.ObjectClasses
         }
         public override string ToString()
         {
-            return $"{Date} - {AdditionalNotes}";
+            if (UserId != "-1")
+            {
+                string userName = UserManager.GetUserById(UserId).Name;
+                return $"{userName}: {AdditionalNotes} - {Date}";
+            }
+            else
+            {
+                return $"Anounymous: {AdditionalNotes} - {Date}";
+            }
         }
 
         public Complaint() { }

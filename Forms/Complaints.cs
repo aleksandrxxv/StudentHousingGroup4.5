@@ -29,11 +29,11 @@ namespace StudentHousing.Forms
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            AddComplaint addComplaint = new AddComplaint(currentUser);
+            AddComplaint addComplaint = new AddComplaint(currentUser, this);
             addComplaint.Show();
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        public void RefreshComplaints()
         {
             lbxComplaints.Items.Clear();
             List<Complaint> complaints = ComplaintsManager.GetAllBuildings();
