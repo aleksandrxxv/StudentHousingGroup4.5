@@ -147,6 +147,7 @@
             // 
             // textBox2
             // 
+            textBox2.Enabled = false;
             textBox2.Font = new Font("Segoe UI", 25F);
             textBox2.Location = new Point(170, 192);
             textBox2.Name = "textBox2";
@@ -157,6 +158,7 @@
             // 
             // textBox1
             // 
+            textBox1.Enabled = false;
             textBox1.Font = new Font("Segoe UI", 25F);
             textBox1.Location = new Point(170, 96);
             textBox1.Name = "textBox1";
@@ -177,6 +179,7 @@
             btnPay.TabIndex = 3;
             btnPay.Text = "Pay";
             btnPay.UseVisualStyleBackColor = false;
+            btnPay.Click += btnPay_Click;
             // 
             // PaymentForm
             // 

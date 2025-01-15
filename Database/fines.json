@@ -1,12 +1,5 @@
 [
   {
-    "Id": "c86ba7d3-6c22-4b85-99df-591b88de43f0",
-    "Amount": 18,
-    "TennantId": "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6",
-    "Reason": "Not doing chores",
-    "Date": "2024-12-05T11:09:50.1987454+01:00"
-  },
-  {
     "Id": "5505a7f6-25e9-4dd8-a7dd-2ce51fa4f201",
     "Amount": 25,
     "TennantId": "6abdf1ef-bc01-4cda-948c-3f41e7f36bf8",
@@ -26,12 +19,5 @@
     "TennantId": "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6",
     "Reason": "izsra se v mivkata",
     "Date": "2024-12-06T10:53:48.4642138+01:00"
-  },
-  {
-    "Id": "66f0dd79-8871-4a74-8439-867953eb40cc",
-    "Amount": 10.00,
-    "TennantId": "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6",
-    "Reason": "kurkur",
-    "Date": "2025-01-13T19:19:40.3974626+01:00"
   }
 ]
