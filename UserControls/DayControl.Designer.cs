@@ -36,7 +36,8 @@
             // lbDay
             // 
             lbDay.AutoSize = true;
-            lbDay.Location = new Point(14, 9);
+            lbDay.Enabled = false;
+            lbDay.Location = new Point(3, 0);
             lbDay.Name = "lbDay";
             lbDay.Size = new Size(17, 20);
             lbDay.TabIndex = 0;
@@ -47,9 +48,9 @@
             pictureBox1.BackgroundImage = Properties.Resources.cleaning;
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox1.InitialImage = Properties.Resources.cleaning;
-            pictureBox1.Location = new Point(14, 32);
+            pictureBox1.Location = new Point(3, 19);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(111, 115);
+            pictureBox1.Size = new Size(142, 126);
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
@@ -59,9 +60,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.CornflowerBlue;
             BorderStyle = BorderStyle.FixedSingle;
-            Controls.Add(pictureBox1);
             Controls.Add(lbDay);
+            Controls.Add(pictureBox1);
             Name = "DayControl";
+            Size = new Size(148, 148);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

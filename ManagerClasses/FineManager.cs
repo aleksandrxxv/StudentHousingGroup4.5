@@ -54,6 +54,21 @@ namespace StudentHousing.ManagerClasses
             }
             return finesForUser;
         }
+        public static void PayFine(Fine fine)
+        {
+            if (File.Exists(filePath))
+            {
+                string existingData = File.ReadAllText(filePath);
+                List<Fine> fines = JsonSerializer.Deserialize<List<Fine>>(existingData);
 
+                Fine fineToRemove = fines.FirstOrDefault(f => f.Id == fine.Id);
+                if (fineToRemove != null)
+                {
+                    fines.Remove(fineToRemove);
+                    string jsonData = JsonSerializer.Serialize(fines, new JsonSerializerOptions { WriteIndented = true });
+                    File.WriteAllText(filePath, jsonData);
+                }
+            }
+        }
     }
 }
