@@ -52,15 +52,10 @@ namespace StudentHousing
             Label lb = (Label)sender;
             string announcementId = (string)lb.Tag;
             List<Announcement> replies = AnnouncementManager.GetReplies(announcementId);
+            Announcement mainAnnouncement = AnnouncementManager.GetAnnouncementById(announcementId);
             if(replies.Count > 0)
             {
-                //string returnString = "";
-                //foreach(Announcement announcement in replies)
-                //{
-                //    returnString += announcement.Content + "\n\n\n";
-                //}
-                //MessageBox.Show(returnString);
-                RepliesForm frm = new RepliesForm(CurrentUser, replies);
+                RepliesForm frm = new RepliesForm(CurrentUser, replies, mainAnnouncement);
                 frm.StartPosition = FormStartPosition.Manual;
                 frm.Location = this.Location;
                 frm.Show();

@@ -32,20 +32,24 @@
             panel1 = new Panel();
             lblHouseName = new Label();
             panelReplies = new Panel();
+            lbReplies = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // btnBack
             // 
-            btnBack.BackColor = Color.FromArgb(137, 128, 245);
+            btnBack.BackColor = Color.Transparent;
+            btnBack.BackgroundImage = Properties.Resources.back;
+            btnBack.BackgroundImageLayout = ImageLayout.Stretch;
+            btnBack.FlatAppearance.BorderSize = 0;
             btnBack.FlatStyle = FlatStyle.Flat;
             btnBack.Font = new Font("Segoe UI", 12F);
-            btnBack.Location = new Point(27, 11);
+            btnBack.ForeColor = Color.Transparent;
+            btnBack.Location = new Point(46, 71);
             btnBack.Margin = new Padding(2);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(111, 38);
+            btnBack.Size = new Size(45, 45);
             btnBack.TabIndex = 6;
-            btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = false;
             btnBack.Click += btnBack_Click;
             // 
@@ -53,7 +57,6 @@
             // 
             panel1.BackColor = Color.FromArgb(100, 0, 0, 0);
             panel1.Controls.Add(lblHouseName);
-            panel1.Controls.Add(btnBack);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(2);
@@ -74,14 +77,27 @@
             lblHouseName.TabIndex = 4;
             lblHouseName.Text = "Replies";
             // 
-            // panelAnnouncements
+            // panelReplies
             // 
             panelReplies.AutoScroll = true;
             panelReplies.BackColor = Color.FromArgb(100, 0, 0, 0);
             panelReplies.Location = new Point(46, 125);
-            panelReplies.Name = "panelAnnouncements";
+            panelReplies.Name = "panelReplies";
             panelReplies.Size = new Size(1031, 534);
             panelReplies.TabIndex = 7;
+            // 
+            // lbReplies
+            // 
+            lbReplies.AutoSize = true;
+            lbReplies.BackColor = Color.FromArgb(0, 2, 24, 158);
+            lbReplies.Font = new Font("Segoe UI", 20F);
+            lbReplies.ForeColor = SystemColors.Control;
+            lbReplies.Location = new Point(106, 66);
+            lbReplies.Margin = new Padding(2, 0, 2, 0);
+            lbReplies.Name = "lbReplies";
+            lbReplies.Size = new Size(182, 46);
+            lbReplies.TabIndex = 8;
+            lbReplies.Text = "Replies to :";
             // 
             // RepliesForm
             // 
@@ -90,6 +106,8 @@
             BackgroundImage = Properties.Resources.background;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1125, 696);
+            Controls.Add(lbReplies);
+            Controls.Add(btnBack);
             Controls.Add(panelReplies);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
@@ -98,6 +116,7 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -106,5 +125,6 @@
         private Panel panel1;
         private Label lblHouseName;
         private Panel panelReplies;
+        private Label lbReplies;
     }
 }

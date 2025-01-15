@@ -88,5 +88,17 @@ namespace StudentHousing.ManagerClasses
             }
             return replies;
         }
+        public static Announcement GetAnnouncementById(string id)
+        {
+            List<Announcement> announcements = GetAnnouncements();
+            foreach (Announcement announcement in announcements)
+            {
+                if (announcement.Id == id)
+                {
+                    return announcement;
+                }
+            }
+            return null;
+        }
     }
 }
