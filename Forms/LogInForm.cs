@@ -9,6 +9,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using StudentHousing.Classes;
+using StudentHousing.Forms;
 using StudentHousing.ManagerClasses;
 using static System.Windows.Forms.DataFormats;
 
@@ -67,10 +68,21 @@ namespace StudentHousing
 
             if (authenticated)
             {
-                Home frm = new Home(user);
-                frm.Show();
-                this.Hide();
-                frm.FormClosed += (s, args) => this.Close();
+                if (user.IsAdmin)
+                {
+                    AdminHomeForm frm = new AdminHomeForm();
+                    frm.Show();
+                    this.Hide();
+                    frm.FormClosed += (s, args) => this.Close();
+                }
+                else
+                {
+                    Home frm = new Home(user);
+                    frm.Show();
+                    this.Hide();
+                    frm.FormClosed += (s, args) => this.Close();
+                }
+                
 
             }
 

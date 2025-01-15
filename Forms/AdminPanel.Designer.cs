@@ -42,9 +42,12 @@
             lbTenants = new ListBox();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
+            btnClose4 = new Button();
             label6 = new Label();
             label5 = new Label();
             tabPage2 = new TabPage();
+            btnClose = new Button();
+            label16 = new Label();
             label4 = new Label();
             label3 = new Label();
             btnCreateUser = new Button();
@@ -52,6 +55,7 @@
             tbPassword = new TextBox();
             tbUsername = new TextBox();
             tabPage3 = new TabPage();
+            btnClose2 = new Button();
             label11 = new Label();
             label7 = new Label();
             label8 = new Label();
@@ -63,6 +67,7 @@
             btnCreateChore = new Button();
             cbChoreType = new ComboBox();
             FinesTab = new TabPage();
+            btnClose3 = new Button();
             btnCreateFine = new Button();
             label15 = new Label();
             tbReasonFine = new TextBox();
@@ -89,7 +94,8 @@
             // BuildingAddress
             // 
             resources.ApplyResources(BuildingAddress, "BuildingAddress");
-            BuildingAddress.ForeColor = SystemColors.ButtonHighlight;
+            BuildingAddress.BackColor = Color.Transparent;
+            BuildingAddress.ForeColor = SystemColors.ActiveCaptionText;
             BuildingAddress.Name = "BuildingAddress";
             // 
             // numUDMaxTenants
@@ -100,7 +106,8 @@
             // label1
             // 
             resources.ApplyResources(label1, "label1");
-            label1.ForeColor = SystemColors.ButtonHighlight;
+            label1.BackColor = Color.Transparent;
+            label1.ForeColor = SystemColors.ActiveCaptionText;
             label1.Name = "label1";
             // 
             // numUDRent
@@ -114,7 +121,8 @@
             // label2
             // 
             resources.ApplyResources(label2, "label2");
-            label2.ForeColor = SystemColors.ButtonHighlight;
+            label2.BackColor = Color.Transparent;
+            label2.ForeColor = SystemColors.ActiveCaptionText;
             label2.Name = "label2";
             // 
             // btnAddBuilding
@@ -162,7 +170,9 @@
             // 
             // tabPage1
             // 
-            tabPage1.BackgroundImage = Properties.Resources._9538280;
+            tabPage1.BackColor = SystemColors.Control;
+            resources.ApplyResources(tabPage1, "tabPage1");
+            tabPage1.Controls.Add(btnClose4);
             tabPage1.Controls.Add(label6);
             tabPage1.Controls.Add(label5);
             tabPage1.Controls.Add(tbBuildingAddress);
@@ -176,45 +186,77 @@
             tabPage1.Controls.Add(numUDRent);
             tabPage1.Controls.Add(btnAddBuilding);
             tabPage1.Controls.Add(label2);
-            resources.ApplyResources(tabPage1, "tabPage1");
             tabPage1.Name = "tabPage1";
-            tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // btnClose4
+            // 
+            btnClose4.BackColor = Color.Red;
+            btnClose4.Cursor = Cursors.Hand;
+            btnClose4.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(btnClose4, "btnClose4");
+            btnClose4.ForeColor = SystemColors.ButtonHighlight;
+            btnClose4.Name = "btnClose4";
+            btnClose4.UseVisualStyleBackColor = false;
+            btnClose4.Click += btnClose_Click;
             // 
             // label6
             // 
             resources.ApplyResources(label6, "label6");
-            label6.ForeColor = SystemColors.ButtonHighlight;
+            label6.BackColor = Color.Transparent;
+            label6.ForeColor = SystemColors.ActiveCaptionText;
             label6.Name = "label6";
             // 
             // label5
             // 
             resources.ApplyResources(label5, "label5");
-            label5.ForeColor = SystemColors.ButtonHighlight;
+            label5.BackColor = Color.Transparent;
+            label5.ForeColor = SystemColors.ActiveCaptionText;
             label5.Name = "label5";
             // 
             // tabPage2
             // 
-            tabPage2.BackgroundImage = Properties.Resources._9538280;
+            tabPage2.BackColor = SystemColors.Control;
+            resources.ApplyResources(tabPage2, "tabPage2");
+            tabPage2.Controls.Add(btnClose);
+            tabPage2.Controls.Add(label16);
             tabPage2.Controls.Add(label4);
             tabPage2.Controls.Add(label3);
             tabPage2.Controls.Add(btnCreateUser);
             tabPage2.Controls.Add(cbAdmin);
             tabPage2.Controls.Add(tbPassword);
             tabPage2.Controls.Add(tbUsername);
-            resources.ApplyResources(tabPage2, "tabPage2");
             tabPage2.Name = "tabPage2";
-            tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // btnClose
+            // 
+            btnClose.BackColor = Color.Red;
+            btnClose.Cursor = Cursors.Hand;
+            btnClose.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(btnClose, "btnClose");
+            btnClose.ForeColor = SystemColors.ButtonHighlight;
+            btnClose.Name = "btnClose";
+            btnClose.UseVisualStyleBackColor = false;
+            btnClose.Click += btnClose_Click;
+            // 
+            // label16
+            // 
+            resources.ApplyResources(label16, "label16");
+            label16.BackColor = Color.Transparent;
+            label16.ForeColor = SystemColors.ActiveCaptionText;
+            label16.Name = "label16";
             // 
             // label4
             // 
             resources.ApplyResources(label4, "label4");
-            label4.ForeColor = SystemColors.ButtonHighlight;
+            label4.BackColor = Color.Transparent;
+            label4.ForeColor = SystemColors.ActiveCaptionText;
             label4.Name = "label4";
             // 
             // label3
             // 
             resources.ApplyResources(label3, "label3");
-            label3.ForeColor = SystemColors.ButtonHighlight;
+            label3.BackColor = Color.Transparent;
+            label3.ForeColor = SystemColors.ActiveCaptionText;
             label3.Name = "label3";
             // 
             // btnCreateUser
@@ -226,9 +268,10 @@
             // cbAdmin
             // 
             resources.ApplyResources(cbAdmin, "cbAdmin");
-            cbAdmin.ForeColor = SystemColors.ButtonHighlight;
+            cbAdmin.BackColor = Color.Transparent;
+            cbAdmin.ForeColor = SystemColors.ActiveCaptionText;
             cbAdmin.Name = "cbAdmin";
-            cbAdmin.UseVisualStyleBackColor = true;
+            cbAdmin.UseVisualStyleBackColor = false;
             // 
             // tbPassword
             // 
@@ -242,7 +285,9 @@
             // 
             // tabPage3
             // 
-            tabPage3.BackgroundImage = Properties.Resources._9538280;
+            tabPage3.BackColor = SystemColors.Control;
+            resources.ApplyResources(tabPage3, "tabPage3");
+            tabPage3.Controls.Add(btnClose2);
             tabPage3.Controls.Add(label11);
             tabPage3.Controls.Add(label7);
             tabPage3.Controls.Add(label8);
@@ -253,38 +298,52 @@
             tabPage3.Controls.Add(cbUsers);
             tabPage3.Controls.Add(btnCreateChore);
             tabPage3.Controls.Add(cbChoreType);
-            resources.ApplyResources(tabPage3, "tabPage3");
             tabPage3.Name = "tabPage3";
-            tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // btnClose2
+            // 
+            btnClose2.BackColor = Color.Red;
+            btnClose2.Cursor = Cursors.Hand;
+            btnClose2.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(btnClose2, "btnClose2");
+            btnClose2.ForeColor = SystemColors.ButtonHighlight;
+            btnClose2.Name = "btnClose2";
+            btnClose2.UseVisualStyleBackColor = false;
+            btnClose2.Click += btnClose_Click;
             // 
             // label11
             // 
             resources.ApplyResources(label11, "label11");
-            label11.ForeColor = SystemColors.ButtonHighlight;
+            label11.BackColor = Color.Transparent;
+            label11.ForeColor = SystemColors.ActiveCaptionText;
             label11.Name = "label11";
             // 
             // label7
             // 
             resources.ApplyResources(label7, "label7");
-            label7.ForeColor = SystemColors.ButtonHighlight;
+            label7.BackColor = Color.Transparent;
+            label7.ForeColor = SystemColors.ActiveCaptionText;
             label7.Name = "label7";
             // 
             // label8
             // 
             resources.ApplyResources(label8, "label8");
-            label8.ForeColor = SystemColors.ButtonHighlight;
+            label8.BackColor = Color.Transparent;
+            label8.ForeColor = SystemColors.ActiveCaptionText;
             label8.Name = "label8";
             // 
             // label9
             // 
             resources.ApplyResources(label9, "label9");
-            label9.ForeColor = SystemColors.ButtonHighlight;
+            label9.BackColor = Color.Transparent;
+            label9.ForeColor = SystemColors.ActiveCaptionText;
             label9.Name = "label9";
             // 
             // label10
             // 
             resources.ApplyResources(label10, "label10");
-            label10.ForeColor = SystemColors.ButtonHighlight;
+            label10.BackColor = Color.Transparent;
+            label10.ForeColor = SystemColors.ActiveCaptionText;
             label10.Name = "label10";
             // 
             // dtpDate
@@ -319,7 +378,9 @@
             // 
             // FinesTab
             // 
-            FinesTab.BackgroundImage = Properties.Resources._9538280;
+            FinesTab.BackColor = SystemColors.Control;
+            resources.ApplyResources(FinesTab, "FinesTab");
+            FinesTab.Controls.Add(btnClose3);
             FinesTab.Controls.Add(btnCreateFine);
             FinesTab.Controls.Add(label15);
             FinesTab.Controls.Add(tbReasonFine);
@@ -328,9 +389,18 @@
             FinesTab.Controls.Add(numFineAmount);
             FinesTab.Controls.Add(label12);
             FinesTab.Controls.Add(cbUsersFines);
-            resources.ApplyResources(FinesTab, "FinesTab");
             FinesTab.Name = "FinesTab";
-            FinesTab.UseVisualStyleBackColor = true;
+            // 
+            // btnClose3
+            // 
+            btnClose3.BackColor = Color.Red;
+            btnClose3.Cursor = Cursors.Hand;
+            btnClose3.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(btnClose3, "btnClose3");
+            btnClose3.ForeColor = SystemColors.ButtonHighlight;
+            btnClose3.Name = "btnClose3";
+            btnClose3.UseVisualStyleBackColor = false;
+            btnClose3.Click += btnClose_Click;
             // 
             // btnCreateFine
             // 
@@ -342,7 +412,8 @@
             // label15
             // 
             resources.ApplyResources(label15, "label15");
-            label15.ForeColor = SystemColors.ButtonHighlight;
+            label15.BackColor = Color.Transparent;
+            label15.ForeColor = SystemColors.ActiveCaptionText;
             label15.Name = "label15";
             // 
             // tbReasonFine
@@ -353,13 +424,13 @@
             // label14
             // 
             resources.ApplyResources(label14, "label14");
-            label14.ForeColor = SystemColors.ButtonHighlight;
+            label14.ForeColor = SystemColors.ActiveCaptionText;
             label14.Name = "label14";
             // 
             // label13
             // 
             resources.ApplyResources(label13, "label13");
-            label13.ForeColor = SystemColors.ButtonHighlight;
+            label13.ForeColor = SystemColors.ActiveCaptionText;
             label13.Name = "label13";
             // 
             // numFineAmount
@@ -372,7 +443,7 @@
             // label12
             // 
             resources.ApplyResources(label12, "label12");
-            label12.ForeColor = SystemColors.ButtonHighlight;
+            label12.ForeColor = SystemColors.ActiveCaptionText;
             label12.Name = "label12";
             // 
             // cbUsersFines
@@ -385,8 +456,10 @@
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources._9538280;
+            BackColor = SystemColors.Control;
             Controls.Add(tabControl1);
+            DoubleBuffered = true;
+            FormBorderStyle = FormBorderStyle.None;
             Name = "AdminPanel";
             ((System.ComponentModel.ISupportInitialize)numUDMaxTenants).EndInit();
             ((System.ComponentModel.ISupportInitialize)numUDRent).EndInit();
@@ -447,5 +520,10 @@
         private Label label14;
         private Label label13;
         private NumericUpDown numFineAmount;
+        private Label label16;
+        private Button btnClose;
+        private Button btnClose4;
+        private Button btnClose2;
+        private Button btnClose3;
     }
 }
