@@ -86,5 +86,45 @@
     "ReplyToAnnouncement": "57e23576-0c8b-47b2-8597-c1ed278754be",
     "Content": "a",
     "CreationDate": "2025-01-15T16:10:05.9550156+01:00"
+  },
+  {
+    "Id": "c1897642-0f34-4f18-b124-bc536f7b5541",
+    "CreatedBy": "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6",
+    "BuildingId": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
+    "ReplyToAnnouncement": "8f2d578b-be85-4246-abe3-4c09ec1a47bf",
+    "Content": "a",
+    "CreationDate": "2025-01-15T17:34:06.8996335+01:00"
+  },
+  {
+    "Id": "0a866efd-fae6-4b5c-b05e-562f0292ba69",
+    "CreatedBy": "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6",
+    "BuildingId": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
+    "ReplyToAnnouncement": "",
+    "Content": "Shte praa domashno",
+    "CreationDate": "2025-01-15T17:35:27.8719397+01:00"
+  },
+  {
+    "Id": "52a00e94-c7fd-414b-a67d-570e75073512",
+    "CreatedBy": "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6",
+    "BuildingId": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
+    "ReplyToAnnouncement": "0a866efd-fae6-4b5c-b05e-562f0292ba69",
+    "Content": "??",
+    "CreationDate": "2025-01-15T17:35:47.427339+01:00"
+  },
+  {
+    "Id": "22a01ae7-2390-4b2d-9a4a-47491a40ab2f",
+    "CreatedBy": "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6",
+    "BuildingId": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
+    "ReplyToAnnouncement": "4172e45b-2e9e-40e4-846b-84fd4e7fa187",
+    "Content": "aa",
+    "CreationDate": "2025-01-15T17:40:20.9844718+01:00"
+  },
+  {
+    "Id": "54c53d44-e8f1-4e69-89ad-2ec20ff24e48",
+    "CreatedBy": "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6",
+    "BuildingId": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
+    "ReplyToAnnouncement": "0a866efd-fae6-4b5c-b05e-562f0292ba69",
+    "Content": "kak be nenor??",
+    "CreationDate": "2025-01-15T17:40:43.2567054+01:00"
   }
 ]

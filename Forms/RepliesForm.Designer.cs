@@ -33,6 +33,8 @@
             lblHouseName = new Label();
             panelReplies = new Panel();
             lbReplies = new Label();
+            tbReplyText = new TextBox();
+            btnSend = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -83,7 +85,7 @@
             panelReplies.BackColor = Color.FromArgb(100, 0, 0, 0);
             panelReplies.Location = new Point(46, 125);
             panelReplies.Name = "panelReplies";
-            panelReplies.Size = new Size(1031, 534);
+            panelReplies.Size = new Size(1031, 464);
             panelReplies.TabIndex = 7;
             // 
             // lbReplies
@@ -99,6 +101,30 @@
             lbReplies.TabIndex = 8;
             lbReplies.Text = "Replies to :";
             // 
+            // tbReplyText
+            // 
+            tbReplyText.Font = new Font("Segoe UI", 20F);
+            tbReplyText.Location = new Point(46, 606);
+            tbReplyText.Name = "tbReplyText";
+            tbReplyText.PlaceholderText = "Enter a reply";
+            tbReplyText.Size = new Size(918, 52);
+            tbReplyText.TabIndex = 9;
+            // 
+            // btnSend
+            // 
+            btnSend.BackColor = Color.FromArgb(137, 128, 245);
+            btnSend.BackgroundImage = Properties.Resources.arrow;
+            btnSend.BackgroundImageLayout = ImageLayout.Zoom;
+            btnSend.FlatAppearance.BorderSize = 0;
+            btnSend.FlatStyle = FlatStyle.Flat;
+            btnSend.ImageAlign = ContentAlignment.TopRight;
+            btnSend.Location = new Point(957, 606);
+            btnSend.Name = "btnSend";
+            btnSend.Size = new Size(120, 52);
+            btnSend.TabIndex = 10;
+            btnSend.UseVisualStyleBackColor = false;
+            btnSend.Click += btnSend_Click;
+            // 
             // RepliesForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -106,6 +132,8 @@
             BackgroundImage = Properties.Resources.background;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1125, 696);
+            Controls.Add(btnSend);
+            Controls.Add(tbReplyText);
             Controls.Add(lbReplies);
             Controls.Add(btnBack);
             Controls.Add(panelReplies);
@@ -126,5 +154,7 @@
         private Label lblHouseName;
         private Panel panelReplies;
         private Label lbReplies;
+        private TextBox tbReplyText;
+        private Button btnSend;
     }
 }

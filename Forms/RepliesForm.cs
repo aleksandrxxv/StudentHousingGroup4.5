@@ -45,6 +45,11 @@ namespace StudentHousing.Forms
             frm.FormClosed += (s, args) => this.Close();
         }
 
+        private void UpdateReplies()
+        {
+            this.replies = AnnouncementManager.GetReplies(mainAnnouncement.Id);
+        }
+
         private void LoadReplies()
         {
             panelReplies.Controls.Clear();
@@ -100,5 +105,17 @@ namespace StudentHousing.Forms
             }
         }
 
+        private void btnSend_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(tbReplyText.Text))
+            {
+                string buildingId = BuildingManager.GetBuildingByTenantID(currentUser.Id).BuildingID;
+                Announcement reply = new Announcement(currentUser.Id, buildingId, mainAnnouncement.Id, tbReplyText.Text, DateTime.Now);
+                AnnouncementManager.CreateAnnouncement(reply);
+                tbReplyText.Text = "";
+                UpdateReplies();
+                LoadReplies();
+            }
+        }
     }
 }
