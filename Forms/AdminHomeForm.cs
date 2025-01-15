@@ -23,5 +23,36 @@ namespace StudentHousing.Forms
             AdminPanel adminPanel = new AdminPanel();
             adminPanel.Show();
         }
+
+        private void btnUsers_Click(object sender, EventArgs e)
+        {
+            AdminPanel adminPanel = new AdminPanel();
+            adminPanel.Show();
+
+        }
+
+        private void btnComplaints_Click(object sender, EventArgs e)
+        {
+            AdminPanel adminPanel = new AdminPanel();
+            adminPanel.Show();
+        }
+
+        private void btnFines_Click(object sender, EventArgs e)
+        {
+            AdminPanel adminPanel = new AdminPanel();
+            adminPanel.Show();
+        }
+
+        private void btnChores_Click(object sender, EventArgs e)
+        {
+            AdminPanel adminPanel = new AdminPanel();
+            adminPanel.Show();
+        }
+
+        private void btnRules_Click(object sender, EventArgs e)
+        {
+            AdminPanel adminPanel = new AdminPanel();
+            adminPanel.Show();
+        }
     }
 }

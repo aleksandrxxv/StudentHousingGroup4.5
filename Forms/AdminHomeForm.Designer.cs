@@ -134,6 +134,7 @@
             btnUsers.TabIndex = 15;
             btnUsers.Text = "Manage Users";
             btnUsers.UseVisualStyleBackColor = false;
+            btnUsers.Click += btnUsers_Click;
             // 
             // btnComplaints
             // 
@@ -147,6 +148,7 @@
             btnComplaints.TabIndex = 16;
             btnComplaints.Text = "View Complaints";
             btnComplaints.UseVisualStyleBackColor = false;
+            btnComplaints.Click += btnComplaints_Click;
             // 
             // btnRules
             // 
@@ -160,6 +162,7 @@
             btnRules.TabIndex = 19;
             btnRules.Text = "Manage Rules";
             btnRules.UseVisualStyleBackColor = false;
+            btnRules.Click += btnRules_Click;
             // 
             // btnChores
             // 
@@ -173,6 +176,7 @@
             btnChores.TabIndex = 18;
             btnChores.Text = "Manage Chores";
             btnChores.UseVisualStyleBackColor = false;
+            btnChores.Click += btnChores_Click;
             // 
             // btnFines
             // 
@@ -186,6 +190,7 @@
             btnFines.TabIndex = 17;
             btnFines.Text = "Manage Fines";
             btnFines.UseVisualStyleBackColor = false;
+            btnFines.Click += btnFines_Click;
             // 
             // pictureBox2
             // 
