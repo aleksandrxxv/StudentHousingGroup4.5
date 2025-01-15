@@ -89,6 +89,7 @@
             // BuildingAddress
             // 
             resources.ApplyResources(BuildingAddress, "BuildingAddress");
+            BuildingAddress.ForeColor = SystemColors.ButtonHighlight;
             BuildingAddress.Name = "BuildingAddress";
             // 
             // numUDMaxTenants
@@ -99,6 +100,7 @@
             // label1
             // 
             resources.ApplyResources(label1, "label1");
+            label1.ForeColor = SystemColors.ButtonHighlight;
             label1.Name = "label1";
             // 
             // numUDRent
@@ -112,6 +114,7 @@
             // label2
             // 
             resources.ApplyResources(label2, "label2");
+            label2.ForeColor = SystemColors.ButtonHighlight;
             label2.Name = "label2";
             // 
             // btnAddBuilding
@@ -159,6 +162,7 @@
             // 
             // tabPage1
             // 
+            tabPage1.BackgroundImage = Properties.Resources._9538280;
             tabPage1.Controls.Add(label6);
             tabPage1.Controls.Add(label5);
             tabPage1.Controls.Add(tbBuildingAddress);
@@ -179,15 +183,18 @@
             // label6
             // 
             resources.ApplyResources(label6, "label6");
+            label6.ForeColor = SystemColors.ButtonHighlight;
             label6.Name = "label6";
             // 
             // label5
             // 
             resources.ApplyResources(label5, "label5");
+            label5.ForeColor = SystemColors.ButtonHighlight;
             label5.Name = "label5";
             // 
             // tabPage2
             // 
+            tabPage2.BackgroundImage = Properties.Resources._9538280;
             tabPage2.Controls.Add(label4);
             tabPage2.Controls.Add(label3);
             tabPage2.Controls.Add(btnCreateUser);
@@ -201,11 +208,13 @@
             // label4
             // 
             resources.ApplyResources(label4, "label4");
+            label4.ForeColor = SystemColors.ButtonHighlight;
             label4.Name = "label4";
             // 
             // label3
             // 
             resources.ApplyResources(label3, "label3");
+            label3.ForeColor = SystemColors.ButtonHighlight;
             label3.Name = "label3";
             // 
             // btnCreateUser
@@ -217,6 +226,7 @@
             // cbAdmin
             // 
             resources.ApplyResources(cbAdmin, "cbAdmin");
+            cbAdmin.ForeColor = SystemColors.ButtonHighlight;
             cbAdmin.Name = "cbAdmin";
             cbAdmin.UseVisualStyleBackColor = true;
             // 
@@ -232,6 +242,7 @@
             // 
             // tabPage3
             // 
+            tabPage3.BackgroundImage = Properties.Resources._9538280;
             tabPage3.Controls.Add(label11);
             tabPage3.Controls.Add(label7);
             tabPage3.Controls.Add(label8);
@@ -249,26 +260,31 @@
             // label11
             // 
             resources.ApplyResources(label11, "label11");
+            label11.ForeColor = SystemColors.ButtonHighlight;
             label11.Name = "label11";
             // 
             // label7
             // 
             resources.ApplyResources(label7, "label7");
+            label7.ForeColor = SystemColors.ButtonHighlight;
             label7.Name = "label7";
             // 
             // label8
             // 
             resources.ApplyResources(label8, "label8");
+            label8.ForeColor = SystemColors.ButtonHighlight;
             label8.Name = "label8";
             // 
             // label9
             // 
             resources.ApplyResources(label9, "label9");
+            label9.ForeColor = SystemColors.ButtonHighlight;
             label9.Name = "label9";
             // 
             // label10
             // 
             resources.ApplyResources(label10, "label10");
+            label10.ForeColor = SystemColors.ButtonHighlight;
             label10.Name = "label10";
             // 
             // dtpDate
@@ -303,6 +319,7 @@
             // 
             // FinesTab
             // 
+            FinesTab.BackgroundImage = Properties.Resources._9538280;
             FinesTab.Controls.Add(btnCreateFine);
             FinesTab.Controls.Add(label15);
             FinesTab.Controls.Add(tbReasonFine);
@@ -325,6 +342,7 @@
             // label15
             // 
             resources.ApplyResources(label15, "label15");
+            label15.ForeColor = SystemColors.ButtonHighlight;
             label15.Name = "label15";
             // 
             // tbReasonFine
@@ -335,11 +353,13 @@
             // label14
             // 
             resources.ApplyResources(label14, "label14");
+            label14.ForeColor = SystemColors.ButtonHighlight;
             label14.Name = "label14";
             // 
             // label13
             // 
             resources.ApplyResources(label13, "label13");
+            label13.ForeColor = SystemColors.ButtonHighlight;
             label13.Name = "label13";
             // 
             // numFineAmount
@@ -352,6 +372,7 @@
             // label12
             // 
             resources.ApplyResources(label12, "label12");
+            label12.ForeColor = SystemColors.ButtonHighlight;
             label12.Name = "label12";
             // 
             // cbUsersFines
@@ -364,6 +385,7 @@
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources._9538280;
             Controls.Add(tabControl1);
             Name = "AdminPanel";
             ((System.ComponentModel.ISupportInitialize)numUDMaxTenants).EndInit();

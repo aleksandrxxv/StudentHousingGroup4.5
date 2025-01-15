@@ -33,7 +33,7 @@
             label3 = new Label();
             tbUsername = new TextBox();
             tbPassword = new TextBox();
-            button1 = new Button();
+            loginButton = new Button();
             lbError = new Label();
             btnClose = new Button();
             panel1 = new Panel();
@@ -104,18 +104,22 @@
             tbPassword.Size = new Size(225, 31);
             tbPassword.TabIndex = 4;
             // 
-            // button1
+            // loginButton
             // 
-            button1.Anchor = AnchorStyles.None;
-            button1.Font = new Font("Yu Gothic UI", 18F);
-            button1.Location = new Point(172, 364);
-            button1.Margin = new Padding(4);
-            button1.Name = "button1";
-            button1.Size = new Size(189, 71);
-            button1.TabIndex = 5;
-            button1.Text = "Log In";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            loginButton.Anchor = AnchorStyles.None;
+            loginButton.BackColor = Color.Transparent;
+            loginButton.FlatAppearance.BorderColor = Color.White;
+            loginButton.FlatAppearance.BorderSize = 2;
+            loginButton.Font = new Font("Yu Gothic UI", 18F);
+            loginButton.ForeColor = Color.Black;
+            loginButton.Location = new Point(172, 364);
+            loginButton.Margin = new Padding(4);
+            loginButton.Name = "loginButton";
+            loginButton.Size = new Size(189, 71);
+            loginButton.TabIndex = 5;
+            loginButton.Text = "Log In";
+            loginButton.UseVisualStyleBackColor = false;
+            loginButton.Click += button1_Click;
             // 
             // lbError
             // 
@@ -148,7 +152,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(100, 0, 0, 0);
-            panel1.Controls.Add(button1);
+            panel1.Controls.Add(loginButton);
             panel1.Controls.Add(label1);
             panel1.Location = new Point(362, 114);
             panel1.Margin = new Padding(4);
@@ -189,7 +193,7 @@
         private Label label3;
         private TextBox tbUsername;
         private TextBox tbPassword;
-        private Button button1;
+        private Button loginButton;
         private Label lbError;
         private Button btnClose;
         private Panel panel1;

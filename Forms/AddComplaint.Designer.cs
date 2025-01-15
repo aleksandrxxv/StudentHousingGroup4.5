@@ -116,7 +116,9 @@
             Controls.Add(btnCreate);
             Controls.Add(cbArea);
             Controls.Add(tbAdditional);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "AddComplaint";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "AddComplaint";
             ResumeLayout(false);
             PerformLayout();

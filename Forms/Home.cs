@@ -19,12 +19,14 @@ namespace StudentHousing
     public partial class Home : Form
     {
         public User currentUser { get; private set; }
+        public Building userBuilding { get; private set; }
 
         public Home(User currentUser)
         {
             InitializeComponent();
             this.currentUser = currentUser;
             Building tenantBuilding = BuildingManager.GetBuildingByTenantID(currentUser.Id);
+            this.userBuilding = tenantBuilding;
             if (currentUser.IsAdmin == true)
             {
                 lblHouseName.Text = "Admin Account";
@@ -176,6 +178,12 @@ namespace StudentHousing
         {
             Complaints complaints = new Complaints(currentUser);
             complaints.Show();
+        }
+
+        private void btnRules_Click(object sender, EventArgs e)
+        {
+            Rules ruleWindow = new Rules(userBuilding, currentUser);
+            ruleWindow.Show();
         }
     }
 }

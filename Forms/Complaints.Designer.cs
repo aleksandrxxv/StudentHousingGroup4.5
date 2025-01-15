@@ -28,24 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
             lbxComplaints = new ListBox();
             btnAdd = new Button();
-            timer1 = new System.Windows.Forms.Timer(components);
+            label1 = new Label();
             SuspendLayout();
             // 
             // lbxComplaints
             // 
             lbxComplaints.FormattingEnabled = true;
             lbxComplaints.ItemHeight = 25;
-            lbxComplaints.Location = new Point(268, 29);
+            lbxComplaints.Location = new Point(43, 89);
             lbxComplaints.Name = "lbxComplaints";
-            lbxComplaints.Size = new Size(338, 354);
+            lbxComplaints.Size = new Size(667, 429);
             lbxComplaints.TabIndex = 0;
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(638, 90);
+            btnAdd.Location = new Point(772, 221);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(112, 34);
             btnAdd.TabIndex = 1;
@@ -53,28 +52,38 @@
             btnAdd.UseVisualStyleBackColor = true;
             btnAdd.Click += btnAdd_Click;
             // 
-            // timer1
+            // label1
             // 
-            timer1.Enabled = true;
-            timer1.Interval = 1000;
-            timer1.Tick += timer1_Tick;
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
+            label1.ForeColor = SystemColors.ButtonHighlight;
+            label1.Location = new Point(378, 22);
+            label1.Name = "label1";
+            label1.Size = new Size(189, 45);
+            label1.TabIndex = 2;
+            label1.Text = "Complaints";
             // 
             // Complaints
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackgroundImage = Properties.Resources._9538280;
+            ClientSize = new Size(937, 552);
+            Controls.Add(label1);
             Controls.Add(btnAdd);
             Controls.Add(lbxComplaints);
             Name = "Complaints";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Complaints";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private ListBox lbxComplaints;
         private Button btnAdd;
-        private System.Windows.Forms.Timer timer1;
+        private Label label1;
     }
 }

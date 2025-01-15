@@ -1,4 +1,5 @@
 ﻿using StudentHousing.Classes;
+using StudentHousing.Forms;
 using StudentHousing.ObjectClasses;
 using System;
 using System.Collections.Generic;
@@ -9,12 +10,15 @@ using System.Threading.Tasks;
 
 namespace StudentHousing.ManagerClasses
 {
-    public class ComplaintsManager
+    public class RuleManager
     {
-        private static readonly string filePath = Path.Combine("..", "..", "..", "Database", "complaints.json");
-        public static void CreateComplaint(Complaint complaint)
+        private static readonly string filePath = Path.Combine("..", "..", "..", "Database", "rules.json");
+        
+        public string BuildingId {  get; private set; }
+
+        public static void AddRule(Rule rule)
         {
-            List<Complaint> complaints = new List<Complaint>();
+            List<Rule> rules = new List<Rule>();
             if (File.Exists(filePath))
             {
                 string existingData = File.ReadAllText(filePath);
@@ -22,24 +26,23 @@ namespace StudentHousing.ManagerClasses
                 {
                     try
                     {
-                        complaints = JsonSerializer.Deserialize<List<Complaint>>(existingData);
+                        rules = JsonSerializer.Deserialize<List<Rule>>(existingData);
                     }
                     catch (JsonException)
                     {
-                        complaints = new List<Complaint>();
+                        rules = new List<Rule>();
                     }
                 }
 
-                complaints.Add(complaint);
-                string jsonData = JsonSerializer.Serialize(complaints, new JsonSerializerOptions { WriteIndented = true });
+                rules.Add(rule);
+                string jsonData = JsonSerializer.Serialize(rules, new JsonSerializerOptions { WriteIndented = true });
 
                 File.WriteAllText(filePath, jsonData);
-
             }
         }
-        public static List<Complaint> GetAllBuildings()
+        public static List<Rule> GetRulesByBuilding(Building building)
         {
-            string filePath = Path.Combine("..", "..", "..", "Database", "complaints.json");
+            string filePath = Path.Combine("..", "..", "..", "Database", "rules.json");
 
             if (!File.Exists(filePath))
             {
@@ -50,12 +53,12 @@ namespace StudentHousing.ManagerClasses
 
             try
             {
-                return JsonSerializer.Deserialize<List<Complaint>>(jsonString);
+                return JsonSerializer.Deserialize<List<Rule>>(jsonString);
             }
             catch (JsonException)
             {
-                Complaint singleComplaint = JsonSerializer.Deserialize<Complaint>(jsonString);
-                return new List<Complaint> { singleComplaint };
+                Rule singleRule = JsonSerializer.Deserialize<Rule>(jsonString);
+                return new List<Rule> { singleRule };
             }
         }
     }
