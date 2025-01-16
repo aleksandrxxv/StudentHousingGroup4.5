@@ -14,5 +14,13 @@
     "Area": 4,
     "AdditionalNotes": "room 5 broken pipe",
     "Date": "2025-01-15T12:17:36.5198454+01:00"
+  },
+  {
+    "Id": "8271a657-4900-4473-a2a9-cae0ddac716e",
+    "UserId": "-1",
+    "BuildingId": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
+    "Area": 1,
+    "AdditionalNotes": "info",
+    "Date": "2025-01-16T10:31:59.4242823+01:00"
   }
 ]

@@ -37,7 +37,7 @@ namespace StudentHousing.ObjectClasses
             }
             else
             {
-                return $"Anounymous: {AdditionalNotes} - {Date}";
+                return $"Anonymous: {AdditionalNotes} - {Date}";
             }
         }
 
