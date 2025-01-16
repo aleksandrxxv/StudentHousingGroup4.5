@@ -5,5 +5,12 @@
     "TennantId": "6abdf1ef-bc01-4cda-948c-3f41e7f36bf8",
     "Reason": "Damaging property",
     "Date": "2024-12-05T11:09:50.2157095+01:00"
+  },
+  {
+    "Id": "c488a9b6-804d-4c7a-a44f-46b61a21bbee",
+    "Amount": 10,
+    "TennantId": "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6",
+    "Reason": "Breaking the sink in the kitchen",
+    "Date": "2024-12-05T19:41:05.0694163+01:00"
   }
 ]

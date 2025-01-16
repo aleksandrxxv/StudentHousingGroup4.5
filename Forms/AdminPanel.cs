@@ -183,7 +183,7 @@ namespace StudentHousing
             User selectedUser = cbUsersFines.SelectedItem as User;
             decimal amount = numFineAmount.Value;
             string reason = tbReasonFine.Text;
-            if(selectedUser == null)
+            if (selectedUser == null)
             {
                 MessageBox.Show("Please select a tennant to be fined.");
             }
@@ -191,7 +191,7 @@ namespace StudentHousing
             {
                 MessageBox.Show("Please select the amount of the fine that is more than 0.");
             }
-            else if(reason.Length < 5)
+            else if (reason.Length < 5)
             {
                 MessageBox.Show("Please provide a reason that is more than 5 characters long.");
             }
@@ -201,7 +201,12 @@ namespace StudentHousing
                 FineManager.CreateFine(fine);
                 MessageBox.Show("Fine created successfully!");
             }
-            
+
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -142,7 +142,10 @@ namespace StudentHousing
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            LogInForm frm = new LogInForm();
+            frm.Show();
+            this.Hide();
+            frm.FormClosed += (s, args) => this.Close();
         }
 
         private void btnAdmin_Click(object sender, EventArgs e)
