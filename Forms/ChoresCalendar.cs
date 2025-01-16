@@ -47,14 +47,29 @@ namespace StudentHousing.Forms
 
                     DateTime date = new DateTime(DateTime.Now.Year, DateTime.Now.Month, dayCounter);
                     List<Chore> choresForDay = ChoreManager.GetUserChoreByDay(CurrentUser.Id, date);
-                    bool isCleaning = choresForDay.Any(chore => chore.typeOfChore == ChoreType.Cleaning); ;
-
+                    //bool isCleaning = choresForDay.Any(chore => chore.typeOfChore == ChoreType.Cleaning);
+                    
+                    ChoreType? choreType = null;
+                    if (choresForDay.Count > 0)
+                    {
+                        choreType = choresForDay.FirstOrDefault().typeOfChore;
+                    }
+                    
                     Image img = null;
                     string toolTipText = "None";
-                    if (isCleaning)
+
+                    if (choreType == ChoreType.Cleaning)
                     {
                         img = Properties.Resources.cleaning;
-                        toolTipText = "Cleaning";
+                        toolTipText = "Clean the common areas";
+                    }else if (choreType == ChoreType.Trash)
+                    {
+                        img = Properties.Resources.trash;
+                        toolTipText = "Throw out the trash";
+                    }else if(choreType == ChoreType.Shopping)
+                    {
+                        img = Properties.Resources.shopping;
+                        toolTipText = "Go shopping";
                     }
 
                     DayControl dayControl = new DayControl(toolTipText)

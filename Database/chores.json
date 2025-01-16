@@ -78,5 +78,21 @@
     "BuildingID": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
     "ResponsibleUserID": "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6",
     "DateCompleted": "0001-01-01T00:00:00"
+  },
+  {
+    "Id": "abdfee32-68fe-46bc-ab30-2e6b4851250e",
+    "typeOfChore": 1,
+    "TimeToBeExecuted": "2025-01-24T09:20:47.094",
+    "BuildingID": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
+    "ResponsibleUserID": "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6",
+    "DateCompleted": "0001-01-01T00:00:00"
+  },
+  {
+    "Id": "579fb974-c388-4225-9c35-7bb28eec100a",
+    "typeOfChore": 2,
+    "TimeToBeExecuted": "2025-01-23T09:22:43.007",
+    "BuildingID": "76de4df3-6618-40ff-8bf1-d2efcf47f16a",
+    "ResponsibleUserID": "4bfee1bf-c05d-4e9a-948c-7e51c7f36ae6",
+    "DateCompleted": "0001-01-01T00:00:00"
   }
 ]

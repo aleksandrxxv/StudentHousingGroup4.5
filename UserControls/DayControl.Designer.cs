@@ -45,7 +45,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.BackgroundImage = Properties.Resources.cleaning;
+            pictureBox1.BackgroundImage = Properties.Resources.shopping;
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox1.InitialImage = Properties.Resources.cleaning;
             pictureBox1.Location = new Point(3, 19);
