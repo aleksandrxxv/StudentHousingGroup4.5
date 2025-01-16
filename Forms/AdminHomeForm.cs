@@ -54,5 +54,13 @@ namespace StudentHousing.Forms
             AdminPanel adminPanel = new AdminPanel();
             adminPanel.Show();
         }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            LogInForm frm = new LogInForm();
+            frm.Show();
+            this.Hide();
+            frm.FormClosed += (s, args) => this.Close();
+        }
     }
 }

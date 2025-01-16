@@ -107,6 +107,7 @@
             btnLogOut.TabIndex = 3;
             btnLogOut.Text = "Log Out";
             btnLogOut.UseVisualStyleBackColor = false;
+            btnLogOut.Click += btnLogOut_Click;
             // 
             // btnBuildings
             // 

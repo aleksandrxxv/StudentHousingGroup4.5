@@ -152,7 +152,7 @@
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(75, 80);
             btnExit.TabIndex = 1;
-            btnExit.Text = "Exit";
+            btnExit.Text = "Log Out";
             btnExit.UseVisualStyleBackColor = false;
             btnExit.Click += btnExit_Click;
             // 
